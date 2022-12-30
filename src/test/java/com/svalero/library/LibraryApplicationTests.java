@@ -1,10 +1,10 @@
-package com.svalero.shop;
+package com.svalero.library;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ShopApplicationTests {
+class LibraryApplicationTests {
 
 	@Test
 	void contextLoads() {

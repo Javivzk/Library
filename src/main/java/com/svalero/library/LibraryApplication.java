@@ -1,13 +1,13 @@
-package com.svalero.shop;
+package com.svalero.library;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ShopApplication {
+public class LibraryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ShopApplication.class, args);
+		SpringApplication.run(LibraryApplication.class, args);
 	}
 
 }
