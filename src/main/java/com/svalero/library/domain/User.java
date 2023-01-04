@@ -53,12 +53,9 @@ public class User {
     private String email;
 
     @Column
-    @NotBlank(message = "El nombre no puede estar vacio")
-    @NotNull(message = "El nombre es obligatorio")
     private LocalDate birthdate;
 
     @Column
-    @NotBlank(message = "El nombre no puede estar vacio")
     @NotNull(message = "El nombre es obligatorio")
     private boolean isMember;
 

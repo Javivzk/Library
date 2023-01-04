@@ -37,14 +37,11 @@ public class Notice {
     private String description;
 
     @Column
-    @NotNull(message = "El nombre es obligatorio")
-    @NotBlank(message = "El nombre no puede estar vacio")
     private LocalDate dateSendNotice;
 
     @Column
     @NotNull(message = "El nombre es obligatorio")
-    @NotBlank(message = "El nombre no puede estar vacio")
-    private boolean read;
+    private boolean hasRead;
 
     @OneToMany(mappedBy = "notices")
     private List<User> users;
