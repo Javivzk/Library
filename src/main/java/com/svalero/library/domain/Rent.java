@@ -38,6 +38,10 @@ public class Rent {
     @NotNull(message = "El nombre es obligatorio")
     private boolean isReturned;
 
+    @Column
+    @NotNull
+    private float totalPrice;
+
     @ToString.Exclude
     @OneToMany(mappedBy = "rent")
     private List<Book> book;

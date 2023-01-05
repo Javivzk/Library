@@ -54,6 +54,8 @@ public class Book {
     private int pages;
 
     @Column
+    private float price;
+    @Column
     @NotNull
     private boolean hasStock;
 

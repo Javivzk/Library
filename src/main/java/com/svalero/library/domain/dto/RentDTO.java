@@ -20,6 +20,8 @@ public class RentDTO {
     private boolean isReturned;
     private long userId;
 
+    private float totalPrice;
+
     private long bookId;
 
 }

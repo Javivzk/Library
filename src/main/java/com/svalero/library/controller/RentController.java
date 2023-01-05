@@ -76,4 +76,10 @@ public class RentController {
         ErrorMessage badRequestErrorMessage = new ErrorMessage(400, "Bad Request", errors);
         return new ResponseEntity<>(badRequestErrorMessage, HttpStatus.BAD_REQUEST);
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ErrorMessage> handleException(Exception e) {
+        ErrorMessage errorMessage = new ErrorMessage(500, "Internal Server Error");
+        return new ResponseEntity<>(errorMessage, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }

@@ -24,4 +24,6 @@ public class NoticeDTO {
 
     private Boolean hasRead;
 
+    private float rating;
+
 }

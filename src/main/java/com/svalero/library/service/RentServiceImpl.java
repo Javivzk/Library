@@ -75,6 +75,7 @@ public class RentServiceImpl implements RentService {
 
         newRent.setCode(rentDTO.getCode());
         newRent.setReturned(rentDTO.isReturned());
+        newRent.setTotalPrice(rentDTO.getTotalPrice());
         newRent.setUser(Collections.singletonList(user));
         newRent.setBook(Collections.singletonList(book));
 

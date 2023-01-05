@@ -65,6 +65,7 @@ public class NoticeServiceImpl implements NoticeService {
         newNotice.setCode(noticeDTO.getCode());
         newNotice.setTitleNotice(noticeDTO.getTitleNotice());
         newNotice.setDescription(noticeDTO.getDescription());
+        newNotice.setRating(noticeDTO.getRating());
         newNotice.setHasRead(noticeDTO.getHasRead());
         newNotice.setUserNotices(users);
         newNotice.setBooks(Collections.singletonList(books));

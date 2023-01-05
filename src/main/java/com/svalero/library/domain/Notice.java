@@ -41,6 +41,9 @@ public class Notice {
     private LocalDate dateSendNotice;
 
     @Column
+    private float rating;
+
+    @Column
     @NotNull(message = "El nombre es obligatorio")
     private boolean hasRead;
 
