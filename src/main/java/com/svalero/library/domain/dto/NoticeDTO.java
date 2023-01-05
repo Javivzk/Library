@@ -18,4 +18,10 @@ public class NoticeDTO {
     @NotNull
     private long bookId;
 
+    private String titleNotice;
+
+    private String description;
+
+    private Boolean hasRead;
+
 }

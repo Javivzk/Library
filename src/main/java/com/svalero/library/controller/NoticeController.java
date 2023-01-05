@@ -42,8 +42,8 @@ public class NoticeController {
         return ResponseEntity.ok(notice);
     }
 
-    @PostMapping("/notices/")
-    public ResponseEntity<Notice> addNotice(@RequestBody NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
+    @PostMapping("/notices")
+    public ResponseEntity<Notice> addNotice(@Valid @RequestBody NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
         Notice newNotice = noticeService.addNotice(noticeDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(newNotice);
     }

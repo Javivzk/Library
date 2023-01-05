@@ -1,5 +1,6 @@
 package com.svalero.library.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -44,6 +45,7 @@ public class Notice {
     private boolean hasRead;
 
     @ToString.Exclude
+    @JsonBackReference(value = "user_notices")
     @ManyToOne
     @JoinColumn(name = "user_notices")
     private User userNotices;

@@ -15,6 +15,7 @@ import com.svalero.library.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -52,21 +53,25 @@ public class NoticeServiceImpl implements NoticeService {
 
     @Override
     public Notice addNotice(NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
-        return null;
+        Notice newNotice = new Notice();
+
+        Book books;
+        User users;
+
+        books = bookRepository.findById(noticeDTO.getBookId()).orElseThrow(BookNotFoundException::new);
+        users = userRepository.findById(noticeDTO.getBookId()).orElseThrow(UserNotFoundException::new);
+
+
+        newNotice.setCode(noticeDTO.getCode());
+        newNotice.setTitleNotice(noticeDTO.getTitleNotice());
+        newNotice.setDescription(noticeDTO.getDescription());
+        newNotice.setHasRead(noticeDTO.getHasRead());
+        newNotice.setUserNotices(users);
+        newNotice.setBooks(Collections.singletonList(books));
+
+
+        return noticeRepository.save(newNotice);
     }
-
-//    @Override
-//    public Notice addNotice(NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
-//        Notice newNotice = new Notice();
-//        Optional<Book> books = bookRepository.findById(noticeDTO.getBookId());
-//        Optional<User> users = userRepository.findById(noticeDTO.getUserId());
-
-//        newNotice.setUserNotices(users);
-//        newNotice.setBooks((List<Book>) books);
-
-
-//        return noticeRepository.save(newNotice);
-//    }
 
     @Override
     public void deleteNotice(long id) throws NoticeNotFoundException {
