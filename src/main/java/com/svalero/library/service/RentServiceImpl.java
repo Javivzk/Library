@@ -1,8 +1,7 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Rent;
-import com.svalero.library.exception.BookNotFoundException;
+import com.svalero.library.exception.RentNotFoundException;
 import com.svalero.library.repository.RentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,27 +19,39 @@ public class RentServiceImpl implements RentService {
     }
 
     @Override
+    public List<Rent> findAllByIsReturned(boolean isReturned) {
+        return rentRepository.findByIsReturned(isReturned);
+    }
+
+
+    @Override
     public Rent findByCode(String code) {
         return rentRepository.findByCode(code);
     }
 
     @Override
-    public Book findById(long id) throws BookNotFoundException {
-        return null;
+    public Rent findById(long id) throws RentNotFoundException {
+        return rentRepository.findById(id)
+                .orElseThrow(RentNotFoundException::new);
     }
 
     @Override
-    public Book addRent(Rent rent) {
-        return null;
+    public Rent addRent(Rent rent) {
+        return rentRepository.save(rent);
     }
 
     @Override
-    public void deleteRent(long id) throws BookNotFoundException {
-
+    public void deleteRent(long id) throws RentNotFoundException {
+        Rent rent = rentRepository.findById(id)
+                .orElseThrow(RentNotFoundException::new);
+        rentRepository.delete(rent);
     }
 
-    @Override
-    public Book modifyRent(long id, Rent newRent) throws BookNotFoundException {
-        return null;
+    public Rent modifyRent(long id, Rent newRent) throws RentNotFoundException {
+        Rent existingRent = rentRepository.findById(id)
+                .orElseThrow(RentNotFoundException::new);
+        existingRent.setCode(newRent.getCode());
+        // Setear el resto de campos
+        return rentRepository.save(existingRent);
     }
 }

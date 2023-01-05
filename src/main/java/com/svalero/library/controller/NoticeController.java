@@ -1,19 +1,20 @@
 package com.svalero.library.controller;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Notice;
-import com.svalero.library.exception.BookNotFoundException;
+import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.exception.NoticeNotFoundException;
-import com.svalero.library.service.BookService;
 import com.svalero.library.service.NoticeService;
-import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class NoticeController {
@@ -53,4 +54,24 @@ public class NoticeController {
         Notice newNotice = noticeService.modifyNotice(id,notice);
         return ResponseEntity.status(HttpStatus.OK).body(newNotice);
     }
+
+    @ExceptionHandler(NoticeNotFoundException.class)
+    public ResponseEntity<?> handleNoticeNotFoundException(NoticeNotFoundException nnfe){
+        ErrorMessage errorMessage = new ErrorMessage(404, nnfe.getMessage());
+        return new ResponseEntity<>(errorMessage, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<ErrorMessage> handleBadRequestException(MethodArgumentNotValidException manve) {
+        Map<String, String> errors = new HashMap<>();
+        manve.getBindingResult().getAllErrors().forEach(error -> {
+            String fieldName = ((FieldError) error).getField();
+            String message = error.getDefaultMessage();
+            errors.put(fieldName, message);
+        });
+
+        ErrorMessage badRequestErrorMessage = new ErrorMessage(400, "Bad Request", errors);
+        return new ResponseEntity<>(badRequestErrorMessage, HttpStatus.BAD_REQUEST);
+    }
+
 }

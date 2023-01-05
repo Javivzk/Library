@@ -30,6 +30,11 @@ public class BookServiceImpl implements BookService{
     }
 
     @Override
+    public Book findByCode(String code) {
+        return null;
+    }
+
+    @Override
     public Book addBook(Book book) {
         return bookRepository.save(book);
     }

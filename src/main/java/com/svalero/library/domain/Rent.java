@@ -3,7 +3,6 @@ package com.svalero.library.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -28,20 +27,15 @@ public class Rent {
     private String code;
 
     @Column(name = "start_rent")
-    @NotNull(message = "El nombre es obligatorio")
-    @NotBlank(message = "El nombre no puede estar vacio")
     @CreatedDate
     private LocalDate startRent;
 
     @Column(name = "end_rent")
-    @NotNull(message = "El nombre es obligatorio")
-    @NotBlank(message = "El nombre no puede estar vacio")
     private LocalDate endRent;
 
     @Column
     @NotNull(message = "El nombre es obligatorio")
-    @NotBlank(message = "El nombre no puede estar vacio")
-    private boolean returned;
+    private boolean isReturned;
 
     @OneToMany(mappedBy = "rent")
     private List<Book> book;

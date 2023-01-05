@@ -11,6 +11,9 @@ public interface RentRepository extends CrudRepository<Rent,Long> {
 
     List<Rent> findAll();
 
+    List<Rent> findByIsReturned(boolean isReturned);
+
+
     Rent findByCode(String code);
 
 }

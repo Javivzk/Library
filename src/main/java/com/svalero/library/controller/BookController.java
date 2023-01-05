@@ -5,7 +5,6 @@ import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

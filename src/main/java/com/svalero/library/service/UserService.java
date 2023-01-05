@@ -1,9 +1,6 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
-import com.svalero.library.domain.Rent;
 import com.svalero.library.domain.User;
-import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.UserNotFoundException;
 
 import java.util.List;

@@ -1,12 +1,8 @@
 package com.svalero.library.controller;
 
-import com.svalero.library.domain.Book;
-import com.svalero.library.domain.Rent;
 import com.svalero.library.domain.User;
-import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.exception.UserNotFoundException;
-import com.svalero.library.service.RentService;
 import com.svalero.library.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

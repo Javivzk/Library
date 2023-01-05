@@ -1,11 +1,8 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Notice;
-import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.NoticeNotFoundException;
 import com.svalero.library.repository.NoticeRepository;
-import org.aspectj.weaver.ast.Not;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

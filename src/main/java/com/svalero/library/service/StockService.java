@@ -1,8 +1,6 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Stock;
-import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.StockNotFoundException;
 
 import java.util.List;
@@ -12,11 +10,11 @@ public interface StockService {
     List<Stock> findAll();
     Stock findById(long id) throws StockNotFoundException;
 
-    List<Stock> findAllByHasStock(boolean hasStock);
+    List<Stock> findAllByIsAvailable(boolean isAvailable);
 
-    Book addBook(Book book);
-    void deleteBook(long id) throws BookNotFoundException;
-    Book modifyBook(long id, Book newBook) throws BookNotFoundException;
+    Stock addStock(Stock stock);
+    void deleteStock(long id) throws StockNotFoundException;
+    Stock modifyStock(long id, Stock newStock) throws StockNotFoundException;
 
     List<Stock> findByBook(long id);
 }

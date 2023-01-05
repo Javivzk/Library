@@ -1,8 +1,6 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Stock;
-import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.StockNotFoundException;
 import com.svalero.library.repository.BookRepository;
 import com.svalero.library.repository.StockRepository;
@@ -28,28 +26,33 @@ public class StockServiceImpl implements StockService {
 
     @Override
     public Stock findById(long id) throws StockNotFoundException {
-        logger.info("ID Stock: " + id);
-        return stockRepository.findById(id).orElseThrow(StockNotFoundException::new);
+        return stockRepository.findById(id)
+                .orElseThrow(StockNotFoundException::new);
     }
 
     @Override
-    public List<Stock> findAllByHasStock(boolean hasStock) {
-        return null;
+    public List<Stock> findAllByIsAvailable(boolean isAvailable) {
+        return stockRepository.findByIsAvailable(isAvailable);
     }
 
     @Override
-    public Book addBook(Book book) {
-        return null;
+    public Stock addStock(Stock stock) {
+        return stockRepository.save(stock);
     }
 
     @Override
-    public void deleteBook(long id) throws BookNotFoundException {
-
+    public void deleteStock(long id) throws StockNotFoundException {
+        Stock stock = stockRepository.findById(id)
+                .orElseThrow(StockNotFoundException::new);
+        stockRepository.delete(stock);
     }
 
-    @Override
-    public Book modifyBook(long id, Book newBook) throws BookNotFoundException {
-        return null;
+    public Stock modifyStock(long id, Stock newStock) throws StockNotFoundException {
+        Stock existingStock = stockRepository.findById(id)
+                .orElseThrow(StockNotFoundException::new);
+        existingStock.setCode(newStock.getCode());
+        // Setear el resto de campos
+        return stockRepository.save(existingStock);
     }
 
     @Override

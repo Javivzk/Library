@@ -1,10 +1,7 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Notice;
-import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.NoticeNotFoundException;
-import org.aspectj.weaver.ast.Not;
 
 import java.util.List;
 

@@ -1,6 +1,5 @@
 package com.svalero.library.repository;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Notice;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

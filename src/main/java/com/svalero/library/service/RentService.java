@@ -1,22 +1,23 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
-import com.svalero.library.domain.Notice;
 import com.svalero.library.domain.Rent;
-import com.svalero.library.exception.BookNotFoundException;
+import com.svalero.library.exception.RentNotFoundException;
 
 import java.util.List;
 
 public interface RentService {
 
     List<Rent> findAll();
+
+    List<Rent> findAllByIsReturned(boolean isReturned);
+
     Rent findByCode(String code);
 
-    Book findById(long id) throws BookNotFoundException;
+    Rent findById(long id) throws RentNotFoundException;
 
-    Book addRent(Rent rent);
+    Rent addRent(Rent rent);
 
-    void deleteRent(long id) throws BookNotFoundException;
+    void deleteRent(long id) throws RentNotFoundException;
 
-    Book modifyRent(long id, Rent newRent) throws BookNotFoundException;
+    Rent modifyRent(long id, Rent newRent) throws RentNotFoundException;
 }

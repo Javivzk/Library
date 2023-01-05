@@ -1,10 +1,7 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
 import com.svalero.library.domain.User;
-import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.UserNotFoundException;
-import com.svalero.library.repository.RentRepository;
 import com.svalero.library.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
