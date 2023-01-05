@@ -1,8 +1,11 @@
 package com.svalero.library.controller;
 
 import com.svalero.library.domain.Rent;
+import com.svalero.library.domain.dto.RentDTO;
+import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.exception.RentNotFoundException;
+import com.svalero.library.exception.UserNotFoundException;
 import com.svalero.library.service.RentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -38,8 +41,8 @@ public class RentController {
     }
 
     @PostMapping("/rents")
-    public ResponseEntity<Rent> addRent(@Valid @RequestBody Rent rent) {
-        Rent newRent = rentService.addRent(rent);
+    public ResponseEntity<Rent> addRent(@Valid @RequestBody RentDTO rentDTO) throws UserNotFoundException, BookNotFoundException {
+        Rent newRent = rentService.addRent(rentDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(newRent);
     }
 

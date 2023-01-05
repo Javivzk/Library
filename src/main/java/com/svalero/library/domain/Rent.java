@@ -1,8 +1,10 @@
 package com.svalero.library.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -22,7 +24,6 @@ public class Rent {
     private long id;
 
     @Column
-    @NotBlank(message = "El campo no puede estar vacio")
     @NotNull(message = "El campo es obligatorio")
     private String code;
 
@@ -37,13 +38,15 @@ public class Rent {
     @NotNull(message = "El nombre es obligatorio")
     private boolean isReturned;
 
+    @ToString.Exclude
     @OneToMany(mappedBy = "rent")
     private List<Book> book;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User users;
+    @ToString.Exclude
+    @OneToMany(mappedBy = "userRents")
+    private List<User> user;
 
+    @ToString.Exclude
     @ManyToMany
     @JoinTable(name = "notice_rent",
             joinColumns = @JoinColumn(name = "rent_id"),

@@ -12,6 +12,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @NoArgsConstructor
 public class NoticeDTO {
+    private String code;
     @NotNull
     private long userId;
     @NotNull

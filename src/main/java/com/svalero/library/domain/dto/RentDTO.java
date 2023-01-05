@@ -4,18 +4,22 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class RentDTO {
-    @Min(value = 1)
-    @NotNull(message = "La cantidad es obligatoria")
-    private int quantity;
+
+    private int id;
+
+    private String title;
+    private String code;
     @NotNull
-    private boolean paid;
-    private long productId;
-    private long customerId;
+    private boolean isReturned;
+    private long userId;
+
+    private long bookId;
+
 }

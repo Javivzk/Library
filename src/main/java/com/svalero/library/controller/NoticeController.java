@@ -1,8 +1,13 @@
 package com.svalero.library.controller;
 
 import com.svalero.library.domain.Notice;
+import com.svalero.library.domain.Rent;
+import com.svalero.library.domain.dto.NoticeDTO;
+import com.svalero.library.domain.dto.RentDTO;
+import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.exception.NoticeNotFoundException;
+import com.svalero.library.exception.UserNotFoundException;
 import com.svalero.library.service.NoticeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -37,9 +42,9 @@ public class NoticeController {
         return ResponseEntity.ok(notice);
     }
 
-    @PostMapping("/notices")
-    public ResponseEntity<Notice> addNotice(@Valid @RequestBody Notice notice) {
-        Notice newNotice = noticeService.addNotice(notice);
+    @PostMapping("/notices/")
+    public ResponseEntity<Notice> addNotice(@RequestBody NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
+        Notice newNotice = noticeService.addNotice(noticeDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(newNotice);
     }
 

@@ -1,8 +1,10 @@
 package com.svalero.library.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -57,13 +59,22 @@ public class Book {
 
     @ManyToOne
     @JoinColumn(name = "rent_id")
+    @JsonBackReference(value = "book_rents")
     private Rent rent;
 
+    @ToString.Exclude
     @ManyToMany
     @JoinTable(name = "books_stock",
             joinColumns = @JoinColumn(name = "book_id"),
             inverseJoinColumns = @JoinColumn(name = "stock_id"))
-    private List<Stock> stock;
+    private List<Stock> stocks;
+
+    @ToString.Exclude
+    @ManyToMany
+    @JoinTable(name = "books_notices",
+            joinColumns = @JoinColumn(name = "book_id"),
+            inverseJoinColumns = @JoinColumn(name = "notice_id"))
+    private List<Notice> noticesByBooks;
 
 
 }

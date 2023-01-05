@@ -1,8 +1,10 @@
 package com.svalero.library.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -57,12 +59,14 @@ public class User {
     @NotNull(message = "El nombre es obligatorio")
     private boolean isMember;
 
-    @OneToMany(mappedBy = "users")
-    private List<Rent> rents;
-
+    @JsonBackReference(value = "userRents")
     @ManyToOne
-    @JoinColumn(name = "user_notices")
-    private Notice notices;
+    @JoinColumn(name = "user_rents")
+    private Rent userRents;
+
+    @ToString.Exclude
+    @OneToMany(mappedBy = "userNotices")
+    private List<Notice> noticeUser;
 
 
 

@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BookDTO {
+public class BookOutDTO {
     @NotNull(message = "El nombre es obligatorio")
     @NotBlank(message = "El nombre no puede estar vacio")
     private String title;
@@ -18,4 +18,8 @@ public class BookDTO {
     @NotBlank(message = "La descripcion no puede estar vacia")
     private String description;
     private String genre;
+
+    private boolean hasStock;
+
+    private int rentId;
 }

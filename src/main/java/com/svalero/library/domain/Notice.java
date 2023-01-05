@@ -3,6 +3,7 @@ package com.svalero.library.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -42,10 +43,17 @@ public class Notice {
     @NotNull(message = "El nombre es obligatorio")
     private boolean hasRead;
 
-    @OneToMany(mappedBy = "notices")
-    private List<User> users;
+    @ToString.Exclude
+    @ManyToOne
+    @JoinColumn(name = "user_notices")
+    private User userNotices;
 
+    @ToString.Exclude
     @ManyToMany(mappedBy = "notices")
     private List<Rent> rents;
+
+    @ToString.Exclude
+    @ManyToMany(mappedBy = "noticesByBooks")
+    private List<Book> books;
 
 }

@@ -1,6 +1,7 @@
 package com.svalero.library.domain;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
@@ -30,7 +31,8 @@ public class Stock {
     private int quantity;
 
 
-    @ManyToMany(mappedBy = "stock")
+    @ToString.Exclude
+    @ManyToMany(mappedBy = "stocks")
     private List<Book> books;
 
 }

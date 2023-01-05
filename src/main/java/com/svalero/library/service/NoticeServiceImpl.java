@@ -1,12 +1,22 @@
 package com.svalero.library.service;
 
+import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Notice;
+import com.svalero.library.domain.Rent;
+import com.svalero.library.domain.User;
+import com.svalero.library.domain.dto.NoticeDTO;
+import com.svalero.library.domain.dto.RentDTO;
+import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.NoticeNotFoundException;
+import com.svalero.library.exception.UserNotFoundException;
+import com.svalero.library.repository.BookRepository;
 import com.svalero.library.repository.NoticeRepository;
+import com.svalero.library.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class NoticeServiceImpl implements NoticeService {
@@ -14,6 +24,11 @@ public class NoticeServiceImpl implements NoticeService {
     @Autowired
     private NoticeRepository noticeRepository;
 
+    @Autowired
+    private BookRepository bookRepository;
+
+    @Autowired
+    private UserRepository userRepository;
     @Override
     public List<Notice> findAll() {
         return noticeRepository.findAll();
@@ -36,9 +51,22 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
-    public Notice addNotice(Notice notice) {
-        return noticeRepository.save(notice);
+    public Notice addNotice(NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
+        return null;
     }
+
+//    @Override
+//    public Notice addNotice(NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
+//        Notice newNotice = new Notice();
+//        Optional<Book> books = bookRepository.findById(noticeDTO.getBookId());
+//        Optional<User> users = userRepository.findById(noticeDTO.getUserId());
+
+//        newNotice.setUserNotices(users);
+//        newNotice.setBooks((List<Book>) books);
+
+
+//        return noticeRepository.save(newNotice);
+//    }
 
     @Override
     public void deleteNotice(long id) throws NoticeNotFoundException {
