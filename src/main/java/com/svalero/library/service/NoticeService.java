@@ -1,5 +1,6 @@
 package com.svalero.library.service;
 
+import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Notice;
 import com.svalero.library.domain.Rent;
 import com.svalero.library.domain.dto.NoticeDTO;
@@ -16,6 +17,9 @@ public interface NoticeService {
     List<Notice> findAllByHasRead(boolean hasRead);
 
     Notice findByCode(String code);
+
+    List<Notice> findByTitleNotice(String titleNotice);
+
 
     Notice findById(long id) throws NoticeNotFoundException;
 

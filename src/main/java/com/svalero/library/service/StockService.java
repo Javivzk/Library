@@ -12,6 +12,8 @@ public interface StockService {
 
     List<Stock> findAllByIsAvailable(boolean isAvailable);
 
+    List<Stock> findByCode(String code);
+
     Stock addStock(Stock stock);
     void deleteStock(long id) throws StockNotFoundException;
     Stock modifyStock(long id, Stock newStock) throws StockNotFoundException;

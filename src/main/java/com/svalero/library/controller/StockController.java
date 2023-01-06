@@ -1,5 +1,6 @@
 package com.svalero.library.controller;
 
+import com.svalero.library.domain.Notice;
 import com.svalero.library.domain.Stock;
 import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.exception.StockNotFoundException;
@@ -22,13 +23,27 @@ public class StockController {
     @Autowired
     private StockService stockService;
     @GetMapping("/stocks")
-    public ResponseEntity<List<Stock>> getStocks(@RequestParam(name = "available", defaultValue = "") String isAvailable) {
-        if (isAvailable.equals("")) {
+    public ResponseEntity<List<Stock>> getStocks(@RequestParam Map<String, String> data) {
+        if (data.isEmpty()) {
             return ResponseEntity.ok(stockService.findAll());
         }else {
-            boolean notice = Boolean.parseBoolean(isAvailable);
-            return ResponseEntity.ok(stockService.findAllByIsAvailable(notice));
+            if (data.containsKey("code")) {
+                List<Stock> stocks = stockService.findByCode(data.get("code"));
+                return ResponseEntity.ok(stocks);
+            }else if(data.containsKey("isAvailable")){
+                if (data.get("isAvailable").equals("true")){
+                    List<Stock> stocks= stockService.findAllByIsAvailable(Boolean.TRUE);
+                    return ResponseEntity.ok(stocks);
+                }else if (data.get("isAvailable").equals("false")){
+                    List<Stock> stocks = stockService.findAllByIsAvailable(Boolean.FALSE);
+                    return ResponseEntity.ok(stocks);
+                }else {
+                    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                }
+            }
         }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
     }
 
     @GetMapping("/stocks/{id}")

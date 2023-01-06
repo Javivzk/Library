@@ -22,13 +22,27 @@ public class BookController {
     @Autowired
     private BookService bookService;
     @GetMapping("/books")
-    public ResponseEntity<List<Book>> getBooks(@RequestParam(name = "stock", defaultValue = "") String hasStock) {
-        if (hasStock.equals("")) {
+    public ResponseEntity<List<Book>> getBooks(@RequestParam Map<String, String> data) {
+        if (data.isEmpty()) {
             return ResponseEntity.ok(bookService.findAll());
         }else {
-            boolean stock = Boolean.parseBoolean(hasStock);
-            return ResponseEntity.ok(bookService.findAllByHasStock(stock));
+            if (data.containsKey("title")) {
+                List<Book> books = bookService.findByTitle(data.get("title"));
+                return ResponseEntity.ok(books);
+            }else if(data.containsKey("stock")){
+                if (data.get("stock").equals("true")){
+                    List<Book> books = bookService.findAllByHasStock(Boolean.TRUE);
+                    return ResponseEntity.ok(books);
+                }else if (data.get("stock").equals("false")){
+                    List<Book> books = bookService.findAllByHasStock(Boolean.FALSE);
+                    return ResponseEntity.ok(books);
+                }else {
+                    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                }
+            }
         }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
     }
 
     @GetMapping("/books/{id}")

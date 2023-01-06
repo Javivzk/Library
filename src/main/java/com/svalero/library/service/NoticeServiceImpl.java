@@ -46,6 +46,12 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
+    public List<Notice> findByTitleNotice(String titleNotice) {
+        return noticeRepository.findByTitleNotice(titleNotice);
+    }
+
+
+    @Override
     public Notice findById(long id) throws NoticeNotFoundException {
         return noticeRepository.findById(id)
                 .orElseThrow(NoticeNotFoundException::new);

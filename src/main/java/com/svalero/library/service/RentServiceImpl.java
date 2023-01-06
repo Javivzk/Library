@@ -2,6 +2,7 @@ package com.svalero.library.service;
 
 import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Rent;
+import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.User;
 import com.svalero.library.domain.dto.RentDTO;
 import com.svalero.library.exception.BookNotFoundException;
@@ -43,13 +44,13 @@ public class RentServiceImpl implements RentService {
 
 
     @Override
-    public Rent findByCode(String code) {
+    public List<Rent> findByCode(String code) {
         return rentRepository.findByCode(code);
     }
 
     @Override
-    public List<Rent> findByBook(Book book) {
-        return rentRepository.findByBook(book);
+    public List<Rent> findByBook(String bookId) {
+        return rentRepository.findByBook(bookId);
     }
 
     @Override

@@ -2,6 +2,7 @@ package com.svalero.library.service;
 
 import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Rent;
+import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.User;
 import com.svalero.library.domain.dto.RentDTO;
 import com.svalero.library.exception.BookNotFoundException;
@@ -16,8 +17,8 @@ public interface RentService {
 
     List<Rent> findAllByIsReturned(boolean isReturned);
 
-    Rent findByCode(String code);
-    List<Rent> findByBook(Book book);
+    List<Rent> findByCode(String code);
+    List<Rent> findByBook(String bookId);
 
     List<Rent> findByUser(User user);
 

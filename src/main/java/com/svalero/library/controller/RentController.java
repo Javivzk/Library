@@ -1,6 +1,8 @@
 package com.svalero.library.controller;
 
+import com.svalero.library.domain.Notice;
 import com.svalero.library.domain.Rent;
+import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.dto.RentDTO;
 import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.ErrorMessage;
@@ -24,14 +26,30 @@ public class RentController {
 
     @Autowired
     private RentService rentService;
+
+    //TODO filtrar por bookId
     @GetMapping("/rents")
-    public ResponseEntity<List<Rent>> getRents(@RequestParam(name = "returned", defaultValue = "") String isReturned) {
-        if (isReturned.equals("")) {
+    public ResponseEntity<List<Rent>> getRents(@RequestParam Map<String, String> data) {
+        if (data.isEmpty()) {
             return ResponseEntity.ok(rentService.findAll());
         }else {
-            boolean notice = Boolean.parseBoolean(isReturned);
-            return ResponseEntity.ok(rentService.findAllByIsReturned(notice));
+            if (data.containsKey("code")) {
+                List<Rent> rents = rentService.findByCode(data.get("code"));
+                return ResponseEntity.ok(rents);
+            }else if(data.containsKey("returned")){
+                if (data.get("returned").equals("true")){
+                    List<Rent> rents = rentService.findAllByIsReturned(Boolean.TRUE);
+                    return ResponseEntity.ok(rents);
+                }else if (data.get("returned").equals("false")){
+                    List<Rent> rents = rentService.findAllByIsReturned(Boolean.FALSE);
+                    return ResponseEntity.ok(rents);
+                }else {
+                    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                }
+            }
         }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
     }
 
     @GetMapping("/rents/{id}")

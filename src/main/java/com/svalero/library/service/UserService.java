@@ -1,5 +1,6 @@
 package com.svalero.library.service;
 
+import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.User;
 import com.svalero.library.exception.UserNotFoundException;
 
@@ -8,7 +9,7 @@ import java.util.List;
 public interface UserService {
 
     List<User> findAll();
-    User findByCode(String code);
+    List<User> findByCode(String code);
     List<User> findAllByIsMember(boolean isMember);
 
 

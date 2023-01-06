@@ -11,6 +11,7 @@ public interface StockRepository extends CrudRepository<Stock,Long> {
 
     List<Stock> findAll();
 
+    List<Stock> findByCode(String code);
     List<Stock> findByIsAvailable(boolean isAvailable);
 
 

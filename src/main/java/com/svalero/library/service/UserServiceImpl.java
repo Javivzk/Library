@@ -1,5 +1,6 @@
 package com.svalero.library.service;
 
+import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.User;
 import com.svalero.library.exception.UserNotFoundException;
 import com.svalero.library.repository.UserRepository;
@@ -20,7 +21,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByCode(String code) {
+    public List<User> findByCode(String code) {
         return userRepository.findByCode(code);
     }
 

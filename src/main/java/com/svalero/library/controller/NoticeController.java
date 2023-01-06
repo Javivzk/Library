@@ -1,5 +1,6 @@
 package com.svalero.library.controller;
 
+import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Notice;
 import com.svalero.library.domain.Rent;
 import com.svalero.library.domain.dto.NoticeDTO;
@@ -27,13 +28,27 @@ public class NoticeController {
     @Autowired
     private NoticeService noticeService;
     @GetMapping("/notices")
-    public ResponseEntity<List<Notice>> getNotices(@RequestParam(name = "read", defaultValue = "") String hasRead) {
-        if (hasRead.equals("")) {
+    public ResponseEntity<List<Notice>> getNotices(@RequestParam Map<String, String> data) {
+        if (data.isEmpty()) {
             return ResponseEntity.ok(noticeService.findAll());
         }else {
-            boolean notice = Boolean.parseBoolean(hasRead);
-            return ResponseEntity.ok(noticeService.findAllByHasRead(notice));
+            if (data.containsKey("titleNotice")) {
+                List<Notice> notices = noticeService.findByTitleNotice(data.get("titleNotice"));
+                return ResponseEntity.ok(notices);
+            }else if(data.containsKey("hasRead")){
+                if (data.get("hasRead").equals("true")){
+                    List<Notice> notices = noticeService.findAllByHasRead(Boolean.TRUE);
+                    return ResponseEntity.ok(notices);
+                }else if (data.get("hasRead").equals("false")){
+                    List<Notice> notices = noticeService.findAllByHasRead(Boolean.FALSE);
+                    return ResponseEntity.ok(notices);
+                }else {
+                    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                }
+            }
         }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
     }
 
     @GetMapping("/notices/{id}")

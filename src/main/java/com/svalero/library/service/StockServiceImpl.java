@@ -36,6 +36,11 @@ public class StockServiceImpl implements StockService {
     }
 
     @Override
+    public List<Stock> findByCode(String code) {
+        return stockRepository.findByCode(code);
+    }
+
+    @Override
     public Stock addStock(Stock stock) {
         return stockRepository.save(stock);
     }

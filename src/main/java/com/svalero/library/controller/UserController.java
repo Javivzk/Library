@@ -1,5 +1,6 @@
 package com.svalero.library.controller;
 
+import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.User;
 import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.exception.UserNotFoundException;
@@ -21,13 +22,27 @@ public class UserController {
     @Autowired
     private UserService userService;
     @GetMapping("/users")
-    public ResponseEntity<List<User>> getUsers(@RequestParam(name = "member", defaultValue = "") String isMember) {
-        if (isMember.equals("")) {
+    public ResponseEntity<List<User>> getUsers(@RequestParam Map<String, String> data) {
+        if (data.isEmpty()) {
             return ResponseEntity.ok(userService.findAll());
         }else {
-            boolean member = Boolean.parseBoolean(isMember);
-            return ResponseEntity.ok(userService.findAllByIsMember(member));
+            if (data.containsKey("code")) {
+                List<User> users = userService.findByCode(data.get("code"));
+                return ResponseEntity.ok(users);
+            }else if(data.containsKey("member")){
+                if (data.get("member").equals("true")){
+                    List<User> users= userService.findAllByIsMember(Boolean.TRUE);
+                    return ResponseEntity.ok(users);
+                }else if (data.get("member").equals("false")){
+                    List<User> users = userService.findAllByIsMember(Boolean.FALSE);
+                    return ResponseEntity.ok(users);
+                }else {
+                    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+                }
+            }
         }
+        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
     }
 
     @GetMapping("/users/{id}")

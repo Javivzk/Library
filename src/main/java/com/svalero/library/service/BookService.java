@@ -14,6 +14,9 @@ public interface BookService {
 
     Book findByCode(String code);
 
+    List<Book> findByTitle(String title);
+
+
 
     Book addBook(Book book);
     void deleteBook(long id) throws BookNotFoundException;
