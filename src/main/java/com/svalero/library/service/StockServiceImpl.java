@@ -26,22 +26,26 @@ public class StockServiceImpl implements StockService {
 
     @Override
     public Stock findById(long id) throws StockNotFoundException {
+        logger.info("Stock Id: " + id);
         return stockRepository.findById(id)
                 .orElseThrow(StockNotFoundException::new);
     }
 
     @Override
     public List<Stock> findAllByIsAvailable(boolean isAvailable) {
+        logger.info("Stock State: " + isAvailable);
         return stockRepository.findByIsAvailable(isAvailable);
     }
 
     @Override
     public List<Stock> findByCode(String code) {
+        logger.info("Stock Code: " + code);
         return stockRepository.findByCode(code);
     }
 
     @Override
     public Stock addStock(Stock stock) {
+        logger.info("Stock added: " + stock);
         return stockRepository.save(stock);
     }
 
@@ -49,14 +53,19 @@ public class StockServiceImpl implements StockService {
     public void deleteStock(long id) throws StockNotFoundException {
         Stock stock = stockRepository.findById(id)
                 .orElseThrow(StockNotFoundException::new);
+        logger.info("Deleted Stock: " + id);
         stockRepository.delete(stock);
     }
 
     public Stock modifyStock(long id, Stock newStock) throws StockNotFoundException {
         Stock existingStock = stockRepository.findById(id)
                 .orElseThrow(StockNotFoundException::new);
+        logger.info("Stock to modify: " + existingStock);
         existingStock.setCode(newStock.getCode());
         // Setear el resto de campos
+
+        logger.info("Stock modified: " + id);
+
         return stockRepository.save(existingStock);
     }
 

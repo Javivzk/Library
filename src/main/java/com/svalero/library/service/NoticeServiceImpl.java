@@ -12,6 +12,8 @@ import com.svalero.library.exception.UserNotFoundException;
 import com.svalero.library.repository.BookRepository;
 import com.svalero.library.repository.NoticeRepository;
 import com.svalero.library.repository.UserRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +32,9 @@ public class NoticeServiceImpl implements NoticeService {
 
     @Autowired
     private UserRepository userRepository;
+
+    private final Logger logger = LoggerFactory.getLogger(NoticeServiceImpl.class);
+
     @Override
     public List<Notice> findAll() {
         return noticeRepository.findAll();
@@ -37,28 +42,33 @@ public class NoticeServiceImpl implements NoticeService {
 
     @Override
     public List<Notice> findAllByHasRead(boolean hasRead) {
+        logger.info("Notice state: " + hasRead);
         return noticeRepository.findByHasRead(hasRead);
     }
 
     @Override
     public Notice findByCode(String code) {
+        logger.info("Notice Code: " + code);
         return noticeRepository.findByCode(code);
     }
 
     @Override
     public List<Notice> findByTitleNotice(String titleNotice) {
+        logger.info("Title Notice: " + titleNotice);
         return noticeRepository.findByTitleNotice(titleNotice);
     }
 
 
     @Override
     public Notice findById(long id) throws NoticeNotFoundException {
+        logger.info("Notice Id: " + id);
         return noticeRepository.findById(id)
                 .orElseThrow(NoticeNotFoundException::new);
     }
 
     @Override
     public Notice addNotice(NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
+        logger.info("Added Notice: " + noticeDTO);
         Notice newNotice = new Notice();
 
         Book books;
@@ -84,14 +94,17 @@ public class NoticeServiceImpl implements NoticeService {
     public void deleteNotice(long id) throws NoticeNotFoundException {
         Notice notice = noticeRepository.findById(id)
                 .orElseThrow(NoticeNotFoundException::new);
+        logger.info("Notice deleted: " + id);
         noticeRepository.delete(notice);
     }
 
     public Notice modifyNotice(long id, Notice newNotice) throws NoticeNotFoundException {
         Notice existingNotice = noticeRepository.findById(id)
                 .orElseThrow(NoticeNotFoundException::new);
+        logger.info("Notice to modify: " + existingNotice);
         existingNotice.setCode(newNotice.getCode());
         // Setear el resto de campos
+        logger.info("Notice Modified: " + newNotice);
         return noticeRepository.save(existingNotice);
     }
 }
