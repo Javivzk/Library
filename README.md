@@ -20,7 +20,7 @@ Actividad de Aprendizaje de Acceso a datos
 - [ ] Añade 3 operaciones que utilicen consultas JPQL para extraer la información de la base de datos
 - [ ] Añade 3 operaciones que utilicen consultas SQL nativas para extraer la información de la base de datos
 - [ ] Añade 2 clases más al modelo de datos con sus respectivas operaciones CRUD (inclúyelas también en la colección Postman)
-- [ ] Parametriza la colección Postman para que pueda ser ejecutada con el Runner de Postman y realizar una prueba completa de la API
+- [x] Parametriza la colección Postman para que pueda ser ejecutada con el Runner de Postman y realizar una prueba completa de la API
 ### Pre-requisitos 📋
 
 
