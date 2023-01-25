@@ -4,10 +4,7 @@ import com.svalero.library.domain.Notice;
 import com.svalero.library.domain.Rent;
 import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.dto.RentDTO;
-import com.svalero.library.exception.BookNotFoundException;
-import com.svalero.library.exception.ErrorMessage;
-import com.svalero.library.exception.RentNotFoundException;
-import com.svalero.library.exception.UserNotFoundException;
+import com.svalero.library.exception.*;
 import com.svalero.library.service.RentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -92,6 +89,14 @@ public class RentController {
         logger.info("PUT Rents");
         Rent newRent = rentService.modifyRent(id,rent);
         logger.info("END PUT Rents");
+        return ResponseEntity.status(HttpStatus.OK).body(newRent);
+    }
+
+    @PatchMapping("/rents/{id}")
+    public ResponseEntity<Rent> patchRent(@PathVariable long id,@RequestBody boolean isReturned) throws RentNotFoundException {
+        logger.error("PATCH Rent");
+        Rent newRent = rentService.patchRent(id,isReturned);
+        logger.error("END PATCH Rent");
         return ResponseEntity.status(HttpStatus.OK).body(newRent);
     }
 

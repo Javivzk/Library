@@ -71,9 +71,9 @@ public class NoticeController {
     }
 
     @PostMapping("/notices")
-    public ResponseEntity<Notice> addNotice(@Valid @RequestBody NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
+    public ResponseEntity<Notice> addNotice(@Valid @RequestBody Notice notice) throws BookNotFoundException, UserNotFoundException {
         logger.info("POST Notices");
-        Notice newNotice = noticeService.addNotice(noticeDTO);
+        Notice newNotice = noticeService.addNotice(notice);
         logger.info("END POST Notices");
         return ResponseEntity.status(HttpStatus.CREATED).body(newNotice);
     }
@@ -91,6 +91,14 @@ public class NoticeController {
         logger.info("PUT Notices");
         Notice newNotice = noticeService.modifyNotice(id,notice);
         logger.info("END PUT Notices");
+        return ResponseEntity.status(HttpStatus.OK).body(newNotice);
+    }
+
+    @PatchMapping("/notices/{id}")
+    public ResponseEntity<Notice> patchNotice(@PathVariable long id,@RequestBody boolean hasRead) throws NoticeNotFoundException{
+        logger.error("PATCH Notice");
+        Notice newNotice = noticeService.patchNotice(id,hasRead);
+        logger.error("END PATCH Notice");
         return ResponseEntity.status(HttpStatus.OK).body(newNotice);
     }
 

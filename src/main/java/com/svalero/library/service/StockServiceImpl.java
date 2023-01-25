@@ -1,6 +1,8 @@
 package com.svalero.library.service;
 
+import com.svalero.library.domain.Rent;
 import com.svalero.library.domain.Stock;
+import com.svalero.library.exception.RentNotFoundException;
 import com.svalero.library.exception.StockNotFoundException;
 import com.svalero.library.repository.BookRepository;
 import com.svalero.library.repository.StockRepository;
@@ -62,11 +64,26 @@ public class StockServiceImpl implements StockService {
                 .orElseThrow(StockNotFoundException::new);
         logger.info("Stock to modify: " + existingStock);
         existingStock.setCode(newStock.getCode());
-        // Setear el resto de campos
+        existingStock.setIsAvailable(newStock.getIsAvailable());
+        existingStock.setQuantity(newStock.getQuantity());
+
 
         logger.info("Stock modified: " + id);
 
         return stockRepository.save(existingStock);
+    }
+
+    @Override
+    public Stock patchStock(long id, int quantity) throws StockNotFoundException {
+        Stock existingStock = stockRepository.findById(id)
+                .orElseThrow(StockNotFoundException::new);
+        logger.info("Stock to patch quantity: " + existingStock);
+        existingStock.setQuantity(quantity);
+        logger.info("Quantity patched: " + quantity);
+
+        // Setear el resto de campos
+        return stockRepository.save(existingStock);
+
     }
 
     @Override

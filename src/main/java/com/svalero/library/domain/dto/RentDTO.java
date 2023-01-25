@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -16,7 +17,10 @@ public class RentDTO {
 
     private String title;
     private String code;
-    @NotNull
+
+    private LocalDate startRent;
+
+    private LocalDate endRent;
     private boolean isReturned;
     private long userId;
 

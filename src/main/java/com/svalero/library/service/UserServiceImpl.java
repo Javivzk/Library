@@ -1,7 +1,9 @@
 package com.svalero.library.service;
 
+import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.User;
+import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.UserNotFoundException;
 import com.svalero.library.repository.UserRepository;
 import org.slf4j.Logger;
@@ -63,9 +65,31 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(UserNotFoundException::new);
         logger.info("User to modify: " + existingUser);
         existingUser.setCode(newUser.getCode());
+        existingUser.setName(newUser.getName());
+        existingUser.setLastName(newUser.getLastName());
+        existingUser.setBirthdate(newUser.getBirthdate());
+        existingUser.setAddress(newUser.getAddress());
+        existingUser.setPhoneNumber(newUser.getPhoneNumber());
+        existingUser.setEmail(newUser.getEmail());
+        existingUser.setMember(newUser.isMember());
+
+
 
         logger.info("User modified: " + id);
 
         return userRepository.save(existingUser);
+    }
+
+    @Override
+    public User patchUser(long id, String name) throws UserNotFoundException {
+        User existingUser = userRepository.findById(id)
+                .orElseThrow(UserNotFoundException::new);
+        logger.info("User to patch Name: " + existingUser);
+        existingUser.setName(name);
+        logger.info("User patched: " + name);
+
+        // Setear el resto de campos
+        return userRepository.save(existingUser);
+
     }
 }

@@ -14,6 +14,8 @@ public class BookOutDTO {
     @NotNull(message = "El nombre es obligatorio")
     @NotBlank(message = "El nombre no puede estar vacio")
     private String title;
+
+    private String author;
     @NotNull(message = "La descripcion es obligatoria")
     @NotBlank(message = "La descripcion no puede estar vacia")
     private String description;

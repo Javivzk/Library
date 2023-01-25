@@ -10,4 +10,8 @@ import lombok.NoArgsConstructor;
 public class StockDTO {
     private long bookStock;
     private int quantity;
+
+    private boolean isAvailable;
+
+    private String code;
 }

@@ -47,6 +47,9 @@ public class Notice {
     @NotNull(message = "El nombre es obligatorio")
     private boolean hasRead;
 
+    @Column
+    private long bookId;
+
     @ToString.Exclude
     @JsonBackReference(value = "user_notices")
     @ManyToOne

@@ -1,8 +1,10 @@
 package com.svalero.library.controller;
 
 import com.svalero.library.domain.Notice;
+import com.svalero.library.domain.Rent;
 import com.svalero.library.domain.Stock;
 import com.svalero.library.exception.ErrorMessage;
+import com.svalero.library.exception.RentNotFoundException;
 import com.svalero.library.exception.StockNotFoundException;
 import com.svalero.library.service.StockService;
 import org.slf4j.Logger;
@@ -89,6 +91,15 @@ public class StockController {
         logger.info("END PUT Stocks");
         return ResponseEntity.status(HttpStatus.OK).body(newStock);
     }
+
+    @PatchMapping("/stocks/{id}")
+    public ResponseEntity<Stock> patchStock(@PathVariable long id, @RequestBody int quantity) throws StockNotFoundException {
+        logger.error("PATCH Stock");
+        Stock newStock = stockService.patchStock(id,quantity);
+        logger.error("END PATCH Stock");
+        return ResponseEntity.status(HttpStatus.OK).body(newStock);
+    }
+
 
     @ExceptionHandler(StockNotFoundException.class)
     public ResponseEntity<?> handleRentNotFoundException(StockNotFoundException snfe){

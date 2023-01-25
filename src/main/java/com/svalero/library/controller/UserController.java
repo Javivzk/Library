@@ -1,7 +1,9 @@
 package com.svalero.library.controller;
 
+import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Stock;
 import com.svalero.library.domain.User;
+import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.ErrorMessage;
 import com.svalero.library.exception.UserNotFoundException;
 import com.svalero.library.service.UserService;
@@ -88,6 +90,14 @@ public class UserController {
         User modifiedUser = userService.modifyUser(id, user);
         logger.info("END PUT Users");
         return ResponseEntity.status(HttpStatus.OK).body(modifiedUser);
+    }
+
+    @PatchMapping("/users/{id}")
+    public ResponseEntity<User> patchUsers(@PathVariable long id, @RequestBody String name) throws UserNotFoundException {
+        logger.error("PATCH User");
+        User newUser = userService.patchUser(id,name);
+        logger.error("END PATCH User");
+        return ResponseEntity.status(HttpStatus.OK).body(newUser);
     }
 
     @ExceptionHandler(UserNotFoundException.class)

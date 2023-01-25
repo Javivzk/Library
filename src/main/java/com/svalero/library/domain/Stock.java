@@ -27,7 +27,6 @@ public class Stock {
     private Boolean isAvailable;
 
     @Column
-    @Min(value = 0)
     private int quantity;
 
 

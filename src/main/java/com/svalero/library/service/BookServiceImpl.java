@@ -67,9 +67,30 @@ public class BookServiceImpl implements BookService{
                 .orElseThrow(BookNotFoundException::new);
         logger.info("Book to modify: " + existingBook);
         existingBook.setCode(newBook.getCode());
+        existingBook.setTitle(newBook.getTitle());
+        existingBook.setAuthor(newBook.getAuthor());
+        existingBook.setYear(newBook.getYear());
+        existingBook.setGenre(newBook.getGenre());
+        existingBook.setPages(newBook.getPages());
+        existingBook.setPrice(newBook.getPrice());
+        existingBook.setHasStock(newBook.isHasStock());
+        existingBook.setRent(newBook.getRent());
+
         logger.info("Book modified: " + newBook);
+
+        return bookRepository.save(existingBook);
+    }
+
+    @Override
+    public Book patchBook(long id, String author) throws BookNotFoundException {
+        Book existingBook = bookRepository.findById(id)
+                .orElseThrow(BookNotFoundException::new);
+        logger.info("Book to patch Author: " + existingBook);
+        existingBook.setAuthor(author);
+        logger.info("Autor patched: " + author);
 
         // Setear el resto de campos
         return bookRepository.save(existingBook);
+
     }
 }

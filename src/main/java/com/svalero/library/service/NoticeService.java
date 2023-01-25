@@ -23,7 +23,10 @@ public interface NoticeService {
 
     Notice findById(long id) throws NoticeNotFoundException;
 
-    Notice addNotice(NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException;
+    Notice addNotice(Notice notice) throws BookNotFoundException, UserNotFoundException;
     void deleteNotice(long id) throws NoticeNotFoundException;
     Notice modifyNotice(long id, Notice newNotice) throws NoticeNotFoundException;
+
+    Notice patchNotice(long id, boolean hasRead) throws NoticeNotFoundException;
+
 }

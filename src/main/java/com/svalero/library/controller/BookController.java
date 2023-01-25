@@ -89,6 +89,15 @@ public class BookController {
         return ResponseEntity.status(HttpStatus.OK).body(newBook);
     }
 
+    @PatchMapping("/books/{id}")
+    public ResponseEntity<Book> patchBook(@PathVariable long id,@RequestBody String author) throws BookNotFoundException{
+        logger.error("PATCH Book");
+        Book newBook = bookService.patchBook(id,author);
+        logger.error("END PATCH Book");
+        return ResponseEntity.status(HttpStatus.OK).body(newBook);
+    }
+
+
     @ExceptionHandler(BookNotFoundException.class)
     public ResponseEntity<?> handleBookNotFoundException(BookNotFoundException bnfe){
         logger.error("Book not found ");

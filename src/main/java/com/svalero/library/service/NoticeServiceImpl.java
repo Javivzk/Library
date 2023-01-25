@@ -67,22 +67,23 @@ public class NoticeServiceImpl implements NoticeService {
     }
 
     @Override
-    public Notice addNotice(NoticeDTO noticeDTO) throws BookNotFoundException, UserNotFoundException {
-        logger.info("Added Notice: " + noticeDTO);
+    public Notice addNotice(Notice notice) throws BookNotFoundException, UserNotFoundException {
+        logger.info("Added Notice: " + notice);
         Notice newNotice = new Notice();
 
         Book books;
         User users;
 
-        books = bookRepository.findById(noticeDTO.getBookId()).orElseThrow(BookNotFoundException::new);
-        users = userRepository.findById(noticeDTO.getBookId()).orElseThrow(UserNotFoundException::new);
+        books = bookRepository.findById(notice.getBookId()).orElseThrow(BookNotFoundException::new);
+        users = userRepository.findById(notice.getBookId()).orElseThrow(UserNotFoundException::new);
 
 
-        newNotice.setCode(noticeDTO.getCode());
-        newNotice.setTitleNotice(noticeDTO.getTitleNotice());
-        newNotice.setDescription(noticeDTO.getDescription());
-        newNotice.setRating(noticeDTO.getRating());
-        newNotice.setHasRead(noticeDTO.getHasRead());
+        newNotice.setCode(notice.getCode());
+        newNotice.setTitleNotice(notice.getTitleNotice());
+        newNotice.setDescription(notice.getDescription());
+        newNotice.setDateSendNotice(notice.getDateSendNotice());
+        newNotice.setRating(notice.getRating());
+        newNotice.setHasRead(notice.isHasRead());
         newNotice.setUserNotices(users);
         newNotice.setBooks(Collections.singletonList(books));
 
@@ -103,8 +104,27 @@ public class NoticeServiceImpl implements NoticeService {
                 .orElseThrow(NoticeNotFoundException::new);
         logger.info("Notice to modify: " + existingNotice);
         existingNotice.setCode(newNotice.getCode());
-        // Setear el resto de campos
+        existingNotice.setTitleNotice(newNotice.getTitleNotice());
+        existingNotice.setDescription(newNotice.getDescription());
+        existingNotice.setDateSendNotice(newNotice.getDateSendNotice());
+        existingNotice.setRating(newNotice.getRating());
+        existingNotice.setHasRead(newNotice.isHasRead());
+
+
         logger.info("Notice Modified: " + newNotice);
         return noticeRepository.save(existingNotice);
+    }
+
+    @Override
+    public Notice patchNotice(long id, boolean hasRead) throws NoticeNotFoundException {
+        Notice existingNotice = noticeRepository.findById(id)
+                .orElseThrow(NoticeNotFoundException::new);
+        logger.info("Notice to patch hasRead: " + existingNotice);
+        existingNotice.setHasRead(hasRead);
+        logger.info("hasRead patched: " + hasRead);
+
+        // Setear el resto de campos
+        return noticeRepository.save(existingNotice);
+
     }
 }

@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -27,11 +28,12 @@ public class Rent {
     @NotNull(message = "El campo es obligatorio")
     private String code;
 
-    @Column(name = "start_rent")
-    @CreatedDate
+    @Column
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate startRent;
 
-    @Column(name = "end_rent")
+    @Column
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate endRent;
 
     @Column

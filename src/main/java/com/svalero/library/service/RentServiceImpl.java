@@ -1,11 +1,9 @@
 package com.svalero.library.service;
 
-import com.svalero.library.domain.Book;
-import com.svalero.library.domain.Rent;
-import com.svalero.library.domain.Stock;
-import com.svalero.library.domain.User;
+import com.svalero.library.domain.*;
 import com.svalero.library.domain.dto.RentDTO;
 import com.svalero.library.exception.BookNotFoundException;
+import com.svalero.library.exception.NoticeNotFoundException;
 import com.svalero.library.exception.RentNotFoundException;
 import com.svalero.library.exception.UserNotFoundException;
 import com.svalero.library.repository.BookRepository;
@@ -85,6 +83,8 @@ public class RentServiceImpl implements RentService {
 
         newRent.setCode(rentDTO.getCode());
         newRent.setReturned(rentDTO.isReturned());
+        newRent.setStartRent(rentDTO.getStartRent());
+        newRent.setEndRent(rentDTO.getEndRent());
         newRent.setTotalPrice(rentDTO.getTotalPrice());
         newRent.setUser(Collections.singletonList(user));
         newRent.setBook(Collections.singletonList(book));
@@ -107,8 +107,26 @@ public class RentServiceImpl implements RentService {
         logger.info("Rent to modify: " + existingRent);
 
         existingRent.setCode(newRent.getCode());
+        existingRent.setStartRent(newRent.getStartRent());
+        existingRent.setEndRent(newRent.getEndRent());
+        existingRent.setReturned(newRent.isReturned());
+        existingRent.setTotalPrice(newRent.getTotalPrice());
+
         // Setear el resto de campos
         logger.info("Rent modified: " + newRent);
         return rentRepository.save(existingRent);
+    }
+
+    @Override
+    public Rent patchRent(long id, boolean isReturned) throws RentNotFoundException {
+        Rent existingRent = rentRepository.findById(id)
+                .orElseThrow(RentNotFoundException::new);
+        logger.info("Rent to patch isReturned: " + existingRent);
+        existingRent.setReturned(isReturned);
+        logger.info("isReturned patched: " + isReturned);
+
+        // Setear el resto de campos
+        return rentRepository.save(existingRent);
+
     }
 }

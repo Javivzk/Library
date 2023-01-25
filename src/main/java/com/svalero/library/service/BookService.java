@@ -21,4 +21,6 @@ public interface BookService {
     Book addBook(Book book);
     void deleteBook(long id) throws BookNotFoundException;
     Book modifyBook(long id, Book newBook) throws BookNotFoundException;
+
+    Book patchBook(long id, String author) throws BookNotFoundException;
 }
