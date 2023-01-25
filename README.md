@@ -15,11 +15,11 @@ Actividad de Aprendizaje de Acceso a datos
 ## Requisitos opcionales:
 - [x] Añade una operación PATCH para cada una de las clases del modelo
 - [x] Utiliza la herramienta Git (y GitHub) durante todo el desarrollo de la aplicación. Escribe el fichero README.md para explicar cómo poner en marcha el proyecto. Utiliza el gestor de Issues para los problemas/fallos que vayan surgiendo
-- [] Añade 3 nuevos endpoints a la aplicación (sin repetir método) que realicen nuevas operaciones con los datos y que requieran el uso de DTOs y/o utilizar las relaciones entre las clases
-- [] Securiza algunas de tus operaciones de la API con un token JWT
-- [] Añade 3 operaciones que utilicen consultas JPQL para extraer la información de la base de datos
-- [] Añade 3 operaciones que utilicen consultas SQL nativas para extraer la información de la base de datos
-- [] Añade 2 clases más al modelo de datos con sus respectivas operaciones CRUD (inclúyelas también en la colección Postman)
+- [ ] Añade 3 nuevos endpoints a la aplicación (sin repetir método) que realicen nuevas operaciones con los datos y que requieran el uso de DTOs y/o utilizar las relaciones entre las clases
+- [ ] Securiza algunas de tus operaciones de la API con un token JWT
+- [ ] Añade 3 operaciones que utilicen consultas JPQL para extraer la información de la base de datos
+- [ ] Añade 3 operaciones que utilicen consultas SQL nativas para extraer la información de la base de datos
+- [ ] Añade 2 clases más al modelo de datos con sus respectivas operaciones CRUD (inclúyelas también en la colección Postman)
 - [ ] Parametriza la colección Postman para que pueda ser ejecutada con el Runner de Postman y realizar una prueba completa de la API
 ### Pre-requisitos 📋
 
