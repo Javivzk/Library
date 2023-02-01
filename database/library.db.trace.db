@@ -830,3 +830,23 @@ org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SEL
 Syntax error in SQL statement "SELECT user[*].* FROM user JOIN notice ON user.id""user_notices"" = ""notice"".""id""\000aWHERE ""notice"".""hasRead"" = false"; SQL statement:
 SELECT user.* FROM user JOIN notice ON user.id"user_notices" = "notice"."id"
 WHERE "notice"."hasRead" = false [42000-214]
+2023-01-25 23:15:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"
+Syntax error in SQL statement "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"; SQL statement:
+SELECT user.* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false [42000-214]
+2023-01-25 23:17:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"
+Syntax error in SQL statement "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"; SQL statement:
+SELECT user.* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false [42000-214]
+2023-01-25 23:17:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"
+Syntax error in SQL statement "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"; SQL statement:
+SELECT user.* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false [42000-214]
+2023-01-25 23:17:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"
+Syntax error in SQL statement "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"; SQL statement:
+SELECT user.* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false [42000-214]
+2023-01-25 23:17:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"
+Syntax error in SQL statement "SELECT user[*].* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false"; SQL statement:
+SELECT user.* FROM user JOIN notice ON user.id  = notice.user_id WHERE notice.hasRead = false [42000-214]
