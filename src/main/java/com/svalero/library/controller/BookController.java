@@ -75,7 +75,7 @@ public class BookController {
 
     }
 
-    @GetMapping("/books/{id}")
+    @GetMapping("/book/{id}")
     public ResponseEntity<Book> getBook(@PathVariable long id) throws BookNotFoundException, NumberFormatException{
         logger.info("GET Book");
         Book book = bookService.findById(id);
@@ -91,15 +91,15 @@ public class BookController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newBook);
     }
 
-    @DeleteMapping("/books/{id}")
+    @DeleteMapping("/book/{id}")
     public ResponseEntity<Void> deleteBook(@PathVariable long id) throws BookNotFoundException {
-        logger.error("DELETE Books");
+        logger.error("DELETE Book");
         bookService.deleteBook(id);
-        logger.error("END DELETE Books");
+        logger.error("END DELETE Book");
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/books/{id}")
+    @PutMapping("/book/{id}")
     public ResponseEntity<Book> modifyBook(@PathVariable long id, @Valid @RequestBody Book book) throws BookNotFoundException{
         logger.error("PUT Book");
         Book newBook = bookService.modifyBook(id,book);
@@ -107,7 +107,7 @@ public class BookController {
         return ResponseEntity.status(HttpStatus.OK).body(newBook);
     }
 
-    @PatchMapping("/books/{id}")
+    @PatchMapping("/book/{id}")
     public ResponseEntity<Book> patchBook(@PathVariable long id,@RequestBody String author) throws BookNotFoundException{
         logger.error("PATCH Book");
         Book newBook = bookService.patchBook(id,author);

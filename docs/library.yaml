@@ -28,6 +28,7 @@ paths:
       operationId: getBooks
       parameters:
         - $ref: '#/components/parameters/hasStock'
+        - $ref: '#/components/parameters/title'
       responses:
         '200':
           description: Se devuelve el listado de buses correctamente
@@ -298,6 +299,14 @@ components:
       schema:
         type: boolean
         default: false
+    title:
+      name: title
+      in: query
+      description: Realiza un filtrado por el campo "titulo" y devuelve los resultados que contengan ese titulo.
+      required: false
+      schema:
+        type: string
+        default: Prueba
 
   requestBodies:
     BookInDTO:
