@@ -1,5 +1,6 @@
 package com.svalero.library.controller;
 
+import com.svalero.library.domain.Book;
 import com.svalero.library.domain.Library;
 import com.svalero.library.exception.BookNotFoundException;
 import com.svalero.library.exception.ErrorMessage;
@@ -42,6 +43,14 @@ public class LibraryController {
     public ResponseEntity<?> deleteLibrary(@PathVariable long libraryId) {
         libraryService.deleteLibrary(libraryId);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/library/{id}")
+    public ResponseEntity<Library> getLibrary(@PathVariable long id) throws LibraryNotFoundException, NumberFormatException{
+        logger.info("GET Library");
+        Library library = libraryService.findById(id);
+        logger.info("END GET Library");
+        return ResponseEntity.ok(library);
     }
 
     @ExceptionHandler(Exception.class)
