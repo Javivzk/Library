@@ -60,7 +60,7 @@ public class RentController {
 
     }
 
-    @GetMapping("/rents/{id}")
+    @GetMapping("/rent/{id}")
     public ResponseEntity<Rent> getRent(@PathVariable long id) throws RentNotFoundException {
         logger.info("GET Rents");
         Rent rent = rentService.findById(id);
@@ -76,7 +76,7 @@ public class RentController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newRent);
     }
 
-    @DeleteMapping("/rents/{id}")
+    @DeleteMapping("/rent/{id}")
     public ResponseEntity<Void> deleteRent(@PathVariable long id) throws RentNotFoundException {
         logger.info("DELETE Rents");
         rentService.deleteRent(id);
@@ -84,7 +84,7 @@ public class RentController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/rents/{id}")
+    @PutMapping("/rent/{id}")
     public ResponseEntity<Rent> modifyRent(@PathVariable long id,@RequestBody Rent rent) throws RentNotFoundException{
         logger.info("PUT Rents");
         Rent newRent = rentService.modifyRent(id,rent);
@@ -92,7 +92,7 @@ public class RentController {
         return ResponseEntity.status(HttpStatus.OK).body(newRent);
     }
 
-    @PatchMapping("/rents/{id}")
+    @PatchMapping("/rent/{id}")
     public ResponseEntity<Rent> patchRent(@PathVariable long id,@RequestBody boolean isReturned) throws RentNotFoundException {
         logger.error("PATCH Rent");
         Rent newRent = rentService.patchRent(id,isReturned);

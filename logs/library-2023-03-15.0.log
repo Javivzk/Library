@@ -1,0 +1,106 @@
+2023-03-15 15:06:49,258 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 12660 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-15 15:06:49,262 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-15 15:06:50,181 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-15 15:06:50,181 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-15 15:06:50,183 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-15 15:06:50,287 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-15 15:06:50,645 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-15 15:06:50,840 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-15 15:06:51,703 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 15:06:51,845 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.NoSuchMethodError: 'io.github.classgraph.ClassGraph io.github.classgraph.ClassGraph.acceptPaths(java.lang.String[])'
+2023-03-15 15:06:51,847 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-03-15 15:06:51,868 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-03-15 15:06:51,869 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2023-03-15 15:06:51,888 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.webjars.WebJarAssetLocator.scanForWebJars(WebJarAssetLocator.java:183)
+
+The following method did not exist:
+
+    'io.github.classgraph.ClassGraph io.github.classgraph.ClassGraph.acceptPaths(java.lang.String[])'
+
+The calling method's class, org.webjars.WebJarAssetLocator, was loaded from the following location:
+
+    jar:file:/C:/Users/javi_/.m2/repository/org/webjars/webjars-locator-core/0.50/webjars-locator-core-0.50.jar!/org/webjars/WebJarAssetLocator.class
+
+The called method's class, io.github.classgraph.ClassGraph, is available from the following locations:
+
+    jar:file:/C:/Users/javi_/.m2/repository/io/github/classgraph/classgraph/4.8.69/classgraph-4.8.69.jar!/io/github/classgraph/ClassGraph.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    io.github.classgraph.ClassGraph: file:/C:/Users/javi_/.m2/repository/io/github/classgraph/classgraph/4.8.69/classgraph-4.8.69.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.webjars.WebJarAssetLocator and io.github.classgraph.ClassGraph
+
+2023-03-15 15:07:30,825 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 1064 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-15 15:07:30,826 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-15 15:07:31,630 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-15 15:07:31,630 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-15 15:07:31,630 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-15 15:07:31,730 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-15 15:07:31,998 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-15 15:07:32,158 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-15 15:07:32,926 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 15:07:33,050 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'resourceHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerMapping]: Factory method 'resourceHandlerMapping' threw exception; nested exception is java.lang.NoSuchMethodError: 'io.github.classgraph.ClassGraph io.github.classgraph.ClassGraph.acceptPaths(java.lang.String[])'
+2023-03-15 15:07:33,052 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-03-15 15:07:33,073 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-03-15 15:07:33,074 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2023-03-15 15:07:33,091 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.webjars.WebJarAssetLocator.scanForWebJars(WebJarAssetLocator.java:183)
+
+The following method did not exist:
+
+    'io.github.classgraph.ClassGraph io.github.classgraph.ClassGraph.acceptPaths(java.lang.String[])'
+
+The calling method's class, org.webjars.WebJarAssetLocator, was loaded from the following location:
+
+    jar:file:/C:/Users/javi_/.m2/repository/org/webjars/webjars-locator-core/0.50/webjars-locator-core-0.50.jar!/org/webjars/WebJarAssetLocator.class
+
+The called method's class, io.github.classgraph.ClassGraph, is available from the following locations:
+
+    jar:file:/C:/Users/javi_/.m2/repository/io/github/classgraph/classgraph/4.8.69/classgraph-4.8.69.jar!/io/github/classgraph/ClassGraph.class
+
+The called method's class hierarchy was loaded from the following locations:
+
+    io.github.classgraph.ClassGraph: file:/C:/Users/javi_/.m2/repository/io/github/classgraph/classgraph/4.8.69/classgraph-4.8.69.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains compatible versions of the classes org.webjars.WebJarAssetLocator and io.github.classgraph.ClassGraph
+
+2023-03-15 15:10:25,248 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 9896 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-15 15:10:25,250 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-15 15:10:25,991 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-15 15:10:25,991 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-15 15:10:25,991 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-15 15:10:26,080 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-15 15:10:26,343 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-15 15:10:26,498 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-15 15:10:27,224 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-15 15:10:27,396 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-15 15:10:27,415 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.381 seconds (JVM running for 2.865)
+2023-03-15 15:10:34,616 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-15 15:11:02,467 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-15 15:11:02,468 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

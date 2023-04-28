@@ -38,8 +38,8 @@ public class BookServiceImpl implements BookService{
 
     @Override
     public Book findByCode(String code) {
-        return null;
-    }
+        logger.info("Book Code: " + code);
+        return bookRepository.findByCode(code);    }
 
     @Override
     public List<Book> findByTitle(String title) {

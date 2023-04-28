@@ -31,7 +31,7 @@ public class Book {
     private String code;
 
     @Column
-    @NotBlank(message = "El campo no puede estar vacio")
+    @NotBlank(message = "El campo es obligatorio")
     @NotNull(message = "El campo es obligatorio")
     private String title;
 
@@ -42,12 +42,16 @@ public class Book {
 
     @Column
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate year;
+    private String year;
 
     @Column
     @NotBlank(message = "El campo no puede estar vacio")
     @NotNull(message = "El campo es obligatorio")
     private String genre;
+
+    @Column
+    @NotNull
+    private String description;
 
     @Column
     @Min(value = 0)

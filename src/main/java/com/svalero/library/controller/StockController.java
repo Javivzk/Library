@@ -60,7 +60,7 @@ public class StockController {
 
     }
 
-    @GetMapping("/stocks/{id}")
+    @GetMapping("/stock/{id}")
     public ResponseEntity<Stock> getStock(@PathVariable long id) throws StockNotFoundException {
         logger.info("GET Stocks");
         Stock stock = stockService.findById(id);
@@ -76,7 +76,7 @@ public class StockController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newStock);
     }
 
-    @DeleteMapping("/stocks/{id}")
+    @DeleteMapping("/stock/{id}")
     public ResponseEntity<Void> deleteStock(@PathVariable long id) throws StockNotFoundException {
         logger.info("DELETE Stocks");
         stockService.deleteStock(id);
@@ -84,7 +84,7 @@ public class StockController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/stocks/{id}")
+    @PutMapping("/stock/{id}")
     public ResponseEntity<Stock> modifyStock(@PathVariable long id,@RequestBody Stock stock) throws StockNotFoundException{
         logger.info("PUT Stocks");
         Stock newStock = stockService.modifyStock(id,stock);
@@ -92,7 +92,7 @@ public class StockController {
         return ResponseEntity.status(HttpStatus.OK).body(newStock);
     }
 
-    @PatchMapping("/stocks/{id}")
+    @PatchMapping("/stock/{id}")
     public ResponseEntity<Stock> patchStock(@PathVariable long id, @RequestBody int quantity) throws StockNotFoundException {
         logger.error("PATCH Stock");
         Stock newStock = stockService.patchStock(id,quantity);

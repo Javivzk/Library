@@ -1,0 +1,204 @@
+2023-03-30 00:06:40,198 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-30 19:23:28,290 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 9676 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:23:28,293 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:23:29,034 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:23:29,034 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:23:29,036 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:23:29,117 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:23:29,423 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:23:29,578 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:23:30,281 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:23:30,439 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:23:30,460 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.397 seconds (JVM running for 2.739)
+2023-03-30 19:23:39,536 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:23:39,554 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] GET Stocks
+2023-03-30 19:23:39,554 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] END GET Stocks
+2023-03-30 19:23:49,933 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] POST Stocks
+2023-03-30 19:23:49,936 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-3] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=B1)
+2023-03-30 19:23:49,957 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] END POST Stocks
+2023-03-30 19:25:03,098 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-6] PUT Stocks
+2023-03-30 19:25:03,113 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-6] Stock to modify: Stock(id=1, code=B1, isAvailable=false, quantity=1)
+2023-03-30 19:25:03,114 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-6] Stock modified: 1
+2023-03-30 19:25:03,122 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-6] END PUT Stocks
+2023-03-30 19:25:11,785 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-7] GET Stocks
+2023-03-30 19:25:11,786 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-7] END GET Stocks
+2023-03-30 19:29:01,494 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-10] PUT Stocks
+2023-03-30 19:29:01,495 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-10] Stock to modify: Stock(id=1, code=C1, isAvailable=false, quantity=1)
+2023-03-30 19:29:01,495 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-10] Stock modified: 1
+2023-03-30 19:29:01,496 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-10] END PUT Stocks
+2023-03-30 19:35:45,197 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 2548 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:35:45,199 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:35:45,948 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:35:45,949 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:35:45,949 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:35:46,031 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:35:46,325 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:35:46,477 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:35:47,195 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:35:47,378 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:35:47,405 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.43 seconds (JVM running for 2.744)
+2023-03-30 19:35:54,460 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:35:54,524 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] POST Stocks
+2023-03-30 19:35:54,527 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-1] Stock added: Stock(id=0, code=B1, isAvailable=true, quantity=1)
+2023-03-30 19:35:54,559 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] END POST Stocks
+2023-03-30 19:36:12,310 ERROR com.svalero.library.controller.StockController [http-nio-8081-exec-3] Internal Error JSON parse error: Cannot deserialize value of type `java.util.ArrayList<com.svalero.library.domain.Book>` from Integer value (token `JsonToken.VALUE_NUMBER_INT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<com.svalero.library.domain.Book>` from Integer value (token `JsonToken.VALUE_NUMBER_INT`)
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 14] (through reference chain: com.svalero.library.domain.Stock["books"])
+2023-03-30 19:36:19,728 ERROR com.svalero.library.controller.StockController [http-nio-8081-exec-5] Internal Error JSON parse error: Cannot deserialize value of type `java.util.ArrayList<com.svalero.library.domain.Book>` from Integer value (token `JsonToken.VALUE_NUMBER_INT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<com.svalero.library.domain.Book>` from Integer value (token `JsonToken.VALUE_NUMBER_INT`)
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 14] (through reference chain: com.svalero.library.domain.Stock["books"])
+2023-03-30 19:36:24,250 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-7] POST Stocks
+2023-03-30 19:36:24,250 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-7] Stock added: Stock(id=0, code=B1, isAvailable=true, quantity=1)
+2023-03-30 19:36:24,252 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-7] END POST Stocks
+2023-03-30 19:36:56,503 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-8] POST Stocks
+2023-03-30 19:36:56,503 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-8] Stock added: Stock(id=0, code=Code- 595, isAvailable=true, quantity=1)
+2023-03-30 19:36:56,505 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-8] END POST Stocks
+2023-03-30 19:37:47,235 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-9] GET Stocks
+2023-03-30 19:37:47,235 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-9] END GET Stocks
+2023-03-30 19:38:09,306 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-10] POST Stocks
+2023-03-30 19:38:09,307 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-10] Stock added: Stock(id=0, code=Code - 235, isAvailable=true, quantity=1)
+2023-03-30 19:38:09,308 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-10] END POST Stocks
+2023-03-30 19:41:41,396 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 6156 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:41:41,401 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:41:42,145 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:41:42,146 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:41:42,147 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:41:42,238 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:41:42,538 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:41:42,692 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:41:43,397 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:41:43,561 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:41:43,584 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.425 seconds (JVM running for 2.748)
+2023-03-30 19:41:43,709 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:41:43,727 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] GET Stocks
+2023-03-30 19:41:43,727 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] END GET Stocks
+2023-03-30 19:41:46,693 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] POST Stocks
+2023-03-30 19:41:46,696 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-3] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 81)
+2023-03-30 19:41:46,714 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] END POST Stocks
+2023-03-30 19:43:34,278 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 1988 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:43:34,282 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:43:35,037 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:43:35,038 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:43:35,038 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:43:35,125 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:43:35,441 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:43:35,597 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:43:36,308 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:43:36,481 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:43:36,503 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.463 seconds (JVM running for 2.78)
+2023-03-30 19:43:37,117 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:43:37,134 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] GET Stocks
+2023-03-30 19:43:37,135 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] END GET Stocks
+2023-03-30 19:43:37,917 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] GET Stocks
+2023-03-30 19:43:37,917 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] END GET Stocks
+2023-03-30 19:43:38,518 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-4] GET Stocks
+2023-03-30 19:43:38,518 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-4] END GET Stocks
+2023-03-30 19:43:41,550 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-5] POST Stocks
+2023-03-30 19:43:41,554 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-5] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 427)
+2023-03-30 19:43:41,572 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-5] END POST Stocks
+2023-03-30 19:47:02,887 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 13468 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:47:02,890 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:47:03,648 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:47:03,648 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:47:03,649 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:47:03,730 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:47:04,033 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:47:04,173 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:47:04,908 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:47:05,077 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:47:05,096 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.446 seconds (JVM running for 2.771)
+2023-03-30 19:47:06,259 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:47:06,317 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] POST Stocks
+2023-03-30 19:47:06,320 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-2] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 235)
+2023-03-30 19:47:06,351 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] END POST Stocks
+2023-03-30 19:47:21,263 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] POST Stocks
+2023-03-30 19:47:21,264 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-3] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 161)
+2023-03-30 19:47:21,265 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] END POST Stocks
+2023-03-30 19:47:24,121 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-5] POST Stocks
+2023-03-30 19:47:24,121 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-5] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 255)
+2023-03-30 19:47:24,123 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-5] END POST Stocks
+2023-03-30 19:47:30,735 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-4] POST Stocks
+2023-03-30 19:47:30,735 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-4] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 217)
+2023-03-30 19:47:30,736 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-4] END POST Stocks
+2023-03-30 19:47:57,789 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-6] POST Stocks
+2023-03-30 19:47:57,790 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-6] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 245)
+2023-03-30 19:47:57,791 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-6] END POST Stocks
+2023-03-30 19:48:12,695 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-7] POST Stocks
+2023-03-30 19:48:12,696 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-7] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 771)
+2023-03-30 19:48:12,698 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-7] END POST Stocks
+2023-03-30 19:48:46,815 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 20300 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:48:46,818 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:48:47,638 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:48:47,638 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:48:47,639 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:48:47,719 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:48:48,008 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:48:48,162 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:48:48,850 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:48:49,021 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:48:49,042 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.527 seconds (JVM running for 2.882)
+2023-03-30 19:48:50,128 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:48:50,184 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] POST Stocks
+2023-03-30 19:48:50,189 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-1] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 355)
+2023-03-30 19:48:50,220 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] END POST Stocks
+2023-03-30 19:48:52,959 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] POST Stocks
+2023-03-30 19:48:52,960 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-3] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 96)
+2023-03-30 19:48:52,961 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-3] END POST Stocks
+2023-03-30 19:54:41,270 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 20176 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:54:41,273 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:54:42,027 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:54:42,028 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:54:42,029 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:54:42,112 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:54:42,408 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:54:42,563 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:54:43,285 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:54:43,453 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:54:43,474 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.43 seconds (JVM running for 2.77)
+2023-03-30 19:54:44,105 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:54:44,168 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] POST Stocks
+2023-03-30 19:54:44,172 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-1] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 266)
+2023-03-30 19:54:44,216 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] END POST Stocks
+2023-03-30 19:56:50,015 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 19032 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:56:50,020 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:56:50,749 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:56:50,749 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:56:50,749 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:56:50,828 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:56:51,124 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:56:51,274 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:56:51,977 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:56:52,141 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:56:52,162 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.388 seconds (JVM running for 2.872)
+2023-03-30 19:56:54,319 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:56:54,376 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] POST Stocks
+2023-03-30 19:56:54,379 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-2] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 198)
+2023-03-30 19:56:54,423 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] END POST Stocks
+2023-03-30 19:59:18,351 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 18712 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 19:59:18,354 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 19:59:19,095 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:59:19,096 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 19:59:19,096 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 19:59:19,177 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 19:59:19,469 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 19:59:19,622 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 19:59:20,318 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 19:59:20,481 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 19:59:20,502 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.376 seconds (JVM running for 2.698)
+2023-03-30 19:59:24,757 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 19:59:24,813 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] POST Stocks
+2023-03-30 19:59:24,817 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-2] Stock added: StockDTO(bookStock=0, quantity=1, isAvailable=false, code=Code - 558)
+2023-03-30 19:59:24,852 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-2] END POST Stocks
+2023-03-30 20:02:06,908 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 18820 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-30 20:02:06,911 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-30 20:02:07,656 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-30 20:02:07,657 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-30 20:02:07,658 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-30 20:02:07,740 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-30 20:02:08,038 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-30 20:02:08,201 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-30 20:02:08,917 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-30 20:02:09,082 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-30 20:02:09,105 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.421 seconds (JVM running for 2.748)
+2023-03-30 20:02:12,278 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-30 20:02:12,340 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] POST Stocks
+2023-03-30 20:02:12,344 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-1] Stock added: Stock(id=0, code=Code - 822, isAvailable=true, quantity=1)
+2023-03-30 20:02:12,375 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-1] END POST Stocks

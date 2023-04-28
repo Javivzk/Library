@@ -59,7 +59,7 @@ public class UserController {
 
     }
 
-    @GetMapping("/users/{id}")
+    @GetMapping("/user/{id}")
     public ResponseEntity<User> getUser(@PathVariable long id) throws UserNotFoundException {
         logger.info("GET Users");
         User user = userService.findById(id);
@@ -76,7 +76,7 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newUser);
     }
 
-    @DeleteMapping("/users/{id}")
+    @DeleteMapping("/user/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable long id) throws UserNotFoundException {
         logger.info("DELETE Users");
         userService.deleteUser(id);
@@ -84,7 +84,7 @@ public class UserController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/users/{id}")
+    @PutMapping("/user/{id}")
     public ResponseEntity<User> modifyUser(@PathVariable long id, @RequestBody User user) throws UserNotFoundException{
         logger.info("PUT Users");
         User modifiedUser = userService.modifyUser(id, user);
@@ -92,7 +92,7 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(modifiedUser);
     }
 
-    @PatchMapping("/users/{id}")
+    @PatchMapping("/user/{id}")
     public ResponseEntity<User> patchUsers(@PathVariable long id, @RequestBody String name) throws UserNotFoundException {
         logger.error("PATCH User");
         User newUser = userService.patchUser(id,name);

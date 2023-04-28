@@ -62,7 +62,7 @@ public class NoticeController {
 
     }
 
-    @GetMapping("/notices/{id}")
+    @GetMapping("/notice/{id}")
     public ResponseEntity<Notice> getNotice(@PathVariable long id) throws NoticeNotFoundException {
         logger.info("GET Notice");
         Notice notice = noticeService.findById(id);
@@ -78,7 +78,7 @@ public class NoticeController {
         return ResponseEntity.status(HttpStatus.CREATED).body(newNotice);
     }
 
-    @DeleteMapping("/notices/{id}")
+    @DeleteMapping("/notice/{id}")
     public ResponseEntity<Void> deleteNotice(@PathVariable long id) throws NoticeNotFoundException {
         logger.info("DELETE Notices");
         noticeService.deleteNotice(id);
@@ -86,7 +86,7 @@ public class NoticeController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/notices/{id}")
+    @PutMapping("/notice/{id}")
     public ResponseEntity<Notice> modifyNotice(@PathVariable long id,@RequestBody Notice notice) throws NoticeNotFoundException{
         logger.info("PUT Notices");
         Notice newNotice = noticeService.modifyNotice(id,notice);
@@ -94,7 +94,7 @@ public class NoticeController {
         return ResponseEntity.status(HttpStatus.OK).body(newNotice);
     }
 
-    @PatchMapping("/notices/{id}")
+    @PatchMapping("/notice/{id}")
     public ResponseEntity<Notice> patchNotice(@PathVariable long id,@RequestBody boolean hasRead) throws NoticeNotFoundException{
         logger.error("PATCH Notice");
         Notice newNotice = noticeService.patchNotice(id,hasRead);

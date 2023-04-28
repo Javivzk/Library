@@ -57,8 +57,37 @@ public class BookController {
 
     }
 
+
+//        logger.info("GET Books");
+//        if (data.isEmpty()) {
+//            logger.info("END GET Books");
+//            return ResponseEntity.ok(bookService.findAll());
+//        }else {
+//            if (data.containsKey("title")) {
+//                List<Book> books = bookService.findByTitle(data.get("title"));
+//                logger.info("END GET Books");
+//                return ResponseEntity.ok(books);
+//            }else if(data.containsKey("hasStock")){
+//                if (data.get("hasStock").equals("true")){
+//                    List<Book> books = bookService.findAllByHasStock(Boolean.TRUE);
+//                    logger.info("END GET Books");
+//                    return ResponseEntity.ok(books);
+//                }else if (data.get("hasStock").equals("false")){
+//                    List<Book> books = bookService.findAllByHasStock(Boolean.FALSE);
+//                    logger.info("END GET Books");
+//                    return ResponseEntity.ok(books);
+//                }else {
+//                    logger.error("BAD REQUEST");
+//                    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//                }
+//            }
+//        }
+//        logger.info("GET Books: BAD REQUEST");
+//        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+
     @GetMapping("/books/{id}")
-    public ResponseEntity<Book> getBook(@PathVariable long id) throws BookNotFoundException {
+    public ResponseEntity<Book> getBook(@PathVariable long id) throws BookNotFoundException, NumberFormatException{
         logger.info("GET Book");
         Book book = bookService.findById(id);
         logger.info("END GET Book");
@@ -82,7 +111,7 @@ public class BookController {
     }
 
     @PutMapping("/books/{id}")
-    public ResponseEntity<Book> modifyBook(@PathVariable long id,@RequestBody Book book) throws BookNotFoundException{
+    public ResponseEntity<Book> modifyBook(@PathVariable long id, @Valid @RequestBody Book book) throws BookNotFoundException{
         logger.error("PUT Book");
         Book newBook = bookService.modifyBook(id,book);
         logger.error("END PUT Book");
@@ -117,6 +146,12 @@ public class BookController {
 
         ErrorMessage badRequestErrorMessage = new ErrorMessage(400, "Bad Request", errors);
         return new ResponseEntity<>(badRequestErrorMessage, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(NumberFormatException.class)
+    public ResponseEntity<ErrorMessage> handleNumberFormatException(NumberFormatException exception) {
+        ErrorMessage errorMessage = new ErrorMessage(400, "Formato de parametro no valido");
+        return new ResponseEntity<>(errorMessage, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(Exception.class)

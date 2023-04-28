@@ -23,7 +23,7 @@ public class Stock {
     private String code;
 
     @Column
-    @NotNull(message = "El nombre es obligatorio")
+    @NotNull(message = "El campo es obligatorio")
     private Boolean isAvailable;
 
     @Column

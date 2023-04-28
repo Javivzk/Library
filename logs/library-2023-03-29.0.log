@@ -1,0 +1,615 @@
+2023-03-29 14:45:08,418 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 10988 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 14:45:08,421 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 14:45:09,352 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 14:45:09,354 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 14:45:09,354 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 14:45:09,461 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 14:45:09,827 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 14:45:10,030 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 14:45:10,835 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 14:45:11,016 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 14:45:11,046 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.919 seconds (JVM running for 3.31)
+2023-03-29 14:45:16,554 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 14:46:59,934 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] POST Book
+2023-03-29 14:46:59,940 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=false, rent=null)
+2023-03-29 14:46:59,972 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END POST Book
+2023-03-29 15:32:21,152 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 16648 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 15:32:21,154 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 15:32:21,943 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 15:32:21,944 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 15:32:21,944 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 15:32:22,027 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 15:32:22,341 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 15:32:22,484 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 15:32:23,214 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 15:32:23,388 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 15:32:23,410 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.495 seconds (JVM running for 2.826)
+2023-03-29 15:32:47,698 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 15:33:56,034 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 19148 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 15:33:56,036 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 15:33:56,819 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 15:33:56,820 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 15:33:56,821 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 15:33:56,902 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 15:33:57,199 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 15:33:57,340 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 15:33:57,456 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: mappedBy reference an unknown target entity property: com.svalero.library.domain.Book.noticesByBooks in com.svalero.library.domain.Notice.books
+2023-03-29 15:33:57,456 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.svalero.library.domain.Book.noticesByBooks in com.svalero.library.domain.Notice.books
+2023-03-29 15:33:57,457 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2023-03-29 15:33:57,466 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2023-03-29 15:33:57,467 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2023-03-29 15:33:57,488 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.svalero.library.domain.Book.noticesByBooks in com.svalero.library.domain.Notice.books
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.svalero.library.LibraryApplication.main(LibraryApplication.java:10)
+Caused by: org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.svalero.library.domain.Book.noticesByBooks in com.svalero.library.domain.Notice.books
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:875)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:826)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1653)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1629)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+2023-03-29 15:34:27,484 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 4892 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 15:34:27,487 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 15:34:28,297 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 15:34:28,299 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 15:34:28,299 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 15:34:28,389 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 15:34:28,716 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 15:34:28,892 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 15:34:29,967 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 15:34:30,147 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 15:34:30,169 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.924 seconds (JVM running for 3.269)
+2023-03-29 15:50:25,153 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 17:19:13,638 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] POST Book
+2023-03-29 17:19:13,650 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=false, rent=null)
+2023-03-29 17:19:13,827 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END POST Book
+2023-03-29 17:26:47,346 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 17:26:50,324 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 17:27:17,437 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 17:28:48,264 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 17:28:52,294 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 17:33:06,513 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 17:33:43,213 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 17:36:46,254 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 17:37:01,310 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 17:38:43,114 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 17:40:00,537 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 17:40:23,580 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 17:43:34,199 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 18:03:37,729 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 18:06:50,175 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 18:07:17,783 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 18:09:41,800 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 18:11:03,944 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 18:11:34,079 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 18:12:31,563 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 2952 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 18:12:31,566 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 18:12:32,498 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:12:32,499 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 18:12:32,499 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 18:12:32,594 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 18:12:32,919 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 18:12:33,105 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 18:12:33,869 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 18:12:34,039 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:12:34,070 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.781 seconds (JVM running for 3.147)
+2023-03-29 18:12:39,846 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 18:12:41,925 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 18:14:04,615 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 18:15:10,502 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 18:15:49,631 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 18:18:13,101 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 18:20:29,258 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 18:21:52,440 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 11904 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 18:21:52,443 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 18:21:53,460 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:21:53,461 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 18:21:53,461 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 18:21:53,549 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 18:21:53,849 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 18:21:54,005 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 18:21:54,715 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 18:21:54,887 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:21:54,910 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.699 seconds (JVM running for 3.027)
+2023-03-29 18:22:00,908 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 18:22:00,973 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] POST Book
+2023-03-29 18:22:00,985 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=false, rent=null)
+2023-03-29 18:22:01,016 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END POST Book
+2023-03-29 18:23:13,749 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 18:26:01,758 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 18:28:21,689 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 8716 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 18:28:21,693 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 18:28:22,633 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:28:22,634 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 18:28:22,634 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 18:28:22,719 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 18:28:23,024 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 18:28:23,175 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 18:28:23,906 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 18:28:24,143 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:28:24,177 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.764 seconds (JVM running for 3.245)
+2023-03-29 18:28:24,266 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 18:28:27,306 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 18:28:42,132 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] POST Book
+2023-03-29 18:28:42,139 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Added Book: Book(id=0, code=a, title=a, author=a, year=a, genre=a, description=a, pages=1, price=1.0, hasStock=true, rent=null)
+2023-03-29 18:28:42,171 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END POST Book
+2023-03-29 18:28:45,975 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 18:28:48,741 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 18:28:54,765 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 18:30:04,847 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 18:34:30,436 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 18:35:25,596 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 18:38:36,929 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 18:39:51,651 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 18:39:55,750 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 18:39:55,752 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book Stock: true
+2023-03-29 18:39:58,737 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 18:39:58,738 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Book Stock: false
+2023-03-29 18:40:02,087 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 18:40:21,795 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 18:42:02,999 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 18:42:02,999 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book Stock: false
+2023-03-29 18:42:09,713 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 18:42:09,714 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book Stock: false
+2023-03-29 18:42:22,355 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 18:42:22,355 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book Stock: true
+2023-03-29 18:44:02,932 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 18:44:02,933 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book Stock: true
+2023-03-29 18:44:35,336 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 18:44:35,337 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book Stock: true
+2023-03-29 18:44:53,937 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 18:44:53,938 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book Stock: true
+2023-03-29 18:45:47,279 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 18:45:47,280 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book Stock: true
+2023-03-29 18:46:02,007 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 18:46:06,064 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 18:46:24,024 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 18:46:37,806 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 18:49:41,725 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 3788 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 18:49:41,727 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 18:49:42,552 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:49:42,553 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 18:49:42,553 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 18:49:42,656 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 18:49:42,951 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 18:49:43,089 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 18:49:43,853 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 18:49:44,034 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 18:49:44,059 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.624 seconds (JVM running for 2.976)
+2023-03-29 18:49:44,675 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 18:49:55,678 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 18:52:27,794 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 18:52:41,828 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] POST Book
+2023-03-29 18:52:41,838 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Added Book: Book(id=0, code=a, title=a, author=a, year=a, genre=a, description=a, pages=1, price=1.0, hasStock=true, rent=null)
+2023-03-29 18:52:41,846 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END POST Book
+2023-03-29 18:52:45,300 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 18:52:47,383 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 18:52:54,508 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 19:25:33,117 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 15560 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 19:25:33,119 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 19:25:34,429 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 19:25:34,429 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 19:25:34,431 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 19:25:34,555 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 19:25:35,017 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 19:25:35,289 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 19:25:36,245 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 19:25:36,464 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 19:25:36,503 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 3.74 seconds (JVM running for 4.312)
+2023-03-29 19:25:52,983 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 19:25:55,752 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 19:27:24,512 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 19:27:24,514 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Books
+2023-03-29 19:29:26,621 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 19:29:26,622 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book Stock: false
+2023-03-29 19:29:35,776 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 19:29:39,818 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 19:29:39,818 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book Stock: false
+2023-03-29 19:29:48,164 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 19:29:48,165 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book Stock: false
+2023-03-29 19:30:44,734 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 19:30:44,735 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book Stock: false
+2023-03-29 19:30:50,468 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 19:30:50,469 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book Stock: false
+2023-03-29 19:30:59,748 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] POST Book
+2023-03-29 19:30:59,756 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Added Book: Book(id=0, code=a, title=aa, author=a, year=a, genre=a, description=a, pages=1, price=1.0, hasStock=true, rent=null)
+2023-03-29 19:30:59,784 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END POST Book
+2023-03-29 19:31:03,467 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 19:31:03,468 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book Stock: false
+2023-03-29 19:31:10,323 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 19:31:20,548 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 19:31:20,549 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book Stock: false
+2023-03-29 19:31:36,316 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 19:31:36,317 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book Stock: false
+2023-03-29 19:37:14,209 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 19:37:14,211 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book Stock: false
+2023-03-29 19:37:17,645 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 19:37:17,646 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book Stock: false
+2023-03-29 19:48:58,295 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 19:48:58,296 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END GET Books
+2023-03-29 19:49:32,283 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 19:49:32,284 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book Stock: false
+2023-03-29 19:49:47,925 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 19:49:47,926 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book Stock: true
+2023-03-29 19:50:14,112 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 19:50:14,112 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book Stock: true
+2023-03-29 19:50:29,447 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 19:50:29,447 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Book Stock: false
+2023-03-29 19:50:35,491 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 19:54:27,416 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 19:55:38,196 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 19:55:38,196 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book Stock: false
+2023-03-29 19:57:09,865 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 19:57:09,866 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book Stock: false
+2023-03-29 19:58:33,354 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 19:58:33,355 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book Stock: false
+2023-03-29 20:00:21,466 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 20:00:21,466 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 20:00:21,466 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book Stock: false
+2023-03-29 20:00:21,466 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book Stock: false
+2023-03-29 20:00:46,681 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 20:00:46,682 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book Stock: false
+2023-03-29 20:01:47,509 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 20:01:47,510 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book Stock: false
+2023-03-29 20:04:50,440 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 20:04:50,441 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book Stock: false
+2023-03-29 20:15:24,553 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] POST Book
+2023-03-29 20:15:24,554 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=false, rent=null)
+2023-03-29 20:15:24,556 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END POST Book
+2023-03-29 20:15:33,591 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] POST Book
+2023-03-29 20:15:33,592 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
+2023-03-29 20:15:33,593 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END POST Book
+2023-03-29 20:15:38,778 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 20:15:48,946 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 20:15:48,946 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book Stock: false
+2023-03-29 20:17:12,551 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 2296 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 20:17:12,554 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 20:17:13,436 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:17:13,436 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 20:17:13,437 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 20:17:13,534 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 20:17:13,869 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 20:17:14,065 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 20:17:14,847 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 20:17:15,019 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 20:17:15,047 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.747 seconds (JVM running for 3.122)
+2023-03-29 20:17:20,048 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 20:17:20,071 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 20:17:26,414 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 20:17:26,416 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book Stock: false
+2023-03-29 20:17:31,459 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] POST Book
+2023-03-29 20:17:31,466 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
+2023-03-29 20:17:31,495 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END POST Book
+2023-03-29 20:17:34,558 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 20:17:34,559 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book Stock: false
+2023-03-29 20:17:37,633 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 20:17:37,634 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book Stock: false
+2023-03-29 20:17:51,940 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-03-29 20:17:51,942 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book Stock: false
+2023-03-29 20:20:08,294 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 20:20:08,294 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book Stock: false
+2023-03-29 20:20:58,596 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 20:21:32,649 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 20:21:53,707 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 20:23:30,761 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 20:23:37,313 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 20:23:45,398 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] POST Book
+2023-03-29 20:23:45,398 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
+2023-03-29 20:23:45,400 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END POST Book
+2023-03-29 20:23:48,373 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-03-29 20:23:59,346 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 20:24:39,717 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 20:24:57,080 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] POST Book
+2023-03-29 20:24:57,081 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Added Book: Book(id=0, code=a, title=aa, author=a, year=a, genre=a, description=a, pages=1, price=5.0, hasStock=true, rent=null)
+2023-03-29 20:24:57,082 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END POST Book
+2023-03-29 20:25:00,846 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 20:35:47,191 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 20:36:08,498 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 20:38:30,413 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-03-29 23:12:27,237 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 3688 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 23:12:27,241 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 23:12:28,515 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:12:28,516 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 23:12:28,516 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 23:12:28,656 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 23:12:29,128 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 23:12:29,388 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 23:12:30,553 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 23:12:30,824 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:12:30,862 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 3.987 seconds (JVM running for 4.453)
+2023-03-29 23:12:39,703 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 23:12:42,078 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 23:18:18,873 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 23:29:05,598 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 15768 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 23:29:05,600 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 23:29:06,365 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:29:06,366 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 23:29:06,366 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 23:29:06,451 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 23:29:06,752 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 23:29:06,910 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 23:29:07,605 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 23:29:07,765 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:29:07,786 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.418 seconds (JVM running for 2.742)
+2023-03-29 23:29:32,273 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 23:43:35,196 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 2356 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 23:43:35,200 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 23:43:35,966 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:43:35,967 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 23:43:35,967 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 23:43:36,049 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 23:43:36,350 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 23:43:36,509 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 23:43:37,213 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 23:43:37,370 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:43:37,390 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.423 seconds (JVM running for 2.747)
+2023-03-29 23:43:44,968 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 23:43:49,684 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 23:46:20,448 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 11140 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 23:46:20,450 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 23:46:21,200 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:46:21,202 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 23:46:21,202 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 23:46:21,291 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 23:46:21,594 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 23:46:22,699 ERROR com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Exception during pool initialization.
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:168)
+	at org.h2.mvstore.db.Store.<init>(Store.java:145)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.svalero.library.LibraryApplication.main(LibraryApplication.java:10)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	... 53 common frames omitted
+2023-03-29 23:46:22,703 WARN org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator [main] HHH000342: Could not obtain connection to query metadata
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:168)
+	at org.h2.mvstore.db.Store.<init>(Store.java:145)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.svalero.library.LibraryApplication.main(LibraryApplication.java:10)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	... 53 common frames omitted
+2023-03-29 23:46:23,120 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 23:46:24,134 ERROR com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Exception during pool initialization.
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:168)
+	at org.h2.mvstore.db.Store.<init>(Store.java:145)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:183)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:104)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.svalero.library.LibraryApplication.main(LibraryApplication.java:10)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	... 52 common frames omitted
+2023-03-29 23:46:24,135 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] SQL Error: 90020, SQLState: 90020
+2023-03-29 23:46:24,135 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [main] La base de datos puede que ya esté siendo utilizada: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/javi_/IdeaProjects/Library/database/library.db.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+2023-03-29 23:46:24,147 ERROR org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2023-03-29 23:46:24,147 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution
+2023-03-29 23:46:35,436 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 5060 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-03-29 23:46:35,438 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-03-29 23:46:36,193 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:46:36,193 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-03-29 23:46:36,194 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-03-29 23:46:36,273 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-03-29 23:46:36,564 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-03-29 23:46:36,714 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-03-29 23:46:37,415 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-29 23:46:37,574 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-03-29 23:46:37,596 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.388 seconds (JVM running for 2.706)
+2023-03-29 23:46:44,467 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-29 23:46:44,493 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 23:47:59,787 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 23:48:03,613 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-03-29 23:48:05,425 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-03-29 23:48:08,273 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-03-29 23:50:55,467 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 23:50:59,284 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-03-29 23:51:25,562 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-03-29 23:58:53,086 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-03-29 23:59:15,625 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-03-29 23:59:28,339 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
