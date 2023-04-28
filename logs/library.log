@@ -820,3 +820,79 @@
 2023-04-28 22:34:22,138 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
 2023-04-28 22:34:22,175 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END POST Book
 2023-04-28 22:34:26,709 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Incorrect Data
+2023-04-28 22:47:27,536 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 14512 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-04-28 22:47:27,538 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-28 22:47:28,659 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-28 22:47:28,660 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-28 22:47:28,660 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-04-28 22:47:28,779 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-28 22:47:29,134 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-28 22:47:29,363 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-28 22:47:30,385 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-28 22:47:30,647 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-04-28 22:47:30,690 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 3.485 seconds (JVM running for 3.926)
+2023-04-28 22:47:43,620 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28 22:47:48,100 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-04-28 22:47:48,100 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END GET Books
+2023-04-28 22:54:32,837 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-04-28 22:54:32,837 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END GET Books
+2023-04-28 23:43:57,163 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 19884 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-04-28 23:43:57,165 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-28 23:43:57,984 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-28 23:43:57,985 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-28 23:43:57,985 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-04-28 23:43:58,074 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-28 23:43:58,391 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-28 23:43:58,589 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-28 23:43:59,395 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-28 23:43:59,570 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-04-28 23:43:59,597 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.698 seconds (JVM running for 3.072)
+2023-04-28 23:44:01,475 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28 23:44:01,492 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-04-28 23:44:01,493 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books: BAD REQUEST
+2023-04-28 23:45:48,798 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-04-28 23:45:48,798 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books: BAD REQUEST
+2023-04-28 23:45:53,617 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-04-28 23:45:53,617 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books: BAD REQUEST
+2023-04-28 23:46:02,688 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-04-28 23:46:02,689 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END GET Books
+2023-04-28 23:46:09,714 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-04-28 23:46:09,714 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books: BAD REQUEST
+2023-04-28 23:46:13,140 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-04-28 23:46:13,140 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books: BAD REQUEST
+2023-04-28 23:46:50,683 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] POST Book
+2023-04-28 23:46:50,695 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
+2023-04-28 23:46:50,720 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END POST Book
+2023-04-28 23:46:52,208 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-04-28 23:46:52,209 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books: BAD REQUEST
+2023-04-28 23:47:08,674 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-5] GET Users
+2023-04-28 23:47:08,676 INFO com.svalero.library.service.UserServiceImpl [http-nio-8081-exec-5] User State: true
+2023-04-28 23:47:08,688 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-5] END GET Users
+2023-04-28 23:47:16,962 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-04-28 23:47:16,963 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books: BAD REQUEST
+2023-04-28 23:47:30,263 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-04-28 23:47:30,264 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book Stock: false
+2023-04-28 23:47:30,266 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Books
+2023-04-28 23:47:35,753 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-04-28 23:47:35,753 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book Stock: true
+2023-04-28 23:47:35,755 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Books
+2023-04-28 23:47:45,943 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-04-28 23:47:45,943 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book Stock: true
+2023-04-28 23:47:45,944 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END GET Books
+2023-04-28 23:49:10,377 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 18524 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-04-28 23:49:10,379 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-28 23:49:11,152 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-04-28 23:49:11,152 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-28 23:49:11,153 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-04-28 23:49:11,232 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-28 23:49:11,496 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-28 23:49:11,653 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-28 23:49:12,412 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-28 23:49:12,576 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-04-28 23:49:12,597 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.451 seconds (JVM running for 2.832)
+2023-04-28 23:49:15,333 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28 23:49:15,358 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-04-28 23:49:15,359 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book Stock: true
+2023-04-28 23:49:20,966 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Incorrect Data
+2023-04-28 23:49:44,455 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-04-28 23:49:44,456 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Books

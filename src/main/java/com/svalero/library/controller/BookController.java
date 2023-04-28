@@ -26,37 +26,25 @@ public class BookController {
 
     private final Logger logger = LoggerFactory.getLogger(BookController.class);
 
-    @GetMapping("/books")
-    public ResponseEntity<List<Book>> getBooks(@RequestParam Map<String, String> data) {
+    @GetMapping(value = "/books")
+    public ResponseEntity<?> getBooks(@RequestParam (name = "hasStock", defaultValue = "") String hasStock) {
         logger.info("GET Books");
-        if (data.isEmpty()) {
+
+        if (!hasStock.equals("true") && !hasStock.equals("false") && !hasStock.isEmpty()) {
+            Map<String, String> errors = Map.of("hasStock", "Valores admitidos: true, false o vacio");
+            ErrorMessage errorMessage = new ErrorMessage(400,"Parametro invalido", errors);
             logger.info("END GET Books");
+            return new  ResponseEntity<>(errorMessage, HttpStatus.BAD_REQUEST);
+        }
+
+        if (hasStock.equals("")){
+            logger.debug("end getBooks");
             return ResponseEntity.ok(bookService.findAll());
         }else {
-            if (data.containsKey("title")) {
-                List<Book> books = bookService.findByTitle(data.get("title"));
-                logger.info("END GET Books");
-                return ResponseEntity.ok(books);
-            }else if(data.containsKey("stock")){
-                if (data.get("stock").equals("true")){
-                    List<Book> books = bookService.findAllByHasStock(Boolean.TRUE);
-                    logger.info("END GET Books");
-                    return ResponseEntity.ok(books);
-                }else if (data.get("stock").equals("false")){
-                    List<Book> books = bookService.findAllByHasStock(Boolean.FALSE);
-                    logger.info("END GET Books");
-                    return ResponseEntity.ok(books);
-                }else {
-                    logger.error("BAD REQUEST");
-                    return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-                }
-            }
+            boolean stock = Boolean.parseBoolean(hasStock);
+            logger.debug("end getBooks");
+            return ResponseEntity.ok(bookService.findAllByHasStock(stock));
         }
-        logger.info("GET Books: BAD REQUEST");
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-
-    }
-
 
 //        logger.info("GET Books");
 //        if (data.isEmpty()) {
@@ -85,6 +73,7 @@ public class BookController {
 //        logger.info("GET Books: BAD REQUEST");
 //        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
+    }
 
     @GetMapping("/books/{id}")
     public ResponseEntity<Book> getBook(@PathVariable long id) throws BookNotFoundException, NumberFormatException{

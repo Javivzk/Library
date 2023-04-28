@@ -16,6 +16,8 @@ tags:
     description: Operaciones para realizar con el stock
   - name: User
     description: Operaciones para realizar con los usuarios
+  - name: Library
+    description: Operaciones para realizar con las librerias
 paths:
   /books:
     get:
@@ -34,7 +36,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/BookOutDTO'
+                  $ref: '#/components/schemas/BookInformation'
         '400':
           $ref: '#/components/responses/BadRequest'
         '500':
@@ -50,7 +52,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/BookInDTO'
+              $ref: '#/components/schemas/BookInformation'
       responses:
         '201':
           description: El libro se ha registrado correctamente
@@ -180,6 +182,7 @@ components:
           description: Indica si el libro tiene o no Stock
           example: true
 
+
     BookInDTO:
       type: object
       properties:
@@ -190,7 +193,7 @@ components:
         code:
           type: string
           description: Codigo del libro
-          example: 123
+          example: A1
         title:
           type: string
           description: Titulo del libro
