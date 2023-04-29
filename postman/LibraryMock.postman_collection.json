@@ -1,0 +1,1721 @@
+{
+	"info": {
+		"_postman_id": "be9df5ec-bc5f-4188-af77-8db71bd28f14",
+		"name": "LibraryMock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23968222"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "GET-UserOk200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-UsersKO400",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/aa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"aa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-UsersOK200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/books",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-UsersOK200",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Javier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/users",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-UsersKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/users/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-UsersKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/users/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-UsersKO400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-UsersKO404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/999",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-UsersOK200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/123",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-UsersOK200",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/123",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-UsersKO400",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/9000",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"9000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-UsersKO404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/456",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"456"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-UsersOK204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-UsersKO400",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/A",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-UsersKO404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/user/500",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"user",
+								"500"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "books",
+			"item": [
+				{
+					"name": "GET-BookOk200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/books",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-BookOK200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-BookKO404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/book/invalid",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"book",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-BooksOK201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Javier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/books",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-BooksKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/books/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-BooksKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/books/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-BookOK200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-BookKO400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/invalid",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-BookKO400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-BookOK200",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-BookKO400",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/invalid",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-BookKO404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-BookOK204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-BookKO400",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-BookKO404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/book/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"book",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "libraries",
+			"item": [
+				{
+					"name": "GET-LibraryOk200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/123",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-LibrariesOK200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/libraries",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"libraries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-LibraryKO404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/library/999",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library",
+								"999"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-LibrariesOK201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Javier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/libraries/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"libraries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-LibrariesKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/libraries/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"libraries",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-LibrariesKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/libraries/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"libraries",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-LibraryOK200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-LibraryKO400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/invalid",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"invalid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-LibraryKO404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/10",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-LibraryOK200",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-LibraryKO400",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-LibraryKO404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-LibraryOK204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-LibraryKO400",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-LibraryKO404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/library/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"library",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "stocks",
+			"item": [
+				{
+					"name": "GET-StockOk200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-StocksOK200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stocks",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-StocksKO400",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/stocks?invalidParam=value",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stocks"
+							],
+							"query": [
+								{
+									"key": "invalidParam",
+									"value": "value"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-StocksOK201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Javier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/stocks",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stocks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-StocksKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stocks/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stocks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-StocksKO404",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stocks/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stocks",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-StockOK200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-StockKO400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-StockKO404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-StockOK200",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-StockKO400",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-StockKO404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-StockOK204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-StockKO400",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-StockKO404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/stock/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"stock",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rents",
+			"item": [
+				{
+					"name": "GET-RentOk200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-RentsOK200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rents",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-RentsKO404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/rents/abc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rents",
+								"abc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-RentsOK201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Javier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/rents/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-RentsKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rents/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rents",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-RentsKO404",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rents/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rents",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-RentOK200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-RentKO400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-RentKO404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-RentOK200",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-RentKO400",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-RentKO404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-RentOK204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-RentKO400",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-RentKO404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/rent/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"rent",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notices",
+			"item": [
+				{
+					"name": "GET-NoticeOk200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/123",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-NoticesOK200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notices",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET-NoticesKO404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/notices/EE",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"notices",
+								"EE"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-NoticesOK201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Javier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/notices/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notices",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-NoticesKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notices/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notices",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-NoticesKO400",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notices/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notices",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-NoticeOK200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-NoticeKO400",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT-NoticeKO404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-NoticeOK200",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-NoticeKO400",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH-NoticeKO404",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-NoticeOK204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-NoticeKO404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/2",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-NoticeKO500",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/notice/3",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"notice",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "localhost:8080"
+		}
+	]
+}
