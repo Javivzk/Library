@@ -199,6 +199,8 @@ paths:
     get:
       tags:
         - Books
+      summary: Obtiene la informacion de un libro determinado
+      description: Obtiene el libro requerido
       operationId: getBook
       responses:
         '200':
@@ -216,6 +218,8 @@ paths:
     put:
       tags:
         - Books
+      summary: Modificacion de libros
+      description: Modifica un libro de la biblioteca
       operationId: modifyBook
       requestBody:
         content:
@@ -239,6 +243,8 @@ paths:
     delete:
       tags:
         - Books
+      summary: Elimina un libro especificado
+      description: Elimina un libro especificado por el usuario
       operationId: deleteBook
       responses:
         "204":
@@ -250,6 +256,8 @@ paths:
     patch:
       tags:
         - Books
+      summary: Modifica un campo de un libro especificado
+      description: Modifica un campo de un libro especificado por el usuario
       operationId: patchBook
       requestBody:
         content:
@@ -277,6 +285,8 @@ paths:
     get:
       tags:
         - Stocks
+      summary: Obtiene la informacion de un stock especificado
+      description: Obtiene la informacion de un stock que nos requiere el usuario
       operationId: getStock
       responses:
         "200":
@@ -294,6 +304,8 @@ paths:
     put:
       tags:
         - Stocks
+      summary: Modifica un stock especificado
+      description: Modifica un stock especificado por el usuario
       operationId: modifyStock
       requestBody:
         content:
@@ -317,6 +329,8 @@ paths:
     delete:
       tags:
         - Stocks
+      summary: Elimina un stock especificado
+      description: Elimina un stock especificado por el usuario
       operationId: deleteStock
       responses:
         "204":
@@ -328,6 +342,8 @@ paths:
     patch:
       tags:
         - Stocks
+      summary: Modifica el campo de un libro especificado
+      description: Modifica el campo de un libro especificado por el usuario
       operationId: patchStock
       requestBody:
         content:
@@ -356,6 +372,8 @@ paths:
     get:
       tags:
         - Stocks
+      summary: Obtiene una lista de stocks
+      description: Obtiene una lista de los stocks registrados en el sistema
       operationId: getStocks
       responses:
         "200":
@@ -373,6 +391,8 @@ paths:
     post:
       tags:
         - Stocks
+      summary: Registra un nuevo stock
+      description: Registra un nuevo stock en el sistema
       operationId: addStock
       requestBody:
         content:
@@ -401,6 +421,8 @@ paths:
     get:
       tags:
         - Rents
+      summary: Obtiene un alquiler concreto
+      description: Obtiene un alquiler en concreto, pasando la rentID que queremos
       operationId: getRent
       responses:
         "200":
@@ -418,6 +440,8 @@ paths:
     put:
       tags:
         - Rents
+      summary: Modifica un alquiler concreto
+      description: Modifica un alquiler en concreto, pasando la rentID que queremos
       operationId: modifyRent
       requestBody:
         content:
@@ -441,6 +465,8 @@ paths:
     delete:
       tags:
         - Rents
+      summary: Eliminar un alquiler concreto
+      description: Elimina un alquiler en concreto, pasando la rentID que queremos
       operationId: deleteRent
       responses:
         "204":
@@ -452,6 +478,8 @@ paths:
     patch:
       tags:
         - Rents
+      summary: Modifica un campo de un alquiler concreto
+      description: Modifica un campo de un alquiler en concreto, pasando la rentID que queremos
       operationId: patchRent
       requestBody:
         content:
@@ -478,6 +506,8 @@ paths:
     get:
       tags:
         - Rents
+      summary: Obtiene una lista de alquileres
+      description: Obtiene una lista de alquileres registrados
       operationId: getRents
       responses:
         "200":
@@ -495,6 +525,8 @@ paths:
     post:
       tags:
         - Rents
+      summary: Registra un nuevo alquiler
+      description: Registra un nuevo alquiler en el sistema
       operationId: addRent
       requestBody:
         content:
@@ -517,12 +549,14 @@ paths:
 
   "/notice/{noticeId}":
     parameters:
-      - $ref: '#/components/parameters/noticeId'
+      - $ref: '#/components/parameters/NoticeId'
       - $ref: '#/components/parameters/hasRead'
       - $ref: '#/components/parameters/titleNotice'
     get:
       tags:
         - Notices
+      summary: Obtiene un aviso en concreto
+      description: Obtiene un aviso en concreto, pasando el noticeId que queremos
       operationId: getNotice
       responses:
         "200":
@@ -540,6 +574,8 @@ paths:
     put:
       tags:
         - Notices
+      summary: Modifica un aviso en concreto
+      description: Modifica un aviso en concreto, pasando el noticeId que queremos
       operationId: modifyNotice
       requestBody:
         content:
@@ -563,6 +599,8 @@ paths:
     delete:
       tags:
         - Notices
+      summary: Elimina un aviso en concreto
+      description: Elimina un aviso en concreto, pasando el noticeId que queremos
       operationId: deleteNotice
       responses:
         "204":
@@ -574,6 +612,8 @@ paths:
     patch:
       tags:
         - Notices
+      summary: Modifica el campo de un aviso en concreto
+      description: Modifica el campo de un aviso en concreto, pasando el noticeId que queremos
       operationId: patchNotice
       requestBody:
         content:
@@ -595,12 +635,14 @@ paths:
 
   /notices:
     parameters:
-      - $ref: '#/components/parameters/noticeId'
+      - $ref: '#/components/parameters/NoticeId'
       - $ref: '#/components/parameters/hasRead'
       - $ref: '#/components/parameters/titleNotice'
     get:
       tags:
         - Notices
+      summary: Obtiene una lista de avisos
+      description: Obtiene una lista de avisos registrados en el sistema
       operationId: getNotices
       responses:
         "200":
@@ -618,6 +660,8 @@ paths:
     post:
       tags:
         - Notices
+      summary: Registro de avisos
+      description: Registra un nuevo aviso en el sistema
       operationId: addNotice
       requestBody:
         content:
@@ -639,12 +683,14 @@ paths:
           $ref: '#/components/responses/InternalServerError'
   /libraries:
     parameters:
-      - $ref: '#/components/parameters/libraryId'
+      - $ref: '#/components/parameters/LibraryId'
       - $ref: '#/components/parameters/verify'
       - $ref: '#/components/parameters/city'
     get:
       tags:
         - Libraries
+      summary: Obtiene una lista de librerias
+      description: Obtiene una lista de librerias registradas en el sistema
       operationId: getLibraries
       responses:
         "200":
@@ -662,6 +708,8 @@ paths:
     post:
       tags:
         - Libraries
+      summary: Registro de librerias
+      description: Registra una nueva libreria en el sistema
       operationId: addLibrary
       requestBody:
         content:
@@ -685,12 +733,14 @@ paths:
 
   "/library/{libraryId}":
     parameters:
-      - $ref: '#/components/parameters/libraryId'
+      - $ref: '#/components/parameters/LibraryId'
       - $ref: '#/components/parameters/verify'
       - $ref: '#/components/parameters/city'
     get:
       tags:
         - Libraries
+      summary: Obtiene una libreria especificada
+      description: Obtiene una libreria especificada por libraryId
       operationId: getLibrary
       responses:
         "200":
@@ -708,6 +758,8 @@ paths:
     delete:
       tags:
         - Libraries
+      summary: Elimina una libreria especificada
+      description: Elimina una libreria especificada por libraryId
       operationId: deleteLibrary
       responses:
         "204":
@@ -862,33 +914,36 @@ components:
         id:
           type: integer
           format: int64
+          example: 256
         code:
           type: string
+          example: CA45
         titleNotice:
           type: string
+          example: Inicio de alquiler del libro Capitan America
         description:
           type: string
+          example: Usted acaba de alquilar el libro Capitan America, fecha de devolucion 30/05/2023
         dateSendNotice:
           type: string
           format: date
+          example: 15/05/2023
         rating:
           type: number
           format: float
+          example: 7.8
         hasRead:
           type: boolean
+          example: false
         bookId:
           type: integer
           format: int64
-        userNotices:
-          $ref: "#/components/schemas/User"
+          example: 356
         rents:
           type: array
           items:
             $ref: "#/components/schemas/Rent"
-        books:
-          type: array
-          items:
-            $ref: "#/components/schemas/BookInformation"
+
     Rent:
       required:
         - code
@@ -899,17 +954,22 @@ components:
         id:
           type: integer
           format: int64
+          example: 25
         code:
           type: string
+          example: C1
         startRent:
           type: string
           format: date
+          example: 2023-04-01
         endRent:
           type: string
           format: date
+          example: 2023-04-05
         totalPrice:
           type: number
           format: float
+          example: 5
         book:
           type: array
           items:
@@ -917,13 +977,7 @@ components:
         user:
           type: array
           items:
-            $ref: "#/components/schemas/User"
-        notices:
-          type: array
-          items:
-            $ref: "#/components/schemas/Notice"
-        returned:
-          type: boolean
+            $ref: "#/components/schemas/UserDTO"
     Stock:
       required:
         - code
@@ -933,13 +987,17 @@ components:
         id:
           type: integer
           format: int64
+          example: 15
         code:
           type: string
+          example: C146
         isAvailable:
           type: boolean
+          example: true
         quantity:
           type: integer
           format: int32
+          example: 1
         books:
           type: array
           items:
@@ -1014,20 +1072,27 @@ components:
         id:
           type: integer
           format: int64
+          example: 300
         name:
           type: string
+          example: Biblioteca municipal
         description:
           type: string
+          example: Biblioteca municipal de Utebo
         city:
           type: string
+          example: Utebo
         verify:
           type: boolean
+          example: true
         latitude:
           type: number
           format: double
+          example: 41.715
         longitude:
           type: number
           format: double
+          example: -0.994744
 
   responses:
     NoContent:
@@ -1046,7 +1111,7 @@ components:
           schema:
             $ref: '#/components/schemas/NotFound'
           example:
-            errorCode: 102
+            errorCode: 404
             message: "Recurso no encontrado"
 
     BadRequest:
@@ -1073,6 +1138,38 @@ components:
       schema:
         type: number
         format: int64
+    StockId:
+      name: stockId
+      in: path
+      description: Identificador de stock
+      required: true
+      schema:
+        type: number
+        format: int64
+    RentId:
+      name: rentId
+      in: path
+      description: Identificador de alquiler
+      required: true
+      schema:
+        type: number
+        format: int64
+    NoticeId:
+      name: noticeId
+      in: path
+      description: Identificador de aviso
+      required: true
+      schema:
+        type: number
+        format: int64
+    LibraryId:
+      name: libraryId
+      in: path
+      description: Identificador de libreria
+      required: true
+      schema:
+        type: number
+        format: int64
     isMember:
       name: isMember
       in: query
@@ -1089,6 +1186,46 @@ components:
       schema:
         type: boolean
         default: false
+    isAvailable:
+      name: isAvailable
+      in: query
+      description: Indica si el libro esta disponible para alquilar
+      required: false
+      schema:
+        type: boolean
+        default: true
+    returned:
+      name: returned
+      in: query
+      description: Indica si el estado del libro es devuelto o no
+      required: false
+      schema:
+        type: boolean
+        default: true
+    hasRead:
+      name: hasRead
+      in: query
+      description: Indica si el usuario ha leido el aviso o no
+      required: false
+      schema:
+        type: boolean
+        default: true
+    verify:
+      name: verify
+      in: query
+      description: Indica si la libreria esta verificada o no
+      required: false
+      schema:
+        type: boolean
+        default: true
+    titleNotice:
+      name: titleNotice
+      in: query
+      description: Realiza un filtrado por el campo "titulo del aviso" y devuelve los resultados que contengan ese titulo.
+      required: false
+      schema:
+        type: string
+        default: Titulo del aviso
     title:
       name: title
       in: query
@@ -1096,4 +1233,20 @@ components:
       required: false
       schema:
         type: string
-        default: Prueba
+        default: Titulo
+    city:
+      name: city
+      in: query
+      description: Realiza un filtrado por el campo "ciudad" y devuelve los resultados que contengan esa ciudad.
+      required: false
+      schema:
+        type: string
+        default: Ciudad
+    code:
+      name: code
+      in: query
+      description: Realiza un filtrado por el campo "codigo" y devuelve los resultados que contengan ese codigo.
+      required: false
+      schema:
+        type: string
+        default: Codigo
