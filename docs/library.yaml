@@ -1,10 +1,14 @@
 openapi: 3.0.3
 servers:
   - url: https://api.library.com
+
+
 info:
   title: Library Api
   description: Api de Biblioteca (Actividad de aprendizaje Javier Vizcaino 2ºDAM)
   version: "1.0"
+
+
 tags:
   - name: Books
     description: Operaciones para realizar con los libros
@@ -154,6 +158,38 @@ components:
           type: string
           description: Mensaje de error
           example: Book not found
+
+    UserDTO:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: User ID
+          example: 1
+        code:
+          type: string
+          description: Codigo del usuario
+          example: A1
+        name:
+          type: string
+          description: Nombre del usuario
+          example: Jose
+        lastname:
+          type: string
+          description: Apellido del usuario
+          example: Salinas
+        address:
+          type: string
+          description: Direccion del usuario
+          example: Paseo Independencia
+        birthdate:
+          type: date
+          description: Fecha de nacimiento
+          example: 02/5/1990
+        isMember:
+          type: boolean
+          description: Indica si el usuario es miembro o no del club de la biblioteca
+          example: true
 
     BookOutDTO:
       type: object
