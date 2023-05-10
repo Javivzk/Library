@@ -14,4 +14,7 @@ public interface LibraryService {
     void deleteLibrary(long libraryId);
     Library findById(long id) throws LibraryNotFoundException;
 
+    Library modifyLibrary(long libraryId, Library newLibrary) throws LibraryNotFoundException;
+
+
 }

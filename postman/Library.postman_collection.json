@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\":\"B1\",\r\n    \"title\": \"Esto\",\r\n    \"author\": \"Javier\",\r\n    \"price\": 1.50,\r\n    \"year\": \"2022-05-14\",\r\n    \"genre\": \"action\",\r\n    \"pages\": 100,\r\n    \"hasStock\": false\r\n}",
+							"raw": "{\r\n    \"code\":\"C1\",\r\n    \"title\": \"Esto\",\r\n    \"author\": \"Javier\",\r\n    \"year\": \"2022-05-14\",\r\n    \"genre\": \"action\",\r\n    \"description\": \"prueba\",\r\n    \"pages\": 100,\r\n    \"price\": 1.50,\r\n    \"hasStock\": true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -38,13 +38,13 @@
 					"response": []
 				},
 				{
-					"name": "books/{bookId}",
+					"name": "book/{bookId}",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\": \"modificado\",\r\n    \"title\": \"mod\",\r\n    \"author\": \"modi\",\r\n    \"year\": \"2022-05-14\",\r\n    \"genre\": \"mod\",\r\n    \"pages\": 500,\r\n    \"price\": 5.0,\r\n    \"hasStock\": true\r\n\r\n\r\n}",
+							"raw": "{\r\n    \"code\": \"Prueba\",\r\n    \"title\": \"mod\",\r\n    \"author\": \"modi\",\r\n    \"year\": \"2022-05-14\",\r\n    \"genre\": \"mod\",\r\n    \"pages\": 500,\r\n    \"price\": 5.0,\r\n    \"hasStock\": true\r\n\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -52,22 +52,22 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/books/1",
+							"raw": "http://localhost:8081/book/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"books",
-								"1"
+								"book",
+								"5"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "books/{bookId} [author]",
+					"name": "book/{bookId} [author]",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -81,15 +81,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/books/1",
+							"raw": "http://localhost:8081/book/35",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"books",
-								"1"
+								"book",
+								"35"
 							]
 						}
 					},
@@ -115,12 +115,12 @@
 					"response": []
 				},
 				{
-					"name": "books?stock=true",
+					"name": "books?hasStock=true",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/books?stock=true",
+							"raw": "http://localhost:8081/books?hasStock=true",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -131,7 +131,7 @@
 							],
 							"query": [
 								{
-									"key": "stock",
+									"key": "hasStock",
 									"value": "true"
 								}
 							]
@@ -140,12 +140,12 @@
 					"response": []
 				},
 				{
-					"name": "books?stock=false",
+					"name": "books?hasStock=false",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/books?stock=false",
+							"raw": "http://localhost:8081/books?hasStock=false",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -156,7 +156,7 @@
 							],
 							"query": [
 								{
-									"key": "stock",
+									"key": "hasStock",
 									"value": "false"
 								}
 							]
@@ -165,12 +165,12 @@
 					"response": []
 				},
 				{
-					"name": "books?title=Esto",
+					"name": "books?title=Prueba",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/books?title=Esto",
+							"raw": "http://localhost:8081/books?title=Prueba",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -182,7 +182,7 @@
 							"query": [
 								{
 									"key": "title",
-									"value": "Esto"
+									"value": "Prueba"
 								}
 							]
 						}
@@ -190,19 +190,19 @@
 					"response": []
 				},
 				{
-					"name": "books{bookId}",
+					"name": "book/{bookId}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/books/1",
+							"raw": "http://localhost:8081/book/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"books",
+								"book",
 								"1"
 							]
 						}
@@ -210,19 +210,215 @@
 					"response": []
 				},
 				{
-					"name": "books/{bookId}",
+					"name": "book/{bookId}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/books/1",
+							"raw": "http://localhost:8081/book/33",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"books",
+								"book",
+								"33"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "libraries",
+			"item": [
+				{
+					"name": "libraries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Biblioteca de Zaragoza\",\r\n    \"description\": \"Biblioteca municipal\",\r\n    \"city\": \"Zaragoza\",\r\n    \"verify\": true,\r\n    \"latitude\": 41.61794304103347,\r\n    \"longitude\": -0.7065395949865945\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/libraries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"libraries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "library/{libraryId}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Biblioteca de Monzon\",\r\n    \"description\": \"Municipal\",\r\n    \"city\": \"Monzon\",\r\n    \"verify\": false,\r\n    \"latitude\": 0.0,\r\n    \"longitude\": 0.0\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/library/161",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"library",
+								"161"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "libraries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/libraries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"libraries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "libraries?verify=true",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/libraries?verify=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"libraries"
+							],
+							"query": [
+								{
+									"key": "verify",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "libraries?verify=false",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/libraries?verify=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"libraries"
+							],
+							"query": [
+								{
+									"key": "verify",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "libraries?city=Zaragoza",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/libraries?city=Zaragoza",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"libraries"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Zaragoza"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "library/{libraryId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/library/34",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"library",
+								"34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "library/{libraryId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/library/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"library",
 								"1"
 							]
 						}
@@ -241,7 +437,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\":\"B1\",\r\n    \"name\":\"Javier\",\r\n    \"lastName\": \"Vizcaino\",\r\n    \"address\": \"Calle\",\r\n    \"phoneNumber\": \"654\",\r\n    \"email\": \"javi\",\r\n    \"birthdate\": \"1993-05-14\",\r\n    \"noticeUser\": null,\r\n    \"member\":false\r\n}",
+							"raw": "{\r\n    \"code\":\"B1\",\r\n    \"name\":\"Javier\",\r\n    \"lastName\": \"Vizcaino\",\r\n    \"address\": \"Calle\",\r\n    \"phoneNumber\": \"654\",\r\n    \"email\": \"javi\",\r\n    \"birthdate\": \"1993-05-14\",\r\n    \"noticeUser\": null,\r\n    \"member\":true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -263,7 +459,7 @@
 					"response": []
 				},
 				{
-					"name": "users/{userId}",
+					"name": "user/{userId}",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -277,22 +473,22 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/users/1",
+							"raw": "http://localhost:8081/user/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"users",
-								"1"
+								"user",
+								"2"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "users/{userId} [name]",
+					"name": "user/{userId} [name]",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -306,15 +502,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/users/1",
+							"raw": "http://localhost:8081/user/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"users",
-								"1"
+								"user",
+								"2"
 							]
 						}
 					},
@@ -415,19 +611,19 @@
 					"response": []
 				},
 				{
-					"name": "users{userId}",
+					"name": "user/{userId}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/users/1",
+							"raw": "http://localhost:8081/user/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"users",
+								"user",
 								"1"
 							]
 						}
@@ -435,19 +631,19 @@
 					"response": []
 				},
 				{
-					"name": "users/{userId}",
+					"name": "user/{userId}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/users/1",
+							"raw": "http://localhost:8081/user/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"users",
+								"user",
 								"1"
 							]
 						}
@@ -488,7 +684,7 @@
 					"response": []
 				},
 				{
-					"name": "notices/{noticeId}",
+					"name": "notice/{noticeId}",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -502,14 +698,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/notices/1",
+							"raw": "http://localhost:8081/notice/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"notices",
+								"notice",
 								"1"
 							]
 						}
@@ -517,7 +713,7 @@
 					"response": []
 				},
 				{
-					"name": "notices/{noticeId} [hasRead]",
+					"name": "notice/{noticeId} [hasRead]",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -531,14 +727,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/notices/1",
+							"raw": "http://localhost:8081/notice/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"notices",
+								"notice",
 								"1"
 							]
 						}
@@ -640,19 +836,19 @@
 					"response": []
 				},
 				{
-					"name": "notices{noticeId}",
+					"name": "notice/{noticeId}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/notices/1",
+							"raw": "http://localhost:8081/notice/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"notices",
+								"notice",
 								"1"
 							]
 						}
@@ -660,19 +856,19 @@
 					"response": []
 				},
 				{
-					"name": "notices/{noticeId}",
+					"name": "notice/{noticeId}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/notices/1",
+							"raw": "http://localhost:8081/notice/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"notices",
+								"notice",
 								"1"
 							]
 						}
@@ -691,7 +887,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\":\"B1\",\r\n    \"startRent\": \"2022-05-01\",\r\n    \"endRent\": \"2022-05-08\",\r\n    \"returned\":true,\r\n    \"totalPrice\":5.0,\r\n    \"userId\": 1,\r\n    \"bookId\": 1\r\n    }",
+							"raw": "{\r\n    \"code\":\"B1\",\r\n    \"startRent\": \"2022-05-01\",\r\n    \"endRent\": \"2022-05-08\",\r\n    \"returned\":false,\r\n    \"totalPrice\":5.0,\r\n    \"userId\": 1,\r\n    \"bookId\": 1\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -714,7 +910,7 @@
 					"response": []
 				},
 				{
-					"name": "rents/{rentId}",
+					"name": "rent/{rentId}",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -728,14 +924,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/rents/1",
+							"raw": "http://localhost:8081/rent/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"rents",
+								"rent",
 								"1"
 							]
 						}
@@ -743,7 +939,7 @@
 					"response": []
 				},
 				{
-					"name": "rents/{rentId} [isReturned]",
+					"name": "rent/{rentId} [isReturned]",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -757,14 +953,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/rents/1",
+							"raw": "http://localhost:8081/rent/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"rents",
+								"rent",
 								"1"
 							]
 						}
@@ -866,19 +1062,19 @@
 					"response": []
 				},
 				{
-					"name": "rents{rentId}",
+					"name": "rent/{rentId}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/rents/1",
+							"raw": "http://localhost:8081/rent/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"rents",
+								"rent",
 								"1"
 							]
 						}
@@ -886,19 +1082,19 @@
 					"response": []
 				},
 				{
-					"name": "rents/{rentId}",
+					"name": "rent/{rentId}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/rents/1",
+							"raw": "http://localhost:8081/rent/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"rents",
+								"rent",
 								"1"
 							]
 						}
@@ -917,7 +1113,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\":\"B1\",\r\n    \"isAvailable\":true,\r\n    \"quantity\":1\r\n\r\n}",
+							"raw": "{\r\n    \"code\":\"Code - {{$randomInt}}\",\r\n    \"isAvailable\":true,\r\n    \"quantity\":1\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -925,35 +1121,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/stocks",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8081",
-							"path": [
-								"stocks"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "stocks/{stockId}",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"code\":\"C1\",\r\n    \"isAvailable\":false,\r\n    \"quantity\":1\r\n\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8081/stocks/1",
+							"raw": "http://localhost:8081/stocks/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -961,6 +1129,35 @@
 							"port": "8081",
 							"path": [
 								"stocks",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stock/{stockId}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"C1\",\r\n    \"isAvailable\":true,\r\n    \"quantity\":1\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/stock/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"stock",
 								"1"
 							]
 						}
@@ -968,7 +1165,7 @@
 					"response": []
 				},
 				{
-					"name": "stocks/{stockId} [quantity]",
+					"name": "stock/{stockId} [quantity]",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -982,14 +1179,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/stocks/1",
+							"raw": "http://localhost:8081/stock/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"stocks",
+								"stock",
 								"1"
 							]
 						}
@@ -1091,19 +1288,19 @@
 					"response": []
 				},
 				{
-					"name": "stocks{stockId}",
+					"name": "stock/{stockId}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/stocks/1",
+							"raw": "http://localhost:8081/stock/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"stocks",
+								"stock",
 								"1"
 							]
 						}
@@ -1111,19 +1308,19 @@
 					"response": []
 				},
 				{
-					"name": "stocks/{stockId}",
+					"name": "stock/{stockId}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/stocks/1",
+							"raw": "http://localhost:8081/stock/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8081",
 							"path": [
-								"stocks",
+								"stock",
 								"1"
 							]
 						}

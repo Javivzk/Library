@@ -1,0 +1,8 @@
+2023-05-10 17:55:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "description CHARACTER VARYING(255)": "U&'Eragon es una novela fant\\00e1stica escrita por Christopher Paolini, el prime... (270)"
+Value too long for column "description CHARACTER VARYING(255)": "U&'Eragon es una novela fant\\00e1stica escrita por Christopher Paolini, el prime... (270)"; SQL statement:
+insert into "book" ("id", "author", "code", "description", "genre", "has_stock", "pages", "price", "rent_id", "title", "year") values (default, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [22001-214]
+2023-05-10 17:58:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "description CHARACTER VARYING(255)": "U&'Juego de tronos (en ingl\\00e9s: A Game of Thrones) es una novela de fantas\\00... (292)"
+Value too long for column "description CHARACTER VARYING(255)": "U&'Juego de tronos (en ingl\\00e9s: A Game of Thrones) es una novela de fantas\\00... (292)"; SQL statement:
+insert into "book" ("id", "author", "code", "description", "genre", "has_stock", "pages", "price", "rent_id", "title", "year") values (default, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [22001-214]

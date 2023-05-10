@@ -15,6 +15,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,6 +44,14 @@ public class LibraryController {
     public ResponseEntity<?> deleteLibrary(@PathVariable long libraryId) {
         libraryService.deleteLibrary(libraryId);
         return ResponseEntity.noContent().build();
+    }
+
+    @PutMapping("/library/{libraryId}")
+    public ResponseEntity<Library> modifyLibrary(@PathVariable long libraryId, @Valid @RequestBody Library library) throws LibraryNotFoundException{
+        logger.error("PUT Library");
+        Library newLibrary = libraryService.modifyLibrary(libraryId,library);
+        logger.error("END PUT Library");
+        return ResponseEntity.status(HttpStatus.OK).body(newLibrary);
     }
 
     @GetMapping("/library/{id}")

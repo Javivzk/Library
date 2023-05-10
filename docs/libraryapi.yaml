@@ -263,7 +263,7 @@ paths:
         content:
           application/json:
             schema:
-              type: string
+              $ref: "#/components/schemas/BookInformation"
         required: true
       responses:
         "200":
@@ -349,8 +349,7 @@ paths:
         content:
           application/json:
             schema:
-              type: integer
-              format: int32
+              $ref: "#/components/schemas/Stock"
         required: true
       responses:
         "200":
@@ -485,7 +484,7 @@ paths:
         content:
           application/json:
             schema:
-              type: boolean
+              $ref: "#/components/schemas/Rent"
         required: true
       responses:
         "200":
@@ -619,7 +618,7 @@ paths:
         content:
           application/json:
             schema:
-              type: boolean
+              $ref: "#/components/schemas/Notice"
         required: true
       responses:
         "200":
@@ -742,6 +741,32 @@ paths:
       summary: Obtiene una libreria especificada
       description: Obtiene una libreria especificada por libraryId
       operationId: getLibrary
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Library"
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/Notfound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+    put:
+      tags:
+        - Libraries
+      summary: Modifica una biblioteca en concreto
+      description: Modifica una biblioteca en concreto, pasando el libraryId que queremos
+      operationId: modifyLibrary
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Library"
+        required: true
       responses:
         "200":
           description: OK

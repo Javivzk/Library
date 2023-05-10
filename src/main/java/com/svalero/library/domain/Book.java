@@ -27,7 +27,6 @@ public class Book {
 
     @Column
     @NotBlank(message = "El campo no puede estar vacio")
-    @NotNull(message = "El campo es obligatorio")
     private String code;
 
     @Column

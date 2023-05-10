@@ -1,0 +1,457 @@
+2023-05-09 13:47:28,141 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 16248 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-05-09 13:47:28,145 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-09 13:47:29,083 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-09 13:47:29,083 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-05-09 13:47:29,083 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-09 13:47:29,184 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-05-09 13:47:29,499 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-09 13:47:29,701 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-09 13:47:30,534 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-09 13:47:30,710 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-09 13:47:30,738 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.888 seconds (JVM running for 3.272)
+2023-05-09 13:47:41,341 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-09 13:47:41,368 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 13:47:42,850 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Book
+2023-05-09 13:47:42,852 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Book id: 193
+2023-05-09 13:47:42,858 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END GET Book
+2023-05-09 13:47:51,121 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 13:47:54,039 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 13:47:54,040 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 225
+2023-05-09 13:47:54,042 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 13:59:37,848 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 13:59:39,032 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Book
+2023-05-09 13:59:39,033 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book id: 129
+2023-05-09 13:59:39,034 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Book
+2023-05-09 13:59:42,963 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 14:10:39,085 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 14:10:40,746 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 14:10:40,746 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 129
+2023-05-09 14:10:40,748 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 14:10:44,214 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 14:10:44,217 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] Book not found 
+2023-05-09 14:10:44,923 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 14:11:59,897 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 14:12:00,898 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Book
+2023-05-09 14:12:00,898 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book id: 129
+2023-05-09 14:12:00,901 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Book
+2023-05-09 14:12:04,212 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 14:12:04,213 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 14:13:11,977 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-09 14:13:12,970 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Book
+2023-05-09 14:13:12,970 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book id: 129
+2023-05-09 14:13:12,971 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END GET Book
+2023-05-09 14:13:16,450 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 14:13:16,452 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 14:13:18,860 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 14:13:21,519 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Book
+2023-05-09 14:13:21,519 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book id: 129
+2023-05-09 14:13:21,521 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Book
+2023-05-09 14:13:23,154 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 14:13:37,095 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 14:13:37,096 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 129
+2023-05-09 14:13:37,097 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 14:13:40,915 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 14:13:40,916 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] Book not found 
+2023-05-09 14:13:47,138 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 14:13:47,140 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 14:14:17,407 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 14:15:07,796 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 14:15:09,277 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Book
+2023-05-09 14:15:09,277 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Book id: 193
+2023-05-09 14:15:09,279 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END GET Book
+2023-05-09 14:15:14,587 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-09 14:15:14,589 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] Book not found 
+2023-05-09 14:15:17,475 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 14:15:21,618 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 14:15:23,345 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 14:15:23,346 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 193
+2023-05-09 14:15:23,347 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 14:20:48,265 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 14:20:49,693 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Book
+2023-05-09 14:20:49,694 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book id: 129
+2023-05-09 14:20:49,696 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Book
+2023-05-09 14:20:54,152 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 14:20:54,153 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 14:20:55,287 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-09 14:21:09,753 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-09 14:21:09,754 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 129
+2023-05-09 14:21:09,755 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-09 14:21:15,696 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 14:21:15,697 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 14:41:39,813 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 14:41:41,127 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 14:41:41,128 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 129
+2023-05-09 14:41:41,129 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 14:41:44,290 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 14:41:44,291 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] Book not found 
+2023-05-09 14:41:46,032 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-09 14:41:47,733 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Book
+2023-05-09 14:41:47,734 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book id: 129
+2023-05-09 14:41:47,735 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] END GET Book
+2023-05-09 14:41:57,673 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-09 14:41:59,880 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Book
+2023-05-09 14:41:59,880 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book id: 129
+2023-05-09 14:41:59,881 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END GET Book
+2023-05-09 14:42:04,893 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 14:42:04,895 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 14:42:27,973 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 14:42:28,997 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Book
+2023-05-09 14:42:28,998 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Book id: 129
+2023-05-09 14:42:29,000 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END GET Book
+2023-05-09 14:42:32,388 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-09 14:42:32,390 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] Book not found 
+2023-05-09 14:42:34,849 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 14:42:53,435 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 14:42:54,349 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Book
+2023-05-09 14:42:54,350 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book id: 129
+2023-05-09 14:42:54,351 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Book
+2023-05-09 14:42:57,397 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] PUT Book
+2023-05-09 14:42:57,398 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] Book not found 
+2023-05-09 14:42:58,561 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 14:43:22,070 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-09 14:43:22,880 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Book
+2023-05-09 14:43:22,881 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book id: 129
+2023-05-09 14:43:22,882 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Book
+2023-05-09 14:43:25,618 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] PUT Book
+2023-05-09 14:43:25,621 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] Book not found 
+2023-05-09 14:43:27,769 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-09 14:45:55,884 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-09 14:45:56,932 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Book
+2023-05-09 14:45:56,933 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book id: 129
+2023-05-09 14:45:56,934 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END GET Book
+2023-05-09 14:46:01,877 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] PUT Book
+2023-05-09 14:46:01,878 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] Book not found 
+2023-05-09 14:46:03,198 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 14:50:19,846 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 14:55:06,210 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-09 14:55:08,384 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 14:55:08,385 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 129
+2023-05-09 14:55:08,387 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 14:55:11,701 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 14:55:11,703 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 14:55:14,587 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 14:56:21,997 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 14:56:22,951 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-09 14:56:22,951 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 129
+2023-05-09 14:56:22,953 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-09 14:56:25,509 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 14:56:25,510 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 14:56:27,670 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-09 14:56:28,921 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Book
+2023-05-09 14:56:28,922 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book id: 129
+2023-05-09 14:56:28,923 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Book
+2023-05-09 14:56:31,289 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] PUT Book
+2023-05-09 14:56:31,290 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] Book not found 
+2023-05-09 14:56:31,469 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] PUT Book
+2023-05-09 14:56:31,470 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] Book not found 
+2023-05-09 14:56:31,635 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] PUT Book
+2023-05-09 14:56:31,637 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] Book not found 
+2023-05-09 14:56:31,753 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 14:56:31,754 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 14:56:31,906 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-09 14:56:31,907 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] Book not found 
+2023-05-09 14:56:32,057 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 14:56:32,058 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 14:56:32,201 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 14:56:32,203 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] Book not found 
+2023-05-09 14:56:32,320 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 14:56:32,321 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 14:56:36,135 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] PUT Book
+2023-05-09 14:56:36,136 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] Book not found 
+2023-05-09 14:56:36,336 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 14:56:36,337 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 14:56:36,507 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] PUT Book
+2023-05-09 14:56:36,508 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] Book not found 
+2023-05-09 14:56:36,666 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] PUT Book
+2023-05-09 14:56:36,667 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] Book not found 
+2023-05-09 14:56:36,824 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] PUT Book
+2023-05-09 14:56:36,826 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] Book not found 
+2023-05-09 14:56:36,941 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 14:56:36,943 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 14:56:37,085 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-09 14:56:37,086 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] Book not found 
+2023-05-09 14:56:37,239 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 14:56:37,240 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 14:56:37,357 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 14:56:37,358 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] Book not found 
+2023-05-09 14:56:37,647 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 14:56:37,649 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 14:56:37,798 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] PUT Book
+2023-05-09 14:56:37,800 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] Book not found 
+2023-05-09 14:56:37,961 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 14:56:37,962 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 14:56:38,111 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] PUT Book
+2023-05-09 14:56:38,112 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] Book not found 
+2023-05-09 14:56:41,105 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] PUT Book
+2023-05-09 14:56:41,106 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] Book not found 
+2023-05-09 14:56:41,265 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] PUT Book
+2023-05-09 14:56:41,266 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] Book not found 
+2023-05-09 14:56:41,413 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 14:56:41,414 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 14:56:41,551 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-09 14:56:41,552 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] Book not found 
+2023-05-09 14:56:41,726 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 14:56:41,727 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 14:56:42,941 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-09 14:57:12,537 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 14:57:13,590 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Book
+2023-05-09 14:57:13,590 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book id: 129
+2023-05-09 14:57:13,592 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] END GET Book
+2023-05-09 14:57:16,108 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] PUT Book
+2023-05-09 14:57:16,110 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] Book not found 
+2023-05-09 14:57:18,554 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 17:21:23,441 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-09 17:21:24,184 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 17:21:24,184 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 193
+2023-05-09 17:21:24,185 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 17:21:25,510 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 17:21:25,512 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 17:21:26,423 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 17:26:07,304 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 17:26:08,133 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-09 17:26:08,134 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 193
+2023-05-09 17:26:08,135 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-09 17:26:11,253 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Book
+2023-05-09 17:26:11,253 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book id: 193
+2023-05-09 17:26:11,254 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END GET Book
+2023-05-09 17:26:11,264 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] PUT Book
+2023-05-09 17:26:11,265 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] Book not found 
+2023-05-09 17:26:16,273 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 17:26:41,451 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 17:26:42,398 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-09 17:26:42,400 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 225
+2023-05-09 17:26:42,401 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-09 17:26:46,998 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 17:26:47,000 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 17:27:08,133 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-09 17:39:15,083 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 17:43:06,950 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 17:43:07,786 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-09 17:43:07,787 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 129
+2023-05-09 17:43:07,788 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-09 17:43:11,218 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 17:43:21,566 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Book
+2023-05-09 17:43:21,567 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book id: 193
+2023-05-09 17:43:21,570 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] END GET Book
+2023-05-09 17:45:15,431 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 17:45:20,183 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Book
+2023-05-09 17:45:20,184 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book id: 129
+2023-05-09 17:45:20,185 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END GET Book
+2023-05-09 17:45:24,072 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 17:45:24,073 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 17:45:26,417 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-09 17:48:23,380 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 17:48:24,142 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Book
+2023-05-09 17:48:24,143 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book id: 193
+2023-05-09 17:48:24,144 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Book
+2023-05-09 17:48:26,497 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 17:48:26,498 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 17:48:31,567 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 17:50:40,140 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 17:50:48,138 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 17:51:25,068 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 18:02:25,936 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 18:02:27,948 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-09 18:02:27,949 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 193
+2023-05-09 18:02:27,949 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-09 18:02:33,081 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 18:02:33,083 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 18:02:36,458 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-09 18:07:10,441 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 18:07:11,634 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Book
+2023-05-09 18:07:11,634 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book id: 129
+2023-05-09 18:07:11,635 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END GET Book
+2023-05-09 18:07:15,184 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 18:07:15,185 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 18:07:19,838 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-09 18:11:48,317 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 18:11:49,268 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Book
+2023-05-09 18:11:49,269 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book id: 193
+2023-05-09 18:11:49,270 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Book
+2023-05-09 18:11:52,927 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 18:11:52,928 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 18:11:54,401 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-09 18:11:54,403 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] Book not found 
+2023-05-09 18:11:54,737 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-09 18:11:54,738 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] Book not found 
+2023-05-09 18:11:54,906 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 18:11:54,907 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] Book not found 
+2023-05-09 18:11:55,034 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 18:11:55,035 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 18:11:55,191 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] PUT Book
+2023-05-09 18:11:55,192 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] Book not found 
+2023-05-09 18:11:58,924 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 18:11:58,925 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 18:11:59,074 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] PUT Book
+2023-05-09 18:11:59,075 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] Book not found 
+2023-05-09 18:11:59,225 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] PUT Book
+2023-05-09 18:11:59,226 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] Book not found 
+2023-05-09 18:11:59,398 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] PUT Book
+2023-05-09 18:11:59,400 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] Book not found 
+2023-05-09 18:12:04,624 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 18:16:32,226 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 18:16:35,186 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 18:16:35,187 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 129
+2023-05-09 18:16:35,188 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 18:16:38,193 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 18:16:38,194 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 18:16:50,441 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 18:16:51,390 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Book
+2023-05-09 18:16:51,391 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book id: 193
+2023-05-09 18:16:51,393 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END GET Book
+2023-05-09 18:16:53,483 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-09 18:16:54,204 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Book
+2023-05-09 18:16:54,204 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Book id: 225
+2023-05-09 18:16:54,205 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END GET Book
+2023-05-09 18:16:55,376 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 18:17:30,151 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 18:17:31,105 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Book
+2023-05-09 18:17:31,106 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book id: 193
+2023-05-09 18:17:31,106 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END GET Book
+2023-05-09 18:31:03,487 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 18:31:04,271 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 18:31:04,272 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 193
+2023-05-09 18:31:04,272 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 18:31:07,869 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 18:31:07,870 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 18:32:39,257 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 18:32:40,821 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Book
+2023-05-09 18:32:40,821 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book id: 193
+2023-05-09 18:32:40,822 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END GET Book
+2023-05-09 18:32:46,962 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 18:32:50,642 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 18:32:50,642 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 129
+2023-05-09 18:32:50,643 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 18:33:51,149 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-09 18:33:54,558 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Book
+2023-05-09 18:33:54,559 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book id: 193
+2023-05-09 18:33:54,559 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Book
+2023-05-09 18:33:58,234 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 18:37:12,868 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-09 18:37:13,771 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-09 18:37:13,771 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 193
+2023-05-09 18:37:13,772 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-09 18:37:16,579 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-09 18:37:16,580 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] Book not found 
+2023-05-09 18:37:17,291 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 18:58:25,851 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 18:58:26,721 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-09 18:58:26,722 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 129
+2023-05-09 18:58:26,723 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-09 18:58:30,953 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 18:58:30,954 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 18:58:31,674 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 19:00:33,883 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 19:00:36,461 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Book
+2023-05-09 19:00:36,461 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book id: 129
+2023-05-09 19:00:36,462 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END GET Book
+2023-05-09 19:00:39,516 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-09 19:00:39,518 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] Book not found 
+2023-05-09 19:00:40,206 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-09 19:01:37,942 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 19:01:38,806 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Book
+2023-05-09 19:01:38,806 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book id: 193
+2023-05-09 19:01:38,807 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Book
+2023-05-09 19:01:41,768 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] PUT Book
+2023-05-09 19:01:41,768 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Book not found 
+2023-05-09 19:01:52,523 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-09 19:04:26,601 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-09 19:04:28,284 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Book
+2023-05-09 19:04:28,286 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book id: 193
+2023-05-09 19:04:28,286 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END GET Book
+2023-05-09 19:04:36,143 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] PUT Book
+2023-05-09 19:04:36,144 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] Book not found 
+2023-05-09 19:05:31,190 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-09 19:05:32,538 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Book
+2023-05-09 19:05:32,538 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book id: 129
+2023-05-09 19:05:32,540 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END GET Book
+2023-05-09 19:05:37,308 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 19:05:37,309 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 19:06:38,664 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 19:06:43,413 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] GET Library
+2023-05-09 19:06:43,417 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-10] Library id: 129
+2023-05-09 19:06:43,423 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] END GET Library
+2023-05-09 19:14:57,756 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-09 19:14:59,145 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Book
+2023-05-09 19:14:59,145 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book id: 129
+2023-05-09 19:14:59,147 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END GET Book
+2023-05-09 19:15:03,655 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 19:15:03,656 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] Book not found 
+2023-05-09 19:18:17,700 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-09 19:18:19,192 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Book
+2023-05-09 19:18:19,192 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book id: 193
+2023-05-09 19:18:19,195 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END GET Book
+2023-05-09 19:18:21,845 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] PUT Book
+2023-05-09 19:18:21,846 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] Book not found 
+2023-05-09 19:24:52,062 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-09 19:24:53,280 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Book
+2023-05-09 19:24:53,281 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book id: 193
+2023-05-09 19:24:53,283 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END GET Book
+2023-05-09 19:24:56,614 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] PUT Book
+2023-05-09 19:24:56,615 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] Book not found 
+2023-05-09 19:24:58,469 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-09 19:28:40,520 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 19:28:41,706 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Book
+2023-05-09 19:28:41,707 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book id: 129
+2023-05-09 19:28:41,707 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END GET Book
+2023-05-09 19:28:44,731 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] PUT Book
+2023-05-09 19:28:44,763 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book to modify: Book(id=129, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
+2023-05-09 19:28:44,763 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book modified: Book(id=0, code=C1, title=Estosafas, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-09 19:28:44,909 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-7] END PUT Book
+2023-05-09 19:28:46,236 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-09 19:31:35,189 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Book
+2023-05-09 19:31:35,190 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book id: 129
+2023-05-09 19:31:35,191 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] END GET Book
+2023-05-09 19:31:41,373 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] PUT Book
+2023-05-09 19:31:41,374 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book to modify: Book(id=129, code=C1, title=Estosafas, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-09 19:31:41,376 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book modified: Book(id=0, code=C1, title=Estosafas, author=Javiers, year=2022-05-14, genre=action, description=prueba, pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-09 19:31:41,377 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-10] END PUT Book
+2023-05-09 19:31:43,119 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-09 19:32:37,520 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-09 19:32:37,521 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 129
+2023-05-09 19:32:37,521 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-09 19:41:15,672 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] GET Library
+2023-05-09 19:41:15,672 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-4] Library id: 129
+2023-05-09 19:41:15,673 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] END GET Library
+2023-05-09 19:41:18,807 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-7] PUT Library
+2023-05-09 19:41:18,815 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-7] Library to modify: Library(id=129, name=Biblioteca de Zaragoza, description=Biblioteca municipal, city=Zaragoza, verify=true, latitude=41.61794304103347, longitude=-0.7065395949865945)
+2023-05-09 19:41:18,815 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-7] Library modified: Library(id=0, name=Biblioteca de Zaragozass, description=Biblioteca municipal, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-09 19:41:18,820 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-7] END PUT Library
+2023-05-09 19:53:37,433 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-09 19:53:37,433 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 193
+2023-05-09 19:53:37,434 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-09 19:59:59,282 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-09 20:00:00,169 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Book
+2023-05-09 20:00:00,170 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Book id: 193
+2023-05-09 20:00:00,172 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] END GET Book
+2023-05-09 20:00:01,609 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-09 20:01:53,673 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-09 21:26:30,694 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] GET Library
+2023-05-09 21:26:30,699 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-6] Library id: 129
+2023-05-09 21:26:30,707 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] END GET Library
+2023-05-09 21:26:34,202 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] GET Library
+2023-05-09 21:26:34,202 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-1] Library id: 129
+2023-05-09 21:26:34,203 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] END GET Library
+2023-05-09 21:26:36,474 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] PUT Library
+2023-05-09 21:26:36,480 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library to modify: Library(id=129, name=Biblioteca de Zaragozass, description=Biblioteca municipal, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-09 21:26:36,481 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library modified: Library(id=0, name=Biblioteca de Zaragozass, description=Biblioteca municipal, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-09 21:26:36,487 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] END PUT Library
+2023-05-09 21:26:38,412 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] GET Library
+2023-05-09 21:26:38,412 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library id: 129
+2023-05-09 21:26:38,414 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] END GET Library
+2023-05-09 21:30:06,618 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] GET Library
+2023-05-09 21:30:06,618 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-4] Library id: 129
+2023-05-09 21:30:06,620 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] END GET Library
+2023-05-09 21:30:08,418 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-7] PUT Library
+2023-05-09 21:30:08,419 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-7] Library to modify: Library(id=129, name=Biblioteca de Zaragozass, description=Biblioteca municipal, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-09 21:30:08,419 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-7] Library modified: Library(id=0, name=Biblioteca de Zaragozass, description=Biblioteca municipal, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-09 21:30:08,420 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-7] END PUT Library
+2023-05-09 21:38:14,924 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] GET Library
+2023-05-09 21:38:14,924 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library id: 129
+2023-05-09 21:38:14,925 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] END GET Library
+2023-05-09 21:45:03,606 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-09 21:45:03,606 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 129
+2023-05-09 21:45:03,607 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-09 21:48:00,679 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] GET Library
+2023-05-09 21:48:00,680 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-1] Library id: 129
+2023-05-09 21:48:00,682 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] END GET Library

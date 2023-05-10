@@ -1,83 +1,443 @@
-2023-04-30 00:58:42,099 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 19680 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
-2023-04-30 00:58:42,102 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-04-30 00:58:43,040 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
-2023-04-30 00:58:43,041 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2023-04-30 00:58:43,041 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
-2023-04-30 00:58:43,137 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-04-30 00:58:43,457 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2023-04-30 00:58:43,655 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-04-30 00:58:44,520 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-30 00:58:44,949 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
-2023-04-30 00:58:44,972 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 3.138 seconds (JVM running for 3.509)
-2023-04-30 00:59:00,810 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-30 00:59:01,378 INFO org.springdoc.api.AbstractOpenApiResource [http-nio-8081-exec-1] Init duration for springdoc-openapi is: 544 ms
-2023-04-30 01:33:55,178 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-8] POST Users
-2023-04-30 01:33:55,183 INFO com.svalero.library.service.UserServiceImpl [http-nio-8081-exec-8] Added User: User(id=0, code=B1, name=Javier, lastName=Vizcaino, address=Calle, phoneNumber=654, email=javi, birthdate=1993-05-14, isMember=true, userRents=null)
-2023-04-30 01:33:55,221 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-8] END POST Users
-2023-04-30 01:35:49,280 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] POST Book
-2023-04-30 01:35:49,285 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
-2023-04-30 01:35:49,290 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END POST Book
-2023-04-30 01:37:14,355 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-6] POST Stocks
-2023-04-30 01:37:14,358 INFO com.svalero.library.service.StockServiceImpl [http-nio-8081-exec-6] Stock added: Stock(id=0, code=Code - 647, isAvailable=true, quantity=1)
-2023-04-30 01:37:14,363 INFO com.svalero.library.controller.StockController [http-nio-8081-exec-6] END POST Stocks
-2023-04-30 02:57:16,171 ERROR com.svalero.library.controller.UserController [http-nio-8081-exec-8] PATCH User
-2023-04-30 02:57:16,194 ERROR com.svalero.library.controller.UserController [http-nio-8081-exec-8] User not found
-2023-04-30 14:22:28,783 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 17580 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
-2023-04-30 14:22:28,785 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-04-30 14:22:29,682 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
-2023-04-30 14:22:29,683 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
-2023-04-30 14:22:29,683 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
-2023-04-30 14:22:29,787 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2023-04-30 14:22:30,110 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2023-04-30 14:22:30,309 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2023-04-30 14:22:31,145 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-30 14:22:31,334 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
-2023-04-30 14:22:31,363 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.863 seconds (JVM running for 3.244)
-2023-04-30 14:22:33,509 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-30 14:22:33,576 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-3] POST Rents
-2023-04-30 14:22:33,582 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-3] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=true, userId=2, totalPrice=5.0, bookId=2)
-2023-04-30 14:22:33,609 ERROR com.svalero.library.controller.RentController [http-nio-8081-exec-3] Internal Error Book not found
-2023-04-30 14:22:40,035 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-2] POST Rents
-2023-04-30 14:22:40,036 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-2] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=true, userId=2, totalPrice=5.0, bookId=2)
-2023-04-30 14:22:40,037 ERROR com.svalero.library.controller.RentController [http-nio-8081-exec-2] Internal Error Book not found
-2023-04-30 14:22:46,156 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-5] GET Rents
-2023-04-30 14:22:46,157 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-5] END GET Rents
-2023-04-30 14:23:07,823 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-7] POST Users
-2023-04-30 14:23:07,827 INFO com.svalero.library.service.UserServiceImpl [http-nio-8081-exec-7] Added User: User(id=0, code=B1, name=Javier, lastName=Vizcaino, address=Calle, phoneNumber=654, email=javi, birthdate=1993-05-14, isMember=true, userRents=null)
-2023-04-30 14:23:07,854 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-7] END POST Users
-2023-04-30 14:23:26,528 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] POST Book
-2023-04-30 14:23:26,534 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
-2023-04-30 14:23:26,540 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END POST Book
-2023-04-30 14:23:42,793 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-9] POST Rents
-2023-04-30 14:23:42,793 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-9] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=true, userId=33, totalPrice=5.0, bookId=161)
-2023-04-30 14:23:42,806 ERROR com.svalero.library.controller.RentController [http-nio-8081-exec-9] Internal Error User not found
-2023-04-30 14:23:59,524 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-1] GET Users
-2023-04-30 14:23:59,525 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-1] END GET Users
-2023-04-30 14:24:20,244 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-3] POST Rents
-2023-04-30 14:24:20,244 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-3] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=false, userId=33, totalPrice=5.0, bookId=161)
-2023-04-30 14:24:20,246 ERROR com.svalero.library.controller.RentController [http-nio-8081-exec-3] Internal Error User not found
-2023-04-30 14:24:30,355 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-2] POST Rents
-2023-04-30 14:24:30,356 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-2] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=false, userId=1, totalPrice=5.0, bookId=161)
-2023-04-30 14:24:30,358 ERROR com.svalero.library.controller.RentController [http-nio-8081-exec-2] Internal Error User not found
-2023-04-30 14:25:05,554 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-5] GET Users
-2023-04-30 14:25:05,555 INFO com.svalero.library.service.UserServiceImpl [http-nio-8081-exec-5] User Id: 1
-2023-04-30 14:25:05,556 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-5] END GET Users
-2023-04-30 14:26:09,868 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-9] POST Rents
-2023-04-30 14:26:09,868 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-9] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=false, userId=0, totalPrice=5.0, bookId=161)
-2023-04-30 14:26:09,870 ERROR com.svalero.library.controller.RentController [http-nio-8081-exec-9] Internal Error User not found
-2023-04-30 14:26:28,709 INFO com.svalero.library.controller.NoticeController [http-nio-8081-exec-1] POST Notices
-2023-04-30 14:26:28,713 INFO com.svalero.library.service.NoticeServiceImpl [http-nio-8081-exec-1] Added Notice: Notice(id=0, code=A1, titleNotice=Nuevo, description=Probando, dateSendNotice=2022-02-01, rating=2.5, hasRead=true, bookId=2)
-2023-04-30 14:26:28,715 ERROR com.svalero.library.controller.NoticeController [http-nio-8081-exec-1] Internal Error Book not found
-2023-04-30 14:26:36,806 INFO com.svalero.library.controller.NoticeController [http-nio-8081-exec-4] POST Notices
-2023-04-30 14:26:36,806 INFO com.svalero.library.service.NoticeServiceImpl [http-nio-8081-exec-4] Added Notice: Notice(id=0, code=A1, titleNotice=Nuevo, description=Probando, dateSendNotice=2022-02-01, rating=2.5, hasRead=true, bookId=133)
-2023-04-30 14:26:36,807 ERROR com.svalero.library.controller.NoticeController [http-nio-8081-exec-4] Internal Error Book not found
-2023-04-30 14:26:43,689 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
-2023-04-30 14:26:56,815 INFO com.svalero.library.controller.NoticeController [http-nio-8081-exec-5] POST Notices
-2023-04-30 14:26:56,816 INFO com.svalero.library.service.NoticeServiceImpl [http-nio-8081-exec-5] Added Notice: Notice(id=0, code=A1, titleNotice=Nuevo, description=Probando, dateSendNotice=2022-02-01, rating=2.5, hasRead=true, bookId=1)
-2023-04-30 14:26:56,825 INFO com.svalero.library.controller.NoticeController [http-nio-8081-exec-5] END POST Notices
-2023-04-30 14:27:03,468 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-7] POST Rents
-2023-04-30 14:27:03,468 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-7] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=false, userId=1, totalPrice=5.0, bookId=161)
-2023-04-30 14:27:03,469 ERROR com.svalero.library.controller.RentController [http-nio-8081-exec-7] Internal Error User not found
-2023-04-30 14:27:07,038 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-9] POST Rents
-2023-04-30 14:27:07,039 INFO com.svalero.library.service.RentServiceImpl [http-nio-8081-exec-9] Added Rent: RentDTO(id=0, title=null, code=B1, startRent=2022-05-01, endRent=2022-05-08, isReturned=false, userId=1, totalPrice=5.0, bookId=1)
-2023-04-30 14:27:07,045 INFO com.svalero.library.controller.RentController [http-nio-8081-exec-9] END POST Rents
+2023-05-10 00:06:10,668 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] GET Library
+2023-05-10 00:06:10,684 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-5] Library id: 129
+2023-05-10 00:06:10,687 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] END GET Library
+2023-05-10 00:06:14,020 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] PUT Library
+2023-05-10 00:06:14,022 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-8] Library to modify: Library(id=129, name=Biblioteca de Zaragozass, description=Biblioteca municipal, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 00:06:14,023 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-8] Library modified: Library(id=0, name=Biblioteca de Zaragozass, description=Biblioteca municipal, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 00:06:14,029 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] END PUT Library
+2023-05-10 00:07:19,991 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-10 00:07:19,992 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 129
+2023-05-10 00:07:19,994 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-10 00:08:49,651 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] GET Library
+2023-05-10 00:08:49,652 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-10] Library id: 130
+2023-05-10 00:08:49,654 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] END GET Library
+2023-05-10 00:09:15,568 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] GET Library
+2023-05-10 00:09:15,568 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-4] Library id: 130
+2023-05-10 00:09:15,571 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] END GET Library
+2023-05-10 00:09:17,397 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-10 00:09:17,398 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 129
+2023-05-10 00:09:17,399 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-10 00:09:19,335 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] GET Library
+2023-05-10 00:09:19,335 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-8] Library id: 161
+2023-05-10 00:09:19,336 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] END GET Library
+2023-05-10 13:55:09,222 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 19176 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-05-10 13:55:09,227 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-10 13:55:10,706 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-10 13:55:10,707 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-05-10 13:55:10,708 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-10 13:55:10,847 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-05-10 13:55:11,383 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 13:55:11,842 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 13:55:13,139 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 13:55:13,424 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-10 13:55:13,474 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 4.652 seconds (JVM running for 5.116)
+2023-05-10 13:55:46,278 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-10 13:55:47,444 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-10 13:55:47,446 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 129
+2023-05-10 13:55:47,456 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-10 13:56:16,525 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] GET Library
+2023-05-10 13:56:16,526 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-5] Library id: 129
+2023-05-10 13:56:16,527 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] END GET Library
+2023-05-10 13:58:09,962 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] GET Library
+2023-05-10 13:58:09,963 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library id: 129
+2023-05-10 13:58:09,965 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] END GET Library
+2023-05-10 14:06:07,642 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] GET Library
+2023-05-10 14:06:07,643 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library id: 129
+2023-05-10 14:06:07,644 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] END GET Library
+2023-05-10 14:06:09,992 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-10 14:06:09,993 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 130
+2023-05-10 14:06:09,994 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-10 14:06:18,165 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-10 14:53:11,384 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] GET Library
+2023-05-10 14:53:11,387 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-4] Library id: 129
+2023-05-10 14:53:11,390 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] END GET Library
+2023-05-10 14:54:19,232 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] GET Library
+2023-05-10 14:54:19,233 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library id: 161
+2023-05-10 14:54:19,234 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] END GET Library
+2023-05-10 14:54:30,081 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] PUT Library
+2023-05-10 14:54:30,093 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-1] Library to modify: Library(id=161, name=Biblioteca de Monzon, description=Municipal, city=Monzon, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 14:54:30,094 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-1] Library modified: Library(id=0, name=Biblioteca de Monzon, description=Municipal, city=Monzon, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 14:54:30,113 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] END PUT Library
+2023-05-10 14:56:38,381 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] GET Library
+2023-05-10 14:56:38,383 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-6] Library id: 129
+2023-05-10 14:56:38,385 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] END GET Library
+2023-05-10 15:43:05,296 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-7] GET Users
+2023-05-10 15:43:05,296 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-7] END GET Users
+2023-05-10 15:43:44,094 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 9360 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-05-10 15:43:44,096 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-10 15:43:44,974 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-10 15:43:44,974 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-05-10 15:43:44,975 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-10 15:43:45,066 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-05-10 15:43:45,382 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 15:43:45,595 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 15:43:46,171 WARN org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [main] GenerationTarget encountered exception accepting command : Error executing DDL "alter table "user" add column "username" varchar(255) not null" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table "user" add column "username" varchar(255) not null" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:602)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:314)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:78)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.svalero.library.LibraryApplication.main(LibraryApplication.java:10)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: La columna "username" no permite valores nulos (NULL)
+NULL not allowed for column "username"; SQL statement:
+INSERT INTO "PUBLIC"."user_COPY_3_0"("id", "address", "birthdate", "code", "email", "is_member", "last_name", "name", "phone_number", "user_rents") OVERRIDING SYSTEM VALUE SELECT "id", "address", "birthdate", "code", "email", "is_member", "last_name", "name", "phone_number", "user_rents" FROM "PUBLIC"."user" [23502-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:365)
+	at org.h2.table.Table.convertInsertRow(Table.java:926)
+	at org.h2.command.dml.Insert.addRow(Insert.java:229)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:203)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.command.ddl.AlterTableAlterColumn.execute(AlterTableAlterColumn.java:645)
+	at org.h2.command.ddl.AlterTableAlterColumn.cloneTableStructure(AlterTableAlterColumn.java:557)
+	at org.h2.command.ddl.AlterTableAlterColumn.copyData(AlterTableAlterColumn.java:339)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:242)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 34 common frames omitted
+2023-05-10 15:43:46,456 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 15:43:46,635 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-10 15:43:46,665 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.833 seconds (JVM running for 3.211)
+2023-05-10 15:43:46,739 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-10 15:43:46,756 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-2] GET Users
+2023-05-10 15:43:46,756 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-2] END GET Users
+2023-05-10 15:43:46,834 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-2] SQL Error: 42122, SQLState: 42S22
+2023-05-10 15:43:46,835 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-2] Columna "USER0_.username" no encontrada
+Column "USER0_.username" not found; SQL statement:
+select user0_."id" as id1_8_, user0_."address" as address2_8_, user0_."birthdate" as birthdat3_8_, user0_."code" as code4_8_, user0_."email" as email5_8_, user0_."is_member" as is_membe6_8_, user0_."last_name" as last_nam7_8_, user0_."name" as name8_8_, user0_."phone_number" as phone_nu9_8_, user0_."user_rents" as user_re11_8_, user0_."username" as usernam10_8_ from "user" user0_ [42122-214]
+2023-05-10 15:43:46,839 ERROR com.svalero.library.controller.UserController [http-nio-8081-exec-2] Internal error could not prepare statement; SQL [select user0_."id" as id1_8_, user0_."address" as address2_8_, user0_."birthdate" as birthdat3_8_, user0_."code" as code4_8_, user0_."email" as email5_8_, user0_."is_member" as is_membe6_8_, user0_."last_name" as last_nam7_8_, user0_."name" as name8_8_, user0_."phone_number" as phone_nu9_8_, user0_."user_rents" as user_re11_8_, user0_."username" as usernam10_8_ from "user" user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+2023-05-10 15:43:47,992 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-5] GET Users
+2023-05-10 15:43:47,992 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-5] END GET Users
+2023-05-10 15:43:47,995 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-5] SQL Error: 42122, SQLState: 42S22
+2023-05-10 15:43:47,995 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-5] Columna "USER0_.username" no encontrada
+Column "USER0_.username" not found; SQL statement:
+select user0_."id" as id1_8_, user0_."address" as address2_8_, user0_."birthdate" as birthdat3_8_, user0_."code" as code4_8_, user0_."email" as email5_8_, user0_."is_member" as is_membe6_8_, user0_."last_name" as last_nam7_8_, user0_."name" as name8_8_, user0_."phone_number" as phone_nu9_8_, user0_."user_rents" as user_re11_8_, user0_."username" as usernam10_8_ from "user" user0_ [42122-214]
+2023-05-10 15:43:47,996 ERROR com.svalero.library.controller.UserController [http-nio-8081-exec-5] Internal error could not prepare statement; SQL [select user0_."id" as id1_8_, user0_."address" as address2_8_, user0_."birthdate" as birthdat3_8_, user0_."code" as code4_8_, user0_."email" as email5_8_, user0_."is_member" as is_membe6_8_, user0_."last_name" as last_nam7_8_, user0_."name" as name8_8_, user0_."phone_number" as phone_nu9_8_, user0_."user_rents" as user_re11_8_, user0_."username" as usernam10_8_ from "user" user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+2023-05-10 15:43:49,731 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-6] GET Users
+2023-05-10 15:43:49,731 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-6] END GET Users
+2023-05-10 15:43:49,732 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-6] SQL Error: 42122, SQLState: 42S22
+2023-05-10 15:43:49,733 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-6] Columna "USER0_.username" no encontrada
+Column "USER0_.username" not found; SQL statement:
+select user0_."id" as id1_8_, user0_."address" as address2_8_, user0_."birthdate" as birthdat3_8_, user0_."code" as code4_8_, user0_."email" as email5_8_, user0_."is_member" as is_membe6_8_, user0_."last_name" as last_nam7_8_, user0_."name" as name8_8_, user0_."phone_number" as phone_nu9_8_, user0_."user_rents" as user_re11_8_, user0_."username" as usernam10_8_ from "user" user0_ [42122-214]
+2023-05-10 15:43:49,733 ERROR com.svalero.library.controller.UserController [http-nio-8081-exec-6] Internal error could not prepare statement; SQL [select user0_."id" as id1_8_, user0_."address" as address2_8_, user0_."birthdate" as birthdat3_8_, user0_."code" as code4_8_, user0_."email" as email5_8_, user0_."is_member" as is_membe6_8_, user0_."last_name" as last_nam7_8_, user0_."name" as name8_8_, user0_."phone_number" as phone_nu9_8_, user0_."user_rents" as user_re11_8_, user0_."username" as usernam10_8_ from "user" user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+2023-05-10 15:44:11,543 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 2300 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-05-10 15:44:11,545 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-10 15:44:12,325 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-10 15:44:12,326 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-05-10 15:44:12,326 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-10 15:44:12,406 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-05-10 15:44:12,671 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 15:44:12,809 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 15:44:13,584 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 15:44:13,744 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-10 15:44:13,764 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.453 seconds (JVM running for 2.772)
+2023-05-10 15:44:18,474 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-10 15:44:18,491 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-1] GET Users
+2023-05-10 15:44:18,492 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-1] END GET Users
+2023-05-10 15:45:01,919 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 20368 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-05-10 15:45:01,921 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-10 15:45:02,730 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-10 15:45:02,731 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-05-10 15:45:02,731 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-10 15:45:02,813 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-05-10 15:45:03,080 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 15:45:03,219 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 15:45:04,015 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 15:45:04,179 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-10 15:45:04,200 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.53 seconds (JVM running for 2.868)
+2023-05-10 15:45:21,691 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-10 15:45:21,774 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-2] POST Users
+2023-05-10 15:45:21,780 INFO com.svalero.library.service.UserServiceImpl [http-nio-8081-exec-2] Added User: User(id=0, code=B1, username=javi, password=1234, name=Javier, lastName=Vizcaino, address=Calle, phoneNumber=654, email=javi, birthdate=1993-05-14, isMember=true, userRents=null)
+2023-05-10 15:45:21,815 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-2] END POST Users
+2023-05-10 15:57:49,836 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-10 16:14:27,607 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-10 16:58:58,707 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] POST Book
+2023-05-10 16:58:58,722 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
+2023-05-10 16:58:58,741 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END POST Book
+2023-05-10 16:58:59,437 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] POST Book
+2023-05-10 16:58:59,438 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Added Book: Book(id=0, code=C1, title=Esto, author=Javier, year=2022-05-14, genre=action, description=prueba, pages=100, price=1.5, hasStock=true, rent=null)
+2023-05-10 16:58:59,439 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END POST Book
+2023-05-10 16:59:07,242 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-10 16:59:08,629 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Book
+2023-05-10 16:59:08,630 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book id: 2
+2023-05-10 16:59:08,640 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END GET Book
+2023-05-10 16:59:10,338 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-10 16:59:12,441 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] GET Library
+2023-05-10 16:59:12,443 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-1] Library id: 1
+2023-05-10 16:59:12,445 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] END GET Library
+2023-05-10 17:08:04,789 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] GET Library
+2023-05-10 17:08:04,790 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-5] Library id: 1
+2023-05-10 17:08:04,791 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] END GET Library
+2023-05-10 17:10:49,771 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] GET Library
+2023-05-10 17:10:49,771 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library id: 1
+2023-05-10 17:10:49,773 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] END GET Library
+2023-05-10 17:13:38,488 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] GET Library
+2023-05-10 17:13:38,488 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library id: 3
+2023-05-10 17:13:38,490 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] END GET Library
+2023-05-10 17:17:53,462 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] GET Library
+2023-05-10 17:17:53,463 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library id: 3
+2023-05-10 17:17:53,464 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] END GET Library
+2023-05-10 17:18:02,745 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] GET Library
+2023-05-10 17:18:02,745 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-10] Library id: 1
+2023-05-10 17:18:02,746 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] END GET Library
+2023-05-10 17:20:22,447 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] GET Library
+2023-05-10 17:20:22,447 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library id: 3
+2023-05-10 17:20:22,449 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] END GET Library
+2023-05-10 17:30:31,039 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] GET Library
+2023-05-10 17:30:31,040 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-6] Library id: 1
+2023-05-10 17:30:31,041 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] END GET Library
+2023-05-10 17:30:44,867 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] GET Library
+2023-05-10 17:30:44,867 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-8] Library id: 1
+2023-05-10 17:30:44,868 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] END GET Library
+2023-05-10 17:31:00,405 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-10 17:31:02,421 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] DELETE Book
+2023-05-10 17:31:02,424 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Deleted Book: 2
+2023-05-10 17:31:02,446 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] END DELETE Book
+2023-05-10 17:31:03,404 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Book
+2023-05-10 17:31:03,404 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book id: 1
+2023-05-10 17:31:03,406 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END GET Book
+2023-05-10 17:31:05,208 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-10 17:32:26,224 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-10 17:32:27,189 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-10 17:32:27,190 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 1
+2023-05-10 17:32:27,191 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-10 17:33:19,817 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-10 17:33:21,415 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Book
+2023-05-10 17:33:21,416 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Book id: 1
+2023-05-10 17:33:21,418 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] END GET Book
+2023-05-10 17:33:23,911 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Books
+2023-05-10 17:33:37,992 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-10 17:33:37,992 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 1
+2023-05-10 17:33:37,994 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-10 17:34:19,382 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] GET Library
+2023-05-10 17:34:19,382 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-1] Library id: 3
+2023-05-10 17:34:19,384 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] END GET Library
+2023-05-10 17:35:28,802 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-10 17:36:42,113 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-10 17:45:08,107 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] GET Library
+2023-05-10 17:45:08,107 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library id: 1
+2023-05-10 17:45:08,108 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END GET Library
+2023-05-10 17:45:11,632 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] GET Library
+2023-05-10 17:45:11,632 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-4] Library id: 1
+2023-05-10 17:45:11,634 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-4] END GET Library
+2023-05-10 17:49:50,165 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 5300 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-05-10 17:49:50,168 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-10 17:49:51,172 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-10 17:49:51,174 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-05-10 17:49:51,174 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-10 17:49:51,281 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-05-10 17:49:51,684 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 17:49:51,892 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 17:49:52,914 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 17:49:53,107 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-10 17:49:53,138 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 3.265 seconds (JVM running for 3.685)
+2023-05-10 17:52:53,474 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-10 17:52:53,555 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] POST Book
+2023-05-10 17:52:53,566 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Added Book: Book(id=0, code=994, title=El Señor de los Anillos, author=J.R.R Tolkien, year=1954-07-29, genre=Literatura Fantastica, description=La Comunidad del Anillo (título original en inglés: The Fellowship of the Ring) es el primero de los tres volúmenes que forman la novela El Señor de los Anillos, pages=423, price=1.5, hasStock=true, rent=null)
+2023-05-10 17:52:53,605 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END POST Book
+2023-05-10 17:53:23,074 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-10 17:53:24,742 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Book
+2023-05-10 17:53:24,744 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book id: 1
+2023-05-10 17:53:24,751 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Book
+2023-05-10 17:53:32,858 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-10 17:55:11,492 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] POST Book
+2023-05-10 17:55:11,494 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-1] Added Book: Book(id=0, code=230, title=Eragon, author=Christopher Paolini, year=2003-08-26, genre=Literatura Fantastica, description=Eragon es una novela fantástica escrita por Christopher Paolini, el primer libro de la saga de Eragon. Su portada se identifica por un color de fondo (azul) y un dragón, así como sus secuelas Eldest (rojo), Brisingr (dorado el dragón y negro el libro) y Legado (verde). , pages=544, price=1.5, hasStock=true, rent=null)
+2023-05-10 17:55:11,500 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-1] SQL Error: 22001, SQLState: 22001
+2023-05-10 17:55:11,500 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-1] Valor demasiado largo para la columna "description CHARACTER VARYING(255)": "U&'Eragon es una novela fant\\00e1stica escrita por Christopher Paolini, el prime... (270)"
+Value too long for column "description CHARACTER VARYING(255)": "U&'Eragon es una novela fant\\00e1stica escrita por Christopher Paolini, el prime... (270)"; SQL statement:
+insert into "book" ("id", "author", "code", "description", "genre", "has_stock", "pages", "price", "rent_id", "title", "year") values (default, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [22001-214]
+2023-05-10 17:55:11,505 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-1] Internal Error 
+2023-05-10 17:55:30,290 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] POST Book
+2023-05-10 17:55:30,290 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Added Book: Book(id=0, code=110, title=Eragon, author=Christopher Paolini, year=2003-08-26, genre=Literatura Fantastica, description=Eragon es una novela fantástica escrita por Christopher Paolini, el primer libro de la saga de Eragon. , pages=544, price=1.5, hasStock=true, rent=null)
+2023-05-10 17:55:30,292 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END POST Book
+2023-05-10 17:55:38,884 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-10 17:55:42,337 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-10 17:55:42,338 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 3
+2023-05-10 17:55:42,340 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-10 17:55:47,077 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-10 17:58:53,686 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] POST Book
+2023-05-10 17:58:53,687 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Added Book: Book(id=0, code=120, title=Canción de Hielo y Fuego 1. Juego de tronos , author=George R. R. Martin, year=1996-08-06, genre=Literatura Fantastica, description=Juego de tronos (en inglés: A Game of Thrones) es una novela de fantasía escrita por el autor estadounidense George R. R. Martin en 1996 y ganadora del premio Locus a la mejor novela de fantasía en 1997. Se trata de la primera entrega de la serie de gran popularidad Canción de hielo y fuego , pages=832, price=1.5, hasStock=true, rent=null)
+2023-05-10 17:58:53,689 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-3] SQL Error: 22001, SQLState: 22001
+2023-05-10 17:58:53,689 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8081-exec-3] Valor demasiado largo para la columna "description CHARACTER VARYING(255)": "U&'Juego de tronos (en ingl\\00e9s: A Game of Thrones) es una novela de fantas\\00... (292)"
+Value too long for column "description CHARACTER VARYING(255)": "U&'Juego de tronos (en ingl\\00e9s: A Game of Thrones) es una novela de fantas\\00... (292)"; SQL statement:
+insert into "book" ("id", "author", "code", "description", "genre", "has_stock", "pages", "price", "rent_id", "title", "year") values (default, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [22001-214]
+2023-05-10 17:58:53,690 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-3] Internal Error 
+2023-05-10 17:59:03,669 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] POST Book
+2023-05-10 17:59:03,669 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Added Book: Book(id=0, code=289, title=Canción de Hielo y Fuego 1. Juego de tronos , author=George R. R. Martin, year=1996-08-06, genre=Literatura Fantastica, description=Una novela de fantasía escrita por el autor estadounidense George R. R. Martin en 1996 y ganadora del premio Locus a la mejor novela de fantasía en 1997. Se trata de la primera entrega de la serie de gran popularidad Canción de hielo y fuego , pages=832, price=1.5, hasStock=true, rent=null)
+2023-05-10 17:59:03,671 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END POST Book
+2023-05-10 17:59:13,942 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-10 17:59:16,710 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Book
+2023-05-10 17:59:16,710 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book id: 5
+2023-05-10 17:59:16,712 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] END GET Book
+2023-05-10 17:59:19,341 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-10 17:59:22,523 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Book
+2023-05-10 17:59:22,523 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book id: 3
+2023-05-10 17:59:22,525 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] END GET Book
+2023-05-10 17:59:23,875 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-10 18:01:57,900 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] POST Book
+2023-05-10 18:01:57,900 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Added Book: Book(id=0, code=548, title=Harry Potter y la piedra filosofal , author=J. K. Rowling, year=1997-08-06, genre=Literatura Fantastica, description=Es el primer libro de la serie literaria Harry Potter, escrito por la autora británica J. K. Rowling en 1997, que supuso además el debut de Rowling como escritora profesional.  , pages=264, price=1.5, hasStock=true, rent=null)
+2023-05-10 18:01:57,902 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END POST Book
+2023-05-10 18:02:11,872 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-8] POST Users
+2023-05-10 18:02:11,877 INFO com.svalero.library.service.UserServiceImpl [http-nio-8081-exec-8] Added User: User(id=0, code=B1, name=Javier, lastName=Vizcaino, address=Calle, phoneNumber=654, email=javi, birthdate=1993-05-14, isMember=true, userRents=null)
+2023-05-10 18:02:11,885 INFO com.svalero.library.controller.UserController [http-nio-8081-exec-8] END POST Users
+2023-05-10 18:02:19,407 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-10 18:02:21,684 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] GET Book
+2023-05-10 18:02:21,685 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-10] Book id: 6
+2023-05-10 18:02:21,687 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-10] END GET Book
+2023-05-10 18:02:23,207 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-10 18:03:47,412 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] GET Library
+2023-05-10 18:03:47,413 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library id: 1
+2023-05-10 18:03:47,415 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] END GET Library
+2023-05-10 18:03:52,758 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] GET Library
+2023-05-10 18:03:52,759 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-5] Library id: 2
+2023-05-10 18:03:52,760 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-5] END GET Library
+2023-05-10 18:25:36,706 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] GET Library
+2023-05-10 18:25:36,706 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-6] Library id: 2
+2023-05-10 18:25:36,708 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-6] END GET Library
+2023-05-10 18:25:42,848 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] PUT Library
+2023-05-10 18:25:42,853 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library to modify: Library(id=2, name=Biblioteca Municipal, description=Biblioteca Municipal de Utebo, city=Utebo, verify=false, latitude=42.08523522335773, longitude=-1.0497607377955376)
+2023-05-10 18:25:42,853 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-2] Library modified: Library(id=0, name=Biblioteca Municipa, description=Biblioteca Municipal de Utebo, city=Utebo, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 18:25:42,936 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-2] END PUT Library
+2023-05-10 18:25:49,161 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] GET Library
+2023-05-10 18:25:49,162 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-8] Library id: 2
+2023-05-10 18:25:49,163 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-8] END GET Library
+2023-05-10 18:25:53,780 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] PUT Library
+2023-05-10 18:25:53,781 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library to modify: Library(id=2, name=Biblioteca Municipa, description=Biblioteca Municipal de Utebo, city=Utebo, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 18:25:53,782 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library modified: Library(id=0, name=Biblioteca Municipal, description=Biblioteca Municipal de Utebo, city=Utebo, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 18:25:53,783 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] END PUT Library
+2023-05-10 18:25:59,196 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-1] GET Books
+2023-05-10 18:26:00,328 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Book
+2023-05-10 18:26:00,328 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-3] Book id: 1
+2023-05-10 18:26:00,330 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] END GET Book
+2023-05-10 18:26:03,380 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] PUT Book
+2023-05-10 18:26:03,382 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book to modify: Book(id=1, code=994, title=El Señor de los Anillos, author=J.R.R Tolkien, year=1954-07-29, genre=Literatura Fantastica, description=La Comunidad del Anillo (título original en inglés: The Fellowship of the Ring) es el primero de los tres volúmenes que forman la novela El Señor de los Anillos, pages=423, price=1.5, hasStock=true, rent=null)
+2023-05-10 18:26:03,382 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book modified: Book(id=0, code=994, title=El Señor de los Anillo, author=J.R.R Tolkien, year=1954-07-29, genre=Literatura Fantastica, description=La Comunidad del Anillo (título original en inglés: The Fellowship of the Ring) es el primero de los tres volúmenes que forman la novela El Señor de los Anillos, pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-10 18:26:03,385 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-4] END PUT Book
+2023-05-10 18:26:04,599 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Books
+2023-05-10 18:26:06,316 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Book
+2023-05-10 18:26:06,317 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book id: 1
+2023-05-10 18:26:06,319 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] END GET Book
+2023-05-10 18:26:09,816 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-10 18:26:09,818 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book to modify: Book(id=1, code=994, title=El Señor de los Anillo, author=J.R.R Tolkien, year=1954-07-29, genre=Literatura Fantastica, description=La Comunidad del Anillo (título original en inglés: The Fellowship of the Ring) es el primero de los tres volúmenes que forman la novela El Señor de los Anillos, pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-10 18:26:09,819 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book modified: Book(id=0, code=994, title=El Señor de los Anillos, author=J.R.R Tolkien, year=1954-07-29, genre=Literatura Fantastica, description=La Comunidad del Anillo (título original en inglés: The Fellowship of the Ring) es el primero de los tres volúmenes que forman la novela El Señor de los Anillos, pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-10 18:26:09,820 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] END PUT Book
+2023-05-10 18:26:11,585 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Books
+2023-05-10 18:27:23,060 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-10 18:27:24,136 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] GET Book
+2023-05-10 18:27:24,137 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Book id: 3
+2023-05-10 18:27:24,138 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-5] END GET Book
+2023-05-10 18:27:27,901 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] PUT Book
+2023-05-10 18:27:27,903 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book to modify: Book(id=3, code=110, title=Eragon, author=Christopher Paolini, year=2003-08-26, genre=Literatura Fantastica, description=Eragon es una novela fantástica escrita por Christopher Paolini, el primer libro de la saga de Eragon. , pages=544, price=1.5, hasStock=true, rent=null)
+2023-05-10 18:27:27,904 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-6] Book modified: Book(id=0, code=110, title=Erago, author=Christopher Paolini, year=2003-08-26, genre=Literatura Fantastica, description=Eragon es una novela fantástica escrita por Christopher Paolini, el primer libro de la saga de Eragon. , pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-10 18:27:27,905 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-6] END PUT Book
+2023-05-10 18:27:33,506 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-10 18:27:34,691 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] GET Book
+2023-05-10 18:27:34,691 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Book id: 3
+2023-05-10 18:27:34,692 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END GET Book
+2023-05-10 18:27:37,753 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] PUT Book
+2023-05-10 18:27:37,755 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book to modify: Book(id=3, code=110, title=Erago, author=Christopher Paolini, year=2003-08-26, genre=Literatura Fantastica, description=Eragon es una novela fantástica escrita por Christopher Paolini, el primer libro de la saga de Eragon. , pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-10 18:27:37,756 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-8] Book modified: Book(id=0, code=110, title=Eragon, author=Christopher Paolini, year=2003-08-26, genre=Literatura Fantastica, description=Eragon es una novela fantástica escrita por Christopher Paolini, el primer libro de la saga de Eragon. , pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-10 18:27:37,757 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-8] END PUT Book
+2023-05-10 18:27:38,711 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-10 18:28:12,675 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] GET Library
+2023-05-10 18:28:12,676 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-9] Library id: 1
+2023-05-10 18:28:12,677 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-9] END GET Library
+2023-05-10 18:28:14,114 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] PUT Library
+2023-05-10 18:28:14,115 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-10] Library to modify: Library(id=1, name=Biblioteca Central, description=Biblioteca Central de Zaragoza, city=Zaragoza, verify=false, latitude=41.6490773284053, longitude=-0.9074009902487035)
+2023-05-10 18:28:14,115 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-10] Library modified: Library(id=0, name=Biblioteca Central, description=Biblioteca Central de Zaragoza, city=Zaragoza, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 18:28:14,116 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] END PUT Library
+2023-05-10 18:29:10,761 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-10 18:29:11,833 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Book
+2023-05-10 18:29:11,833 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-4] Book id: 6
+2023-05-10 18:29:11,836 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] END GET Book
+2023-05-10 18:29:13,479 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] PUT Book
+2023-05-10 18:29:13,480 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book to modify: Book(id=6, code=548, title=Harry Potter y la piedra filosofal , author=J. K. Rowling, year=1997-08-06, genre=Literatura Fantastica, description=Es el primer libro de la serie literaria Harry Potter, escrito por la autora británica J. K. Rowling en 1997, que supuso además el debut de Rowling como escritora profesional.  , pages=264, price=1.5, hasStock=true, rent=null)
+2023-05-10 18:29:13,480 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-2] Book modified: Book(id=0, code=548, title=Harry Potter y la piedra filosofal , author=J. K. Rowling, year=1997-08-06, genre=Literatura Fantastica, description=Es el primer libro de la serie literaria Harry Potter, escrito por la autora británica J. K. Rowling en 1997, que supuso además el debut de Rowling como escritora profesional.  , pages=0, price=0.0, hasStock=false, rent=null)
+2023-05-10 18:29:13,483 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-2] END PUT Book
+2023-05-10 18:29:15,829 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-8] GET Books
+2023-05-10 18:29:21,733 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] GET Library
+2023-05-10 18:29:21,735 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-1] Library id: 3
+2023-05-10 18:29:21,736 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-1] END GET Library
+2023-05-10 18:29:22,680 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] PUT Library
+2023-05-10 18:29:22,681 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library to modify: Library(id=3, name=Biblioteca Municipal, description=Biblioteca Municipal de Mallen, city=Mallen, verify=false, latitude=42.035712592887194, longitude=-1.2254990707329227)
+2023-05-10 18:29:22,681 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-3] Library modified: Library(id=0, name=Biblioteca Municipal, description=Biblioteca Municipal de Mallen, city=Mallen, verify=false, latitude=0.0, longitude=0.0)
+2023-05-10 18:29:22,683 ERROR com.svalero.library.controller.LibraryController [http-nio-8081-exec-3] END PUT Library
+2023-05-10 18:41:05,579 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-6] GET Books
+2023-05-10 18:44:00,769 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-10 18:45:12,095 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-10 18:45:20,181 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] GET Library
+2023-05-10 18:45:20,182 INFO com.svalero.library.service.LibraryServiceImpl [http-nio-8081-exec-10] Library id: 3
+2023-05-10 18:45:20,184 INFO com.svalero.library.controller.LibraryController [http-nio-8081-exec-10] END GET Library
+2023-05-10 18:45:35,406 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-4] GET Books
+2023-05-10 18:45:49,923 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-10 18:46:06,380 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] POST Book
+2023-05-10 18:46:06,380 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Added Book: Book(id=0, code=safsf, title=sfaf, author=asf, year=saff, genre=a, description=asfasf, pages=500, price=5.0, hasStock=true, rent=null)
+2023-05-10 18:46:06,383 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END POST Book
+2023-05-10 18:46:07,711 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-10 18:46:19,926 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-3] GET Books
+2023-05-10 18:46:26,310 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] DELETE Book
+2023-05-10 18:46:26,312 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-5] Deleted Book: 7
+2023-05-10 18:46:26,317 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-5] END DELETE Book
+2023-05-10 18:48:03,687 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-10 18:48:16,996 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] POST Book
+2023-05-10 18:48:16,997 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-7] Added Book: Book(id=0, code=fasf, title=afas, author=afsfa, year=afafa, genre=aff, description=afafa, pages=500, price=5.0, hasStock=true, rent=null)
+2023-05-10 18:48:16,998 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-7] END POST Book
+2023-05-10 18:48:18,841 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-9] GET Books
+2023-05-10 18:49:01,311 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-10 18:49:04,139 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] DELETE Book
+2023-05-10 18:49:04,141 INFO com.svalero.library.service.BookServiceImpl [http-nio-8081-exec-9] Deleted Book: 8
+2023-05-10 18:49:04,142 ERROR com.svalero.library.controller.BookController [http-nio-8081-exec-9] END DELETE Book
+2023-05-10 19:04:00,673 INFO org.springframework.boot.StartupInfoLogger [main] Starting LibraryApplication using Java 17.0.6 on PcJavi with PID 16272 (C:\Users\javi_\IdeaProjects\Library\target\classes started by javi_ in C:\Users\javi_\IdeaProjects\Library)
+2023-05-10 19:04:00,675 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-10 19:04:01,547 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-10 19:04:01,547 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2023-05-10 19:04:01,548 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-05-10 19:04:01,646 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-05-10 19:04:01,964 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-10 19:04:02,163 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-10 19:04:03,005 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-10 19:04:03,174 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-05-10 19:04:03,201 INFO org.springframework.boot.StartupInfoLogger [main] Started LibraryApplication in 2.788 seconds (JVM running for 3.154)
+2023-05-10 19:04:03,718 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-10 19:04:03,740 INFO com.svalero.library.controller.BookController [http-nio-8081-exec-2] GET Books
+2023-05-10 19:10:26,884 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8081-exec-5] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]

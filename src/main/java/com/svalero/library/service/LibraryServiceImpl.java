@@ -40,4 +40,21 @@ public class LibraryServiceImpl implements LibraryService{
         return libraryRepository.findById(id)
                 .orElseThrow(LibraryNotFoundException::new);
     }
+
+    @Override
+    public Library modifyLibrary(long libraryId, Library newLibrary) throws LibraryNotFoundException {
+        Library existingLibrary = libraryRepository.findById(libraryId)
+                .orElseThrow(LibraryNotFoundException::new);
+        logger.info("Library to modify: " + existingLibrary);
+        existingLibrary.setName(newLibrary.getName());
+        existingLibrary.setDescription(newLibrary.getDescription());
+        existingLibrary.setCity(newLibrary.getCity());
+        existingLibrary.setVerify(newLibrary.isVerify());
+        existingLibrary.setLatitude(newLibrary.getLatitude());
+        existingLibrary.setLongitude(newLibrary.getLongitude());
+
+        logger.info("Library modified: " + newLibrary);
+
+        return libraryRepository.save(existingLibrary);
+    }
 }
